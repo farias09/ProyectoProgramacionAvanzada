@@ -1,0 +1,65 @@
+﻿@model IEnumerable<ProyectoFinal.Models.CarritoDeCompras>
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <p>
+        @Html.ActionLink("Create New", "Create")
+    </p>
+    <table class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Producto.codigoProducto)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Usuario.codigoUsuario)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.cantidad)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.montoTotal)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.fechaCompra)
+            </th>
+            <th></th>
+        </tr>
+    
+    @foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Producto.codigoProducto)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Usuario.codigoUsuario)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.cantidad)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.montoTotal)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.fechaCompra)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id=item.id_carritoCompra }) |
+                @Html.ActionLink("Details", "Details", new { id=item.id_carritoCompra }) |
+                @Html.ActionLink("Delete", "Delete", new { id=item.id_carritoCompra })
+            </td>
+        </tr>
+    }
+    
+    </table>
+</body>
+</html>
