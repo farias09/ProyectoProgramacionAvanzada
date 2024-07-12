@@ -266,11 +266,6 @@ h6, .h6 {
   font-size: 1rem;
 }
 
-p {
-  margin-top: 0;
-  margin-bottom: 1rem;
-}
-
 abbr[title] {
   -webkit-text-decoration: underline dotted;
   text-decoration: underline dotted;
@@ -596,7 +591,7 @@ progress {
 }
 
 .lead {
-  font-size: 1.25rem;
+  font-size: 18px;
   font-weight: 300;
 }
 

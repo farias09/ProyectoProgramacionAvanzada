@@ -1,0 +1,58 @@
+﻿@model ProyectoFinal.Models.Reseñas
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Details</title>
+</head>
+<body>
+    <div>
+        <h4>Reseñas</h4>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.Producto.codigoProducto)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.Producto.codigoProducto)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.Usuario.codigoUsuario)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.Usuario.codigoUsuario)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.fechaPublicacion)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.fechaPublicacion)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.descripcion)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.descripcion)
+            </dd>
+    
+        </dl>
+    </div>
+    <p>
+        @Html.ActionLink("Edit", "Edit", new { id = Model.id_reseña }) |
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+</body>
+</html>

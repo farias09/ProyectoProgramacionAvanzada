@@ -1,0 +1,66 @@
+﻿@model ProyectoFinal.Models.CarritoDeCompras
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Details</title>
+</head>
+<body>
+    <div>
+        <h4>CarritoDeCompras</h4>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.Producto.codigoProducto)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.Producto.codigoProducto)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.Usuario.codigoUsuario)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.Usuario.codigoUsuario)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.cantidad)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.cantidad)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.montoTotal)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.montoTotal)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.fechaCompra)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.fechaCompra)
+            </dd>
+    
+        </dl>
+    </div>
+    <p>
+        @Html.ActionLink("Edit", "Edit", new { id = Model.id_carritoCompra }) |
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+</body>
+</html>
