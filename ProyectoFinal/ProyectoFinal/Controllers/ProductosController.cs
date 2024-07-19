@@ -14,10 +14,18 @@ namespace ProyectoFinal.Controllers
     {
         private ApplicationDbContext db = new ApplicationDbContext();
 
+        public ActionResult Catalogo()
+        {
+            var productos = db.Productos.Include(p => p.Categoria).ToList();
+            ViewBag.Categorias = db.Categorias.ToList();
+            return View(productos);
+        }
+
         // GET: Productos
         public ActionResult Index()
         {
-            return View(db.Productos.ToList());
+            var productos = db.Productos.Include(p => p.Categoria);
+            return View(productos.ToList());
         }
 
         // GET: Productos/Details/5
@@ -27,7 +35,7 @@ namespace ProyectoFinal.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Productos productos = db.Productos.Find(id);
+            Productos productos = db.Productos.Include(p => p.Categoria).FirstOrDefault(p => p.id_producto == id);
             if (productos == null)
             {
                 return HttpNotFound();
@@ -38,15 +46,14 @@ namespace ProyectoFinal.Controllers
         // GET: Productos/Create
         public ActionResult Create()
         {
+            ViewBag.CategoriaId = new SelectList(db.Categorias, "Id", "Nombre");
             return View();
         }
 
         // POST: Productos/Create
-        // To protect from overposting attacks, enable the specific properties you want to bind to, for 
-        // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "id_producto,codigoProducto,nombreProducto,descripcion,precioProducto,disponibilidadInventario,imagenAlmacenada,estadoProducto")] Productos productos)
+        public ActionResult Create([Bind(Include = "id_producto,codigoProducto,nombreProducto,descripcion,precioProducto,disponibilidadInventario,imagenAlmacenada,estadoProducto,CategoriaId")] Productos productos)
         {
             if (ModelState.IsValid)
             {
@@ -55,6 +62,7 @@ namespace ProyectoFinal.Controllers
                 return RedirectToAction("Index");
             }
 
+            ViewBag.CategoriaId = new SelectList(db.Categorias, "Id", "Nombre", productos.CategoriaId);
             return View(productos);
         }
 
@@ -70,22 +78,29 @@ namespace ProyectoFinal.Controllers
             {
                 return HttpNotFound();
             }
+            ViewBag.CategoriaId = new SelectList(db.Categorias, "Id", "Nombre", productos.CategoriaId);
             return View(productos);
         }
 
         // POST: Productos/Edit/5
-        // To protect from overposting attacks, enable the specific properties you want to bind to, for 
-        // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "id_producto,codigoProducto,nombreProducto,descripcion,precioProducto,disponibilidadInventario,imagenAlmacenada,estadoProducto")] Productos productos)
+        public ActionResult Edit([Bind(Include = "id_producto,codigoProducto,nombreProducto,descripcion,precioProducto,disponibilidadInventario,imagenAlmacenada,estadoProducto,CategoriaId")] Productos productos)
         {
             if (ModelState.IsValid)
             {
                 db.Entry(productos).State = EntityState.Modified;
-                db.SaveChanges();
-                return RedirectToAction("Index");
+                try
+                {
+                    db.SaveChanges();
+                    return RedirectToAction("Index");
+                }
+                catch (Exception ex)
+                {
+                    ModelState.AddModelError("", "Error al guardar los cambios. " + ex.Message);
+                }
             }
+            ViewBag.CategoriaId = new SelectList(db.Categorias, "Id", "Nombre", productos.CategoriaId);
             return View(productos);
         }
 
@@ -96,7 +111,7 @@ namespace ProyectoFinal.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Productos productos = db.Productos.Find(id);
+            Productos productos = db.Productos.Include(p => p.Categoria).FirstOrDefault(p => p.id_producto == id);
             if (productos == null)
             {
                 return HttpNotFound();
@@ -110,9 +125,27 @@ namespace ProyectoFinal.Controllers
         public ActionResult DeleteConfirmed(int id)
         {
             Productos productos = db.Productos.Find(id);
-            db.Productos.Remove(productos);
-            db.SaveChanges();
-            return RedirectToAction("Index");
+            try
+            {
+                db.Productos.Remove(productos);
+                db.SaveChanges();
+                return RedirectToAction("Index");
+            }
+            catch (Exception ex)
+            {
+                ModelState.AddModelError("", "Error al eliminar el producto. " + ex.Message);
+                return View(productos);
+            }
+        }
+
+        public ActionResult InfoProducto(int id)
+        {
+            var producto = db.Productos.Find(id);
+            if (producto == null)
+            {
+                return HttpNotFound();
+            }
+            return View(producto);
         }
 
         protected override void Dispose(bool disposing)

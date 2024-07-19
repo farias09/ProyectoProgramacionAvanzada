@@ -1,0 +1,33 @@
+﻿@model ProyectoFinal.Models.Productos
+
+@{
+    ViewBag.Title = Model.nombreProducto;
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container mt-2">
+    <div class="body-content">
+        <h2 class="mb-4">@Model.nombreProducto</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card">
+                    <img src="@Model.imagenAlmacenada" class="card-img-top" alt="@Model.nombreProducto" style="object-fit: contain; height: 400px;">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <h4>Descripción</h4>
+                <p><strong>Código:</strong> @Model.codigoProducto</p>
+                <p>@Model.descripcion</p>
+                <h3 class="mt-4">₡@Model.precioProducto.ToString("0.00")</h3>
+                <div class="form-group mt-3">
+                    <label for="cantidad">Cantidad:</label>
+                    <input type="number" id="cantidad" name="cantidad" class="form-control" value="1" min="1" style="width: 100px;">
+                </div>
+                <div class="mt-4">
+                    <button class="btn btn-primary btn-lg btn-block mb-2" style="width: 100%;">Comprar Ahora</button>
+                    <button class="btn btn-outline-secondary btn-lg btn-block" style="width: 100%;">Agregar al Carrito</button>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>

@@ -16,6 +16,7 @@ namespace ProyectoFinal.Models
 
         public DbSet<Usuarios> Usuarios { get; set; }
         public DbSet<Roles> Roles { get; set; }
+        public DbSet<Categorias> Categorias { get; set; }
         public DbSet<Productos> Productos { get; set; }
         public DbSet<Reseñas> Resenas { get; set; }
         public DbSet<CarritoDeCompras> CarritoDeCompras { get; set; }

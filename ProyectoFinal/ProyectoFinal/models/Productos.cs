@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Web;
 
@@ -17,6 +18,10 @@ namespace ProyectoFinal.Models
         public int disponibilidadInventario { get; set; }
         public string imagenAlmacenada { get; set; }
         public bool estadoProducto { get; set; }
+
+        public int CategoriaId { get; set; }
+        [ForeignKey("CategoriaId")]
+        public virtual Categorias Categoria { get; set; }
 
         public virtual ICollection<Reseñas> Reseña { get; set; }
 
