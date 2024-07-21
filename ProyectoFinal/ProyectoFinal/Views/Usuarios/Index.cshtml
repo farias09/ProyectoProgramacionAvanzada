@@ -13,55 +13,57 @@
     <title>Index</title>
 </head>
 <body>
-    <p>
-        @Html.ActionLink("Create New", "Create")
-    </p>
-    <table class="table">
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.codigoUsuario)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.nombreUsuario)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.password)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.ultimaFechaConexion)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.estadoUsuario)
-            </th>
-            <th></th>
-        </tr>
-
-        @foreach (var item in Model)
-        {
+    <div class="body-content">
+        <p>
+            @Html.ActionLink("Create New", "Create")
+        </p>
+        <table class="table">
             <tr>
-                <td>
-                    @Html.DisplayFor(modelItem => item.codigoUsuario)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.nombreUsuario)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.password)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.ultimaFechaConexion)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.estadoUsuario)
-                </td>
-                <td>
-                    @Html.ActionLink("Edit", "Edit", new { id = item.id_usuario }) |
-                    @Html.ActionLink("Details", "Details", new { id = item.id_usuario }) |
-                    @Html.ActionLink("Delete", "Delete", new { id = item.id_usuario })
-                </td>
+                <th>
+                    @Html.DisplayNameFor(model => model.codigoUsuario)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.nombreUsuario)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.password)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.ultimaFechaConexion)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.estadoUsuario)
+                </th>
+                <th></th>
             </tr>
-        }
 
-    </table>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.codigoUsuario)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.nombreUsuario)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.password)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.ultimaFechaConexion)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.estadoUsuario)
+                    </td>
+                    <td>
+                        @Html.ActionLink("Edit", "Edit", new { id = item.id_usuario }) |
+                        @Html.ActionLink("Details", "Details", new { id = item.id_usuario }) |
+                        @Html.ActionLink("Delete", "Delete", new { id = item.id_usuario })
+                    </td>
+                </tr>
+            }
+
+        </table>
+        </div>
 </body>
 </html>

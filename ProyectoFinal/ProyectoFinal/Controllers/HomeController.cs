@@ -13,9 +13,22 @@ namespace ProyectoFinal.Controllers
 
         public ActionResult Index()
         {
-            // Obtener algunos productos de la base de datos
-            var productos = db.Productos.Take(5).ToList(); // Aquí puedes ajustar la cantidad y la lógica según sea necesario
-            return View(productos);
+
+            var libros = db.Productos
+                .Where(p => p.Categoria.Nombre == "Libros")
+                .OrderByDescending(p => p.id_producto)
+                .Take(10)
+                .ToList();
+
+            var productosRecientes = db.Productos
+                .Where(p => p.Categoria.Nombre != "Libros")
+                .OrderByDescending(p => p.id_producto)
+                .Take(10)
+                .ToList();
+
+            ViewBag.ProductosRecientes = productosRecientes;
+
+            return View(libros);
         }
 
         public ActionResult About()

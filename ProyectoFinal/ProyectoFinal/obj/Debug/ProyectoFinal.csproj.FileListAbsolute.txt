@@ -66,6 +66,8 @@ C:\Users\ferva\OneDrive\Escritorio\@Repositorios-Github\ProyectoProgramacionAvan
 C:\Users\ferva\OneDrive\Escritorio\@Repositorios-Github\ProyectoProgramacionAvanzada\ProyectoFinal\ProyectoFinal\bin\es\System.Web.WebPages.Razor.resources.dll
 C:\Users\ferva\OneDrive\Escritorio\@Repositorios-Github\ProyectoProgramacionAvanzada\ProyectoFinal\ProyectoFinal\bin\es\System.Web.Optimization.resources.dll
 C:\Users\ferva\OneDrive\Escritorio\@Repositorios-Github\ProyectoProgramacionAvanzada\ProyectoFinal\ProyectoFinal\obj\Debug\ProyectoFinal.csproj.AssemblyReference.cache
+C:\Users\ferva\OneDrive\Escritorio\@Repositorios-Github\ProyectoProgramacionAvanzada\ProyectoFinal\ProyectoFinal\obj\Debug\ProyectoFinal.Migrations.AddCategoriaToProductos.resources
+C:\Users\ferva\OneDrive\Escritorio\@Repositorios-Github\ProyectoProgramacionAvanzada\ProyectoFinal\ProyectoFinal\obj\Debug\ProyectoFinal.csproj.GenerateResource.cache
 C:\Users\ferva\OneDrive\Escritorio\@Repositorios-Github\ProyectoProgramacionAvanzada\ProyectoFinal\ProyectoFinal\obj\Debug\ProyectoFinal.csproj.CoreCompileInputs.cache
 C:\Users\ferva\OneDrive\Escritorio\@Repositorios-Github\ProyectoProgramacionAvanzada\ProyectoFinal\ProyectoFinal\obj\Debug\Proyecto.489DB05A.Up2Date
 C:\Users\ferva\OneDrive\Escritorio\@Repositorios-Github\ProyectoProgramacionAvanzada\ProyectoFinal\ProyectoFinal\obj\Debug\ProyectoFinal.dll

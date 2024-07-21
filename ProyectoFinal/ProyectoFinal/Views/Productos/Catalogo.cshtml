@@ -1,0 +1,137 @@
+﻿@model IEnumerable<ProyectoFinal.Models.Productos>
+@{
+    ViewBag.Title = "Catalogo";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container catalogo-container">
+    <h1>Catálogo de Productos</h1>
+    <div class="row">
+        <div class="col-md-3 catalogo-filtros">
+            <h4>Filtros</h4>
+            <h5>Categoría</h5>
+            @foreach (var categoria in ViewBag.Categorias)
+            {
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="@categoria.Id" id="categoria-@categoria.Id">
+                    <label class="form-check-label" for="categoria-@categoria.Id">@categoria.Nombre</label>
+                </div>
+            }
+        </div>
+        <div class="col-md-9 catalogo-productos">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+                <p class="mb-0">Mostrando @Model.Count() productos</p>
+                <select class="form-select" style="width: auto;">
+                    <option selected>Ordenar por: Todos</option>
+                    <option>Precio: Menor a Mayor</option>
+                    <option>Precio: Mayor a Menor</option>
+                </select>
+            </div>
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
+                @foreach (var producto in Model)
+                {
+                    <div class="col">
+                        <div class="card h-100">
+                            <a href="@Url.RouteUrl("InfoProducto", new { id = producto.id_producto })">
+                                <div class="card-img-top-wrapper">
+                                    <img src="@producto.imagenAlmacenada" class="card-img-top" alt="@producto.nombreProducto">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">@producto.nombreProducto</h5>
+                                    <p class="precio">₡@producto.precioProducto.ToString("0.00")</p>
+                                    <a href="#" class="btn btn-primary btn-agregar">Agregar al carrito</a>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+
+    .catalogo-container {
+        margin-top: 2rem;
+    }
+
+        .catalogo-container h1 {
+            margin-bottom: 1.5rem;
+        }
+
+    .catalogo-filtros {
+        margin-bottom: 1.5rem;
+    }
+
+        .catalogo-filtros h4 {
+            margin-bottom: 1rem;
+        }
+
+        .catalogo-filtros h5 {
+            margin-top: 1rem;
+            margin-bottom: 0.5rem;
+        }
+
+    .catalogo-productos {
+        margin-bottom: 2rem;
+    }
+
+        .catalogo-productos .card-img-top-wrapper {
+            width: 100%;
+            height: 200px;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .catalogo-productos .card-img-top {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .catalogo-productos .card {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+
+            .catalogo-productos .card:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            }
+
+        .catalogo-productos .card-body {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .catalogo-productos .card-title {
+            font-size: 1.1rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+
+        .catalogo-productos .card-text {
+            font-size: 0.9rem;
+            flex-grow: 1;
+        }
+
+        .catalogo-productos .precio {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #007bff;
+            margin-top: auto;
+            margin-bottom: 0.5rem;
+        }
+
+        .catalogo-productos .btn-agregar {
+            width: 100%;
+        }
+
+
+</style>
