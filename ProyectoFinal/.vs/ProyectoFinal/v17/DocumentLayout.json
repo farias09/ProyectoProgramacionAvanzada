@@ -1,33 +1,37 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\ferva\\OneDrive\\Escritorio\\@Repositorios-Github\\ProyectoProgramacionAvanzada\\ProyectoFinal\\",
+  "WorkspaceRootPath": "C:\\Users\\Bryan\\OneDrive\\Documentos\\Proyecto\\ProyectoFinal\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{DAEC6BB0-2C87-416B-9FCE-AE589F4A2A45}|ProyectoFinal\\ProyectoFinal.csproj|C:\\Users\\ferva\\OneDrive\\Escritorio\\@Repositorios-Github\\ProyectoProgramacionAvanzada\\ProyectoFinal\\ProyectoFinal\\Views\\Shared\\_Layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{DAEC6BB0-2C87-416B-9FCE-AE589F4A2A45}|ProyectoFinal\\ProyectoFinal.csproj|solutionrelative:ProyectoFinal\\Views\\Shared\\_Layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{DAEC6BB0-2C87-416B-9FCE-AE589F4A2A45}|ProyectoFinal\\ProyectoFinal.csproj|c:\\users\\bryan\\onedrive\\documentos\\proyecto\\proyectofinal\\proyectofinal\\migrations\\202407211900234_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DAEC6BB0-2C87-416B-9FCE-AE589F4A2A45}|ProyectoFinal\\ProyectoFinal.csproj|solutionrelative:proyectofinal\\migrations\\202407211900234_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DAEC6BB0-2C87-416B-9FCE-AE589F4A2A45}|ProyectoFinal\\ProyectoFinal.csproj|C:\\Users\\ferva\\OneDrive\\Escritorio\\@Repositorios-Github\\ProyectoProgramacionAvanzada\\ProyectoFinal\\ProyectoFinal\\Views\\Usuarios\\Index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{DAEC6BB0-2C87-416B-9FCE-AE589F4A2A45}|ProyectoFinal\\ProyectoFinal.csproj|c:\\users\\bryan\\onedrive\\documentos\\proyecto\\proyectofinal\\proyectofinal\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DAEC6BB0-2C87-416B-9FCE-AE589F4A2A45}|ProyectoFinal\\ProyectoFinal.csproj|solutionrelative:proyectofinal\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DAEC6BB0-2C87-416B-9FCE-AE589F4A2A45}|ProyectoFinal\\ProyectoFinal.csproj|C:\\Users\\Bryan\\OneDrive\\Documentos\\Proyecto\\ProyectoFinal\\ProyectoFinal\\Views\\Usuarios\\Index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{DAEC6BB0-2C87-416B-9FCE-AE589F4A2A45}|ProyectoFinal\\ProyectoFinal.csproj|solutionrelative:ProyectoFinal\\Views\\Usuarios\\Index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DAEC6BB0-2C87-416B-9FCE-AE589F4A2A45}|ProyectoFinal\\ProyectoFinal.csproj|C:\\Users\\ferva\\OneDrive\\Escritorio\\@Repositorios-Github\\ProyectoProgramacionAvanzada\\ProyectoFinal\\ProyectoFinal\\Views\\Productos\\InfoProducto.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{DAEC6BB0-2C87-416B-9FCE-AE589F4A2A45}|ProyectoFinal\\ProyectoFinal.csproj|C:\\Users\\Bryan\\OneDrive\\Documentos\\Proyecto\\ProyectoFinal\\ProyectoFinal\\Views\\Productos\\InfoProducto.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{DAEC6BB0-2C87-416B-9FCE-AE589F4A2A45}|ProyectoFinal\\ProyectoFinal.csproj|solutionrelative:ProyectoFinal\\Views\\Productos\\InfoProducto.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DAEC6BB0-2C87-416B-9FCE-AE589F4A2A45}|ProyectoFinal\\ProyectoFinal.csproj|c:\\users\\ferva\\onedrive\\escritorio\\@repositorios-github\\proyectoprogramacionavanzada\\proyectofinal\\proyectofinal\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{DAEC6BB0-2C87-416B-9FCE-AE589F4A2A45}|ProyectoFinal\\ProyectoFinal.csproj|C:\\Users\\Bryan\\OneDrive\\Documentos\\Proyecto\\ProyectoFinal\\proyectofinal\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{DAEC6BB0-2C87-416B-9FCE-AE589F4A2A45}|ProyectoFinal\\ProyectoFinal.csproj|solutionrelative:proyectofinal\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DAEC6BB0-2C87-416B-9FCE-AE589F4A2A45}|ProyectoFinal\\ProyectoFinal.csproj|C:\\Users\\ferva\\OneDrive\\Escritorio\\@Repositorios-Github\\ProyectoProgramacionAvanzada\\ProyectoFinal\\ProyectoFinal\\Content\\bootstrap.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "AbsoluteMoniker": "D:0:0:{DAEC6BB0-2C87-416B-9FCE-AE589F4A2A45}|ProyectoFinal\\ProyectoFinal.csproj|C:\\Users\\Bryan\\OneDrive\\Documentos\\Proyecto\\ProyectoFinal\\ProyectoFinal\\Content\\bootstrap.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
       "RelativeMoniker": "D:0:0:{DAEC6BB0-2C87-416B-9FCE-AE589F4A2A45}|ProyectoFinal\\ProyectoFinal.csproj|solutionrelative:ProyectoFinal\\Content\\bootstrap.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DAEC6BB0-2C87-416B-9FCE-AE589F4A2A45}|ProyectoFinal\\ProyectoFinal.csproj|C:\\Users\\ferva\\OneDrive\\Escritorio\\@Repositorios-Github\\ProyectoProgramacionAvanzada\\ProyectoFinal\\ProyectoFinal\\Content\\Site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "AbsoluteMoniker": "D:0:0:{DAEC6BB0-2C87-416B-9FCE-AE589F4A2A45}|ProyectoFinal\\ProyectoFinal.csproj|C:\\Users\\Bryan\\OneDrive\\Documentos\\Proyecto\\ProyectoFinal\\ProyectoFinal\\Content\\Site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
       "RelativeMoniker": "D:0:0:{DAEC6BB0-2C87-416B-9FCE-AE589F4A2A45}|ProyectoFinal\\ProyectoFinal.csproj|solutionrelative:ProyectoFinal\\Content\\Site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DAEC6BB0-2C87-416B-9FCE-AE589F4A2A45}|ProyectoFinal\\ProyectoFinal.csproj|C:\\Users\\ferva\\OneDrive\\Escritorio\\@Repositorios-Github\\ProyectoProgramacionAvanzada\\ProyectoFinal\\ProyectoFinal\\Controllers\\ProductosController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{DAEC6BB0-2C87-416B-9FCE-AE589F4A2A45}|ProyectoFinal\\ProyectoFinal.csproj|C:\\Users\\Bryan\\OneDrive\\Documentos\\Proyecto\\ProyectoFinal\\ProyectoFinal\\Controllers\\ProductosController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DAEC6BB0-2C87-416B-9FCE-AE589F4A2A45}|ProyectoFinal\\ProyectoFinal.csproj|solutionrelative:ProyectoFinal\\Controllers\\ProductosController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -38,21 +42,38 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 54,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\ferva\\OneDrive\\Escritorio\\@Repositorios-Github\\ProyectoProgramacionAvanzada\\ProyectoFinal\\ProyectoFinal\\Views\\Home\\Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Bryan\\OneDrive\\Documentos\\Proyecto\\ProyectoFinal\\ProyectoFinal\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "ProyectoFinal\\Views\\Home\\Index.cshtml",
-              "ToolTip": "C:\\Users\\ferva\\OneDrive\\Escritorio\\@Repositorios-Github\\ProyectoProgramacionAvanzada\\ProyectoFinal\\ProyectoFinal\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Bryan\\OneDrive\\Documentos\\Proyecto\\ProyectoFinal\\ProyectoFinal\\Views\\Home\\Index.cshtml",
               "RelativeToolTip": "ProyectoFinal\\Views\\Home\\Index.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAE4AAABPAAAA",
+              "ViewState": "AQIAAEsAAAAAAAAAAAAAAE4AAABPAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-07-10T16:08:50.437Z",
               "IsPinned": true,
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "202407211900234_InitialCreate.cs",
+              "DocumentMoniker": "C:\\Users\\Bryan\\OneDrive\\Documentos\\Proyecto\\ProyectoFinal\\ProyectoFinal\\Migrations\\202407211900234_InitialCreate.cs",
+              "RelativeDocumentMoniker": "ProyectoFinal\\Migrations\\202407211900234_InitialCreate.cs",
+              "ToolTip": "C:\\Users\\Bryan\\OneDrive\\Documentos\\Proyecto\\ProyectoFinal\\ProyectoFinal\\Migrations\\202407211900234_InitialCreate.cs",
+              "RelativeToolTip": "ProyectoFinal\\Migrations\\202407211900234_InitialCreate.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-21T19:00:38.682Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
               "$type": "Bookmark",
@@ -260,11 +281,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "InfoProducto.cshtml",
-              "DocumentMoniker": "C:\\Users\\ferva\\OneDrive\\Escritorio\\@Repositorios-Github\\ProyectoProgramacionAvanzada\\ProyectoFinal\\ProyectoFinal\\Views\\Productos\\InfoProducto.cshtml",
+              "DocumentMoniker": "C:\\Users\\Bryan\\OneDrive\\Documentos\\Proyecto\\ProyectoFinal\\ProyectoFinal\\Views\\Productos\\InfoProducto.cshtml",
               "RelativeDocumentMoniker": "ProyectoFinal\\Views\\Productos\\InfoProducto.cshtml",
-              "ToolTip": "C:\\Users\\ferva\\OneDrive\\Escritorio\\@Repositorios-Github\\ProyectoProgramacionAvanzada\\ProyectoFinal\\ProyectoFinal\\Views\\Productos\\InfoProducto.cshtml",
+              "ToolTip": "C:\\Users\\Bryan\\OneDrive\\Documentos\\Proyecto\\ProyectoFinal\\ProyectoFinal\\Views\\Productos\\InfoProducto.cshtml",
               "RelativeToolTip": "ProyectoFinal\\Views\\Productos\\InfoProducto.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAkAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -273,11 +294,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\ferva\\OneDrive\\Escritorio\\@Repositorios-Github\\ProyectoProgramacionAvanzada\\ProyectoFinal\\ProyectoFinal\\Views\\Usuarios\\Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Bryan\\OneDrive\\Documentos\\Proyecto\\ProyectoFinal\\ProyectoFinal\\Views\\Usuarios\\Index.cshtml",
               "RelativeDocumentMoniker": "ProyectoFinal\\Views\\Usuarios\\Index.cshtml",
-              "ToolTip": "C:\\Users\\ferva\\OneDrive\\Escritorio\\@Repositorios-Github\\ProyectoProgramacionAvanzada\\ProyectoFinal\\ProyectoFinal\\Views\\Usuarios\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Bryan\\OneDrive\\Documentos\\Proyecto\\ProyectoFinal\\ProyectoFinal\\Views\\Usuarios\\Index.cshtml",
               "RelativeToolTip": "ProyectoFinal\\Views\\Usuarios\\Index.cshtml",
               "ViewState": "AQIAACoAAAAAAAAAAAAAAEIAAAAOAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -286,11 +307,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\ferva\\OneDrive\\Escritorio\\@Repositorios-Github\\ProyectoProgramacionAvanzada\\ProyectoFinal\\ProyectoFinal\\Views\\Shared\\_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\Bryan\\OneDrive\\Documentos\\Proyecto\\ProyectoFinal\\ProyectoFinal\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "ProyectoFinal\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\ferva\\OneDrive\\Escritorio\\@Repositorios-Github\\ProyectoProgramacionAvanzada\\ProyectoFinal\\ProyectoFinal\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\Bryan\\OneDrive\\Documentos\\Proyecto\\ProyectoFinal\\ProyectoFinal\\Views\\Shared\\_Layout.cshtml",
               "RelativeToolTip": "ProyectoFinal\\Views\\Shared\\_Layout.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAxAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -299,39 +320,42 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "bootstrap.css",
-              "DocumentMoniker": "C:\\Users\\ferva\\OneDrive\\Escritorio\\@Repositorios-Github\\ProyectoProgramacionAvanzada\\ProyectoFinal\\ProyectoFinal\\Content\\bootstrap.css",
+              "DocumentMoniker": "C:\\Users\\Bryan\\OneDrive\\Documentos\\Proyecto\\ProyectoFinal\\ProyectoFinal\\Content\\bootstrap.css",
               "RelativeDocumentMoniker": "ProyectoFinal\\Content\\bootstrap.css",
-              "ToolTip": "C:\\Users\\ferva\\OneDrive\\Escritorio\\@Repositorios-Github\\ProyectoProgramacionAvanzada\\ProyectoFinal\\ProyectoFinal\\Content\\bootstrap.css",
+              "ToolTip": "C:\\Users\\Bryan\\OneDrive\\Documentos\\Proyecto\\ProyectoFinal\\ProyectoFinal\\Content\\bootstrap.css",
               "RelativeToolTip": "ProyectoFinal\\Content\\bootstrap.css",
               "ViewState": "AQIAAPICAAAAAAAAAADgvwEDAAAVAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-07-18T02:47:41.594Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Site.css",
-              "DocumentMoniker": "C:\\Users\\ferva\\OneDrive\\Escritorio\\@Repositorios-Github\\ProyectoProgramacionAvanzada\\ProyectoFinal\\ProyectoFinal\\Content\\Site.css",
-              "RelativeDocumentMoniker": "ProyectoFinal\\Content\\Site.css",
-              "ToolTip": "C:\\Users\\ferva\\OneDrive\\Escritorio\\@Repositorios-Github\\ProyectoProgramacionAvanzada\\ProyectoFinal\\ProyectoFinal\\Content\\Site.css",
-              "RelativeToolTip": "ProyectoFinal\\Content\\Site.css",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAARAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-07-12T19:30:21.912Z"
+              "WhenOpened": "2024-07-18T02:47:41.594Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
+              "Title": "Site.css",
+              "DocumentMoniker": "C:\\Users\\Bryan\\OneDrive\\Documentos\\Proyecto\\ProyectoFinal\\ProyectoFinal\\Content\\Site.css",
+              "RelativeDocumentMoniker": "ProyectoFinal\\Content\\Site.css",
+              "ToolTip": "C:\\Users\\Bryan\\OneDrive\\Documentos\\Proyecto\\ProyectoFinal\\ProyectoFinal\\Content\\Site.css",
+              "RelativeToolTip": "ProyectoFinal\\Content\\Site.css",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-07-12T19:30:21.912Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "ProductosController.cs",
-              "DocumentMoniker": "C:\\Users\\ferva\\OneDrive\\Escritorio\\@Repositorios-Github\\ProyectoProgramacionAvanzada\\ProyectoFinal\\ProyectoFinal\\Controllers\\ProductosController.cs",
+              "DocumentMoniker": "C:\\Users\\Bryan\\OneDrive\\Documentos\\Proyecto\\ProyectoFinal\\ProyectoFinal\\Controllers\\ProductosController.cs",
               "RelativeDocumentMoniker": "ProyectoFinal\\Controllers\\ProductosController.cs",
-              "ToolTip": "C:\\Users\\ferva\\OneDrive\\Escritorio\\@Repositorios-Github\\ProyectoProgramacionAvanzada\\ProyectoFinal\\ProyectoFinal\\Controllers\\ProductosController.cs",
+              "ToolTip": "C:\\Users\\Bryan\\OneDrive\\Documentos\\Proyecto\\ProyectoFinal\\ProyectoFinal\\Controllers\\ProductosController.cs",
               "RelativeToolTip": "ProyectoFinal\\Controllers\\ProductosController.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-16T19:28:59.842Z"
+              "WhenOpened": "2024-07-16T19:28:59.842Z",
+              "EditorCaption": ""
             }
           ]
         },

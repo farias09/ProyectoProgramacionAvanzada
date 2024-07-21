@@ -133,6 +133,10 @@
     <Compile Include="Migrations\202407130317141_AgregarCategoriaParaProductos.Designer.cs">
       <DependentUpon>202407130317141_AgregarCategoriaParaProductos.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202407211900234_InitialCreate.cs" />
+    <Compile Include="Migrations\202407211900234_InitialCreate.Designer.cs">
+      <DependentUpon>202407211900234_InitialCreate.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AplicationDbContext.cs" />
     <Compile Include="Models\CarritoDeCompras.cs" />
@@ -272,6 +276,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202407130317141_AgregarCategoriaParaProductos.resx">
       <DependentUpon>202407130317141_AgregarCategoriaParaProductos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202407211900234_InitialCreate.resx">
+      <DependentUpon>202407211900234_InitialCreate.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
