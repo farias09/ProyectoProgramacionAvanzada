@@ -14,7 +14,7 @@ namespace ProyectoFinal.Models
         public string codigoUsuario { get; set; }
         public string nombreUsuario { get; set; }
         public string password { get; set; }
-        public DateTime ultimaFechaConexion { get; set; }
+        public DateTime ultimaFechaConexion { get; set; } = DateTime.Now;
         public bool estadoUsuario { get; set; }
 
         public virtual ICollection<Roles> Roles { get; set; }
