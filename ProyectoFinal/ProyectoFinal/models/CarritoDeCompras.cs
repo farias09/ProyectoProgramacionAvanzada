@@ -17,10 +17,42 @@ namespace ProyectoFinal.Models
         public int id_usuario { get; set; }
         public int id_producto { get; set; }
 
+
         [ForeignKey("id_usuario")]
         public virtual Usuarios Usuario { get; set; }
 
         [ForeignKey("id_producto")]
         public virtual Productos Producto { get; set; }
+
+        public List<ItemDeCarrito> Items { get; set; } = new List<ItemDeCarrito>();
+
+        public void AgregarProducto(Productos producto) 
+        {
+            var item = Items.FirstOrDefault(i => i.Producto.id_producto == producto.id_producto);
+            if (item != null)
+            {
+                item.Cantidad++;
+            }
+            else
+            {
+                Items.Add(new ItemDeCarrito { Producto = producto, Cantidad = 1 });
+            }
+        }
+
+        public void EliminarProducto(int productoId)
+        {
+            var item = Items.FirstOrDefault(i => i.Producto.id_producto == productoId);
+            if (item != null)
+            {
+                Items.Remove(item);
+            }
+        }
+    }
+    
+    public class ItemDeCarrito
+    {
+        public int Id { get; set; } // Clave primaria
+        public Productos Producto { get; set; } 
+        public int Cantidad { get; set; }
     }
 }

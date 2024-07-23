@@ -14,11 +14,13 @@ namespace ProyectoFinal.Controllers
     {
         private ApplicationDbContext db = new ApplicationDbContext();
 
+        private const string CarritoSessionKey = "Carrito";
+
         // GET: CarritoDeCompras
         public ActionResult Index()
         {
-            var carritoDeCompras = db.CarritoDeCompras.Include(c => c.Producto).Include(c => c.Usuario);
-            return View(carritoDeCompras.ToList());
+            CarritoDeCompras carrito = ObtenerCarritoDeLaSesion();
+            return View(carrito.Items);
         }
 
         // GET: CarritoDeCompras/Details/5
@@ -131,6 +133,48 @@ namespace ProyectoFinal.Controllers
                 db.Dispose();
             }
             base.Dispose(disposing);
+        }
+
+        public ActionResult VerificarAcceso()
+        {
+            if (!User.Identity.IsAuthenticated)
+            {
+                return RedirectToAction("Login", "Account");
+            }
+            return RedirectToAction("Index");
+        }
+
+        private CarritoDeCompras ObtenerCarritoDeLaSesion()
+        {
+            var carrito = Session[CarritoSessionKey] as CarritoDeCompras;
+            if (carrito == null)
+            {
+                carrito = new CarritoDeCompras();
+                Session[CarritoSessionKey] = carrito;
+            }
+            return carrito;
+        }
+
+        // Acción para agregar un producto al carrito
+        public ActionResult AgregarAlCarrito(int productoId)
+        {
+            // Obtener el producto desde la base de datos 
+            Productos producto = db.Productos.Find(productoId); 
+
+            if (producto != null)
+            {
+                // Obtener el carrito de la sesión
+                CarritoDeCompras carrito = ObtenerCarritoDeLaSesion();
+
+                // Agregar el producto al carrito
+                carrito.AgregarProducto(producto);
+
+                // Actualizar la sesión con el carrito actualizado
+                Session[CarritoSessionKey] = carrito;
+            }
+
+            // Redirigir a la vista del carrito o a la página de productos
+            return RedirectToAction("Index");
         }
     }
 }

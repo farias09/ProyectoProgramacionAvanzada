@@ -1,7 +1,8 @@
-﻿@model IEnumerable<ProyectoFinal.Models.CarritoDeCompras>
+﻿@model IEnumerable<ProyectoFinal.Models.ItemDeCarrito>
 
 @{
-    Layout = null;
+    ViewBag.Title = "Carrito de Compras";
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
 <!DOCTYPE html>
@@ -12,54 +13,33 @@
     <title>Index</title>
 </head>
 <body>
-    <p>
-        @Html.ActionLink("Create New", "Create")
-    </p>
-    <table class="table">
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.Producto.codigoProducto)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Usuario.codigoUsuario)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.cantidad)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.montoTotal)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.fechaCompra)
-            </th>
-            <th></th>
-        </tr>
-    
-    @foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Producto.codigoProducto)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Usuario.codigoUsuario)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.cantidad)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.montoTotal)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.fechaCompra)
-            </td>
-            <td>
-                @Html.ActionLink("Edit", "Edit", new { id=item.id_carritoCompra }) |
-                @Html.ActionLink("Details", "Details", new { id=item.id_carritoCompra }) |
-                @Html.ActionLink("Delete", "Delete", new { id=item.id_carritoCompra })
-            </td>
-        </tr>
+    <br />
+
+    @if (!Model.Any())
+    {
+        <p>El carrito de compras está vacío.</p>
     }
-    
-    </table>
+    else
+    {
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Producto</th>
+                    <th>Cantidad</th>
+                    <th>Precio</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>@item.Producto.nombreProducto</td>
+                        <td>@item.Cantidad</td>
+                        <td>₡@item.Producto.precioProducto</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
 </body>
 </html>
