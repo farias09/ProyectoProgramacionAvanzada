@@ -51,6 +51,9 @@
     <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.Core, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.Core.2.2.4\lib\net45\Microsoft.AspNet.Identity.Core.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=4.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.4.1.0\lib\net472\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
     </Reference>
@@ -137,6 +140,10 @@
     <Compile Include="Migrations\202407211900234_InitialCreate.cs" />
     <Compile Include="Migrations\202407211900234_InitialCreate.Designer.cs">
       <DependentUpon>202407211900234_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202407230310180_AddKeyToItemDeCarrito.cs" />
+    <Compile Include="Migrations\202407230310180_AddKeyToItemDeCarrito.Designer.cs">
+      <DependentUpon>202407230310180_AddKeyToItemDeCarrito.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AplicationDbContext.cs" />
@@ -288,6 +295,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202407211900234_InitialCreate.resx">
       <DependentUpon>202407211900234_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202407230310180_AddKeyToItemDeCarrito.resx">
+      <DependentUpon>202407230310180_AddKeyToItemDeCarrito.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

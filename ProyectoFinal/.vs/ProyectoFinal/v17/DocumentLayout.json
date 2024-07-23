@@ -1,30 +1,18 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Bryan\\OneDrive\\Documentos\\Proyecto\\ProyectoFinal\\",
+  "WorkspaceRootPath": "D:\\github\\ProyectoFinalProgramacionAvanzada\\ProyectoProgramacionAvanzada\\ProyectoFinal\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{DAEC6BB0-2C87-416B-9FCE-AE589F4A2A45}|ProyectoFinal\\ProyectoFinal.csproj|c:\\users\\bryan\\onedrive\\documentos\\proyecto\\proyectofinal\\proyectofinal\\models\\usuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DAEC6BB0-2C87-416B-9FCE-AE589F4A2A45}|ProyectoFinal\\ProyectoFinal.csproj|solutionrelative:proyectofinal\\models\\usuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DAEC6BB0-2C87-416B-9FCE-AE589F4A2A45}|ProyectoFinal\\ProyectoFinal.csproj|d:\\github\\proyectofinalprogramacionavanzada\\proyectoprogramacionavanzada\\proyectofinal\\proyectofinal\\models\\carritodecompras.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DAEC6BB0-2C87-416B-9FCE-AE589F4A2A45}|ProyectoFinal\\ProyectoFinal.csproj|solutionrelative:proyectofinal\\models\\carritodecompras.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DAEC6BB0-2C87-416B-9FCE-AE589F4A2A45}|ProyectoFinal\\ProyectoFinal.csproj|c:\\users\\bryan\\onedrive\\documentos\\proyecto\\proyectofinal\\proyectofinal\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DAEC6BB0-2C87-416B-9FCE-AE589F4A2A45}|ProyectoFinal\\ProyectoFinal.csproj|solutionrelative:proyectofinal\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DAEC6BB0-2C87-416B-9FCE-AE589F4A2A45}|ProyectoFinal\\ProyectoFinal.csproj|d:\\github\\proyectofinalprogramacionavanzada\\proyectoprogramacionavanzada\\proyectofinal\\proyectofinal\\controllers\\carritodecomprascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DAEC6BB0-2C87-416B-9FCE-AE589F4A2A45}|ProyectoFinal\\ProyectoFinal.csproj|solutionrelative:proyectofinal\\controllers\\carritodecomprascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DAEC6BB0-2C87-416B-9FCE-AE589F4A2A45}|ProyectoFinal\\ProyectoFinal.csproj|c:\\users\\bryan\\onedrive\\documentos\\proyecto\\proyectofinal\\proyectofinal\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{DAEC6BB0-2C87-416B-9FCE-AE589F4A2A45}|ProyectoFinal\\ProyectoFinal.csproj|solutionrelative:proyectofinal\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DAEC6BB0-2C87-416B-9FCE-AE589F4A2A45}|ProyectoFinal\\ProyectoFinal.csproj|c:\\users\\bryan\\onedrive\\documentos\\proyecto\\proyectofinal\\proyectofinal\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{DAEC6BB0-2C87-416B-9FCE-AE589F4A2A45}|ProyectoFinal\\ProyectoFinal.csproj|solutionrelative:proyectofinal\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DAEC6BB0-2C87-416B-9FCE-AE589F4A2A45}|ProyectoFinal\\ProyectoFinal.csproj|c:\\users\\bryan\\onedrive\\documentos\\proyecto\\proyectofinal\\proyectofinal\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{DAEC6BB0-2C87-416B-9FCE-AE589F4A2A45}|ProyectoFinal\\ProyectoFinal.csproj|solutionrelative:proyectofinal\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DAEC6BB0-2C87-416B-9FCE-AE589F4A2A45}|ProyectoFinal\\ProyectoFinal.csproj|c:\\users\\bryan\\onedrive\\documentos\\proyecto\\proyectofinal\\proyectofinal\\models\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DAEC6BB0-2C87-416B-9FCE-AE589F4A2A45}|ProyectoFinal\\ProyectoFinal.csproj|solutionrelative:proyectofinal\\models\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DAEC6BB0-2C87-416B-9FCE-AE589F4A2A45}|ProyectoFinal\\ProyectoFinal.csproj|d:\\github\\proyectofinalprogramacionavanzada\\proyectoprogramacionavanzada\\proyectofinal\\proyectofinal\\views\\carritodecompras\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DAEC6BB0-2C87-416B-9FCE-AE589F4A2A45}|ProyectoFinal\\ProyectoFinal.csproj|solutionrelative:proyectofinal\\views\\carritodecompras\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,16 +22,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 52,
+          "SelectedChildIndex": 54,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:12:0:{2456bd12-ecf7-4988-a4a6-67d49173f565}"
@@ -242,84 +222,53 @@
             },
             {
               "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Usuarios.cs",
-              "DocumentMoniker": "C:\\Users\\Bryan\\OneDrive\\Documentos\\Proyecto\\ProyectoFinal\\ProyectoFinal\\models\\Usuarios.cs",
-              "RelativeDocumentMoniker": "ProyectoFinal\\models\\Usuarios.cs",
-              "ToolTip": "C:\\Users\\Bryan\\OneDrive\\Documentos\\Proyecto\\ProyectoFinal\\ProyectoFinal\\models\\Usuarios.cs*",
-              "RelativeToolTip": "ProyectoFinal\\models\\Usuarios.cs*",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAABJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-22T02:20:20.331Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Web.config",
-              "DocumentMoniker": "C:\\Users\\Bryan\\OneDrive\\Documentos\\Proyecto\\ProyectoFinal\\ProyectoFinal\\Web.config",
-              "RelativeDocumentMoniker": "ProyectoFinal\\Web.config",
-              "ToolTip": "C:\\Users\\Bryan\\OneDrive\\Documentos\\Proyecto\\ProyectoFinal\\ProyectoFinal\\Web.config",
-              "RelativeToolTip": "ProyectoFinal\\Web.config",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAABkAAAAUAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2024-07-22T02:02:52.324Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "LoginViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\Bryan\\OneDrive\\Documentos\\Proyecto\\ProyectoFinal\\ProyectoFinal\\models\\LoginViewModel.cs",
-              "RelativeDocumentMoniker": "ProyectoFinal\\models\\LoginViewModel.cs",
-              "ToolTip": "C:\\Users\\Bryan\\OneDrive\\Documentos\\Proyecto\\ProyectoFinal\\ProyectoFinal\\models\\LoginViewModel.cs",
-              "RelativeToolTip": "ProyectoFinal\\models\\LoginViewModel.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAsAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-22T02:00:57.863Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Login.cshtml",
-              "DocumentMoniker": "C:\\Users\\Bryan\\OneDrive\\Documentos\\Proyecto\\ProyectoFinal\\ProyectoFinal\\Views\\Account\\Login.cshtml",
-              "RelativeDocumentMoniker": "ProyectoFinal\\Views\\Account\\Login.cshtml",
-              "ToolTip": "C:\\Users\\Bryan\\OneDrive\\Documentos\\Proyecto\\ProyectoFinal\\ProyectoFinal\\Views\\Account\\Login.cshtml",
-              "RelativeToolTip": "ProyectoFinal\\Views\\Account\\Login.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAC0AAAAAAAAA",
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\github\\ProyectoFinalProgramacionAvanzada\\ProyectoProgramacionAvanzada\\ProyectoFinal\\ProyectoFinal\\Views\\CarritoDeCompras\\Index.cshtml",
+              "RelativeDocumentMoniker": "ProyectoFinal\\Views\\CarritoDeCompras\\Index.cshtml",
+              "ToolTip": "D:\\github\\ProyectoFinalProgramacionAvanzada\\ProyectoProgramacionAvanzada\\ProyectoFinal\\ProyectoFinal\\Views\\CarritoDeCompras\\Index.cshtml",
+              "RelativeToolTip": "ProyectoFinal\\Views\\CarritoDeCompras\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB8AAAATAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-07-22T01:40:34.727Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Register.cshtml",
-              "DocumentMoniker": "C:\\Users\\Bryan\\OneDrive\\Documentos\\Proyecto\\ProyectoFinal\\ProyectoFinal\\Views\\Account\\Register.cshtml",
-              "RelativeDocumentMoniker": "ProyectoFinal\\Views\\Account\\Register.cshtml",
-              "ToolTip": "C:\\Users\\Bryan\\OneDrive\\Documentos\\Proyecto\\ProyectoFinal\\ProyectoFinal\\Views\\Account\\Register.cshtml",
-              "RelativeToolTip": "ProyectoFinal\\Views\\Account\\Register.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAC0AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-07-22T01:37:55.6Z",
+              "WhenOpened": "2024-07-23T03:16:10.247Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "AccountController.cs",
-              "DocumentMoniker": "C:\\Users\\Bryan\\OneDrive\\Documentos\\Proyecto\\ProyectoFinal\\ProyectoFinal\\Controllers\\AccountController.cs",
-              "RelativeDocumentMoniker": "ProyectoFinal\\Controllers\\AccountController.cs",
-              "ToolTip": "C:\\Users\\Bryan\\OneDrive\\Documentos\\Proyecto\\ProyectoFinal\\ProyectoFinal\\Controllers\\AccountController.cs",
-              "RelativeToolTip": "ProyectoFinal\\Controllers\\AccountController.cs",
-              "ViewState": "AQIAABAAAAAAAAAAAAAmwCYAAAAQAAAA",
+              "Title": "CarritoDeComprasController.cs",
+              "DocumentMoniker": "D:\\github\\ProyectoFinalProgramacionAvanzada\\ProyectoProgramacionAvanzada\\ProyectoFinal\\ProyectoFinal\\Controllers\\CarritoDeComprasController.cs",
+              "RelativeDocumentMoniker": "ProyectoFinal\\Controllers\\CarritoDeComprasController.cs",
+              "ToolTip": "D:\\github\\ProyectoFinalProgramacionAvanzada\\ProyectoProgramacionAvanzada\\ProyectoFinal\\ProyectoFinal\\Controllers\\CarritoDeComprasController.cs",
+              "RelativeToolTip": "ProyectoFinal\\Controllers\\CarritoDeComprasController.cs",
+              "ViewState": "AQIAAIgAAAAAAAAAAAAYwJoAAAAbAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-22T01:29:26.431Z",
+              "WhenOpened": "2024-07-23T02:44:29.067Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CarritoDeCompras.cs",
+              "DocumentMoniker": "D:\\github\\ProyectoFinalProgramacionAvanzada\\ProyectoProgramacionAvanzada\\ProyectoFinal\\ProyectoFinal\\models\\CarritoDeCompras.cs",
+              "RelativeDocumentMoniker": "ProyectoFinal\\models\\CarritoDeCompras.cs",
+              "ToolTip": "D:\\github\\ProyectoFinalProgramacionAvanzada\\ProyectoProgramacionAvanzada\\ProyectoFinal\\ProyectoFinal\\models\\CarritoDeCompras.cs",
+              "RelativeToolTip": "ProyectoFinal\\models\\CarritoDeCompras.cs",
+              "ViewState": "AQIAABUAAAAAAAAAAAAmwDIAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-23T02:43:41.165Z",
               "EditorCaption": ""
             }
           ]
@@ -330,11 +279,11 @@
           "Children": [
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{4a9b7e51-aa16-11d0-a8c5-00a0c921a4d2}"
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+              "Name": "ST:0:0:{4a9b7e51-aa16-11d0-a8c5-00a0c921a4d2}"
             }
           ]
         }
