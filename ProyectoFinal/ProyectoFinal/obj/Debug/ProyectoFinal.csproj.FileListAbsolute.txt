@@ -225,3 +225,7 @@ D:\github\ProyectoFinalProgramacionAvanzada\ProyectoProgramacionAvanzada\Proyect
 D:\github\ProyectoFinalProgramacionAvanzada\ProyectoProgramacionAvanzada\ProyectoFinal\ProyectoFinal\bin\Microsoft.AspNet.Identity.Core.dll
 D:\github\ProyectoFinalProgramacionAvanzada\ProyectoProgramacionAvanzada\ProyectoFinal\ProyectoFinal\bin\Microsoft.AspNet.Identity.Core.xml
 D:\github\ProyectoFinalProgramacionAvanzada\ProyectoProgramacionAvanzada\ProyectoFinal\ProyectoFinal\obj\Debug\ProyectoFinal.Migrations.AddKeyToItemDeCarrito.resources
+C:\Users\ferva\OneDrive\Escritorio\@Repositorios-Github\ProyectoProgramacionAvanzada\ProyectoFinal\ProyectoFinal\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\ferva\OneDrive\Escritorio\@Repositorios-Github\ProyectoProgramacionAvanzada\ProyectoFinal\ProyectoFinal\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\ferva\OneDrive\Escritorio\@Repositorios-Github\ProyectoProgramacionAvanzada\ProyectoFinal\ProyectoFinal\obj\Debug\ProyectoFinal.Migrations.InitialCreate.resources
+C:\Users\ferva\OneDrive\Escritorio\@Repositorios-Github\ProyectoProgramacionAvanzada\ProyectoFinal\ProyectoFinal\obj\Debug\ProyectoFinal.Migrations.AddKeyToItemDeCarrito.resources

@@ -6,7 +6,7 @@
 <main>
     <div class="body-content">
             <div class="row">
-                <div id="tarjetas-section" class="col-md-7">
+                <div id="tarjetas-section" class="col-md-9">
                     <!-- Titulo principal para la pagina -->
                     <h1><b>¡Tus compras favoritas a un click!</b></h1>
                 </div>
@@ -24,9 +24,9 @@
                     </a>
                 </div>
                 <div class="col-md-4 my-2">
-                    <a href="ventaFlashPanel.php" style="text-decoration: none;">
+                    <a href="@Url.Action("Catalogo", "Productos", new { area = "", categorias = new List<int> { 1 } })" style="text-decoration: none;">
                         <div class="card">
-                            <!-- Tarjeta 2 venta flash -->
+                            <!-- Tarjeta 2 libreria -->
                             <img class="card-img-top" src="https://static01.nyt.com/images/2018/07/12/universal/es/LIBRERIASESPA1206/LIBRERIASESPA1206-superJumbo.jpg?quality=90&auto=webp" alt="ventaflash" />
                             <div class="card-body">
                                 <p class="card-text" style="font-family: Verdana, sans-serif;">Libreria</p>
@@ -34,6 +34,7 @@
                         </div>
                     </a>
                 </div>
+
                 <div class="col-md-4 my-2">
                     <a href="promocionesPanel.php" style="text-decoration: none;">
                         <div class="card">

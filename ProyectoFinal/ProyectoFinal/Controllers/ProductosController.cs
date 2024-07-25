@@ -14,11 +14,19 @@ namespace ProyectoFinal.Controllers
     {
         private ApplicationDbContext db = new ApplicationDbContext();
 
-        public ActionResult Catalogo()
+        public ActionResult Catalogo(List<int> categorias)
         {
-            var productos = db.Productos.Include(p => p.Categoria).ToList();
+            IQueryable<Productos> productos = db.Productos.Include(p => p.Categoria);
+
+            if (categorias != null && categorias.Any())
+            {
+                productos = productos.Where(p => categorias.Contains(p.CategoriaId));
+            }
+
             ViewBag.Categorias = db.Categorias.ToList();
-            return View(productos);
+            ViewBag.CategoriasSeleccionadas = categorias;
+
+            return View(productos.ToList());
         }
 
         // GET: Productos
