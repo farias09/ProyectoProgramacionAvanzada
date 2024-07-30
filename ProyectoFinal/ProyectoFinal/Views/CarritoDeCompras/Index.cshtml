@@ -3,6 +3,7 @@
 @{
     ViewBag.Title = "Carrito de Compras";
     Layout = "~/Views/Shared/_Layout.cshtml";
+    @Styles.Render("~/Content/Site.css")
 }
 
 <!DOCTYPE html>
@@ -13,11 +14,29 @@
     <title>Index</title>
 </head>
 <body>
+    <!-- Banner de Bienvenida -->
+    <section id="banner">
+        <div class="container">
+            <a>
+                <div class="row">
+                    <div class="col-md-12">
+                        <img src="~/Assets/img/BANNER_CARRRITO.png" alt="Banner" class="img-fluid">
+                    </div>
+                </div>
+            </a>
+        </div>
+    </section>
+    <br />
     <br />
 
     @if (!Model.Any())
     {
-        <p>El carrito de compras está vacío.</p>
+        <div class='empty-cart-message'>
+            <div class='empty-cart-box'>
+                <i class='fas fa-shopping-cart' style='color: #a4a4a4;'></i>
+                <h1><b>¡Tu carrito está vacío!</b></h1>
+            </div>
+        </div>
     }
     else
     {
@@ -27,6 +46,7 @@
                     <th>Producto</th>
                     <th>Cantidad</th>
                     <th>Precio</th>
+                    <th>Acciones</th>
                 </tr>
             </thead>
             <tbody>
@@ -36,10 +56,23 @@
                         <td>@item.Producto.nombreProducto</td>
                         <td>@item.Cantidad</td>
                         <td>₡@item.Producto.precioProducto</td>
+                        <td>
+                            <form action="@Url.Action("EliminarDelCarrito", "CarritoDeCompras")" method="post" style="display:inline;">
+                                @Html.AntiForgeryToken()
+                                <input type="hidden" name="productoId" value="@item.Producto.id_producto" />
+                                <button type="submit" class="btn btn-danger btn-sm">Eliminar</button>
+                            </form>
+                        </td>
                     </tr>
                 }
             </tbody>
         </table>
+        <div class="mt-4">
+            <form action="@Url.Action("Checkout", "Pago")" method="get">
+                <button type="submit" class="btn btn-primary btn-lg btn-block">Completar Compra</button>
+            </form>
+        </div>
     }
+    <br />
 </body>
 </html>

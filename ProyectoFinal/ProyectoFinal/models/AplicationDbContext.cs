@@ -22,6 +22,8 @@ namespace ProyectoFinal.Models
         public DbSet<CarritoDeCompras> CarritoDeCompras { get; set; }
         public DbSet<HistorialDePedidos> HistorialDePedidos { get; set; }
 
+        public DbSet<Pago> Pagos { get; set; }
+
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Roles>()

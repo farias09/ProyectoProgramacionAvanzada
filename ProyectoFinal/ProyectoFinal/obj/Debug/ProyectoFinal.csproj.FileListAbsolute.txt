@@ -225,3 +225,4 @@ D:\github\ProyectoFinalProgramacionAvanzada\ProyectoProgramacionAvanzada\Proyect
 D:\github\ProyectoFinalProgramacionAvanzada\ProyectoProgramacionAvanzada\ProyectoFinal\ProyectoFinal\bin\Microsoft.AspNet.Identity.Core.dll
 D:\github\ProyectoFinalProgramacionAvanzada\ProyectoProgramacionAvanzada\ProyectoFinal\ProyectoFinal\bin\Microsoft.AspNet.Identity.Core.xml
 D:\github\ProyectoFinalProgramacionAvanzada\ProyectoProgramacionAvanzada\ProyectoFinal\ProyectoFinal\obj\Debug\ProyectoFinal.Migrations.AddKeyToItemDeCarrito.resources
+D:\github\ProyectoFinalProgramacionAvanzada\ProyectoProgramacionAvanzada\ProyectoFinal\ProyectoFinal\obj\Debug\ProyectoFinal.Migrations.Compras.resources

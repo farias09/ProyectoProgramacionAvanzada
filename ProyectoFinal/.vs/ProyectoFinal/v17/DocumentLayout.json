@@ -3,16 +3,20 @@
   "WorkspaceRootPath": "D:\\github\\ProyectoFinalProgramacionAvanzada\\ProyectoProgramacionAvanzada\\ProyectoFinal\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{DAEC6BB0-2C87-416B-9FCE-AE589F4A2A45}|ProyectoFinal\\ProyectoFinal.csproj|d:\\github\\proyectofinalprogramacionavanzada\\proyectoprogramacionavanzada\\proyectofinal\\proyectofinal\\models\\carritodecompras.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DAEC6BB0-2C87-416B-9FCE-AE589F4A2A45}|ProyectoFinal\\ProyectoFinal.csproj|solutionrelative:proyectofinal\\models\\carritodecompras.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DAEC6BB0-2C87-416B-9FCE-AE589F4A2A45}|ProyectoFinal\\ProyectoFinal.csproj|d:\\github\\proyectofinalprogramacionavanzada\\proyectoprogramacionavanzada\\proyectofinal\\proyectofinal\\views\\home\\contact.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DAEC6BB0-2C87-416B-9FCE-AE589F4A2A45}|ProyectoFinal\\ProyectoFinal.csproj|solutionrelative:proyectofinal\\views\\home\\contact.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DAEC6BB0-2C87-416B-9FCE-AE589F4A2A45}|ProyectoFinal\\ProyectoFinal.csproj|d:\\github\\proyectofinalprogramacionavanzada\\proyectoprogramacionavanzada\\proyectofinal\\proyectofinal\\controllers\\carritodecomprascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DAEC6BB0-2C87-416B-9FCE-AE589F4A2A45}|ProyectoFinal\\ProyectoFinal.csproj|solutionrelative:proyectofinal\\controllers\\carritodecomprascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DAEC6BB0-2C87-416B-9FCE-AE589F4A2A45}|ProyectoFinal\\ProyectoFinal.csproj|d:\\github\\proyectofinalprogramacionavanzada\\proyectoprogramacionavanzada\\proyectofinal\\proyectofinal\\content\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{DAEC6BB0-2C87-416B-9FCE-AE589F4A2A45}|ProyectoFinal\\ProyectoFinal.csproj|solutionrelative:proyectofinal\\content\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DAEC6BB0-2C87-416B-9FCE-AE589F4A2A45}|ProyectoFinal\\ProyectoFinal.csproj|d:\\github\\proyectofinalprogramacionavanzada\\proyectoprogramacionavanzada\\proyectofinal\\proyectofinal\\views\\carritodecompras\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{DAEC6BB0-2C87-416B-9FCE-AE589F4A2A45}|ProyectoFinal\\ProyectoFinal.csproj|solutionrelative:proyectofinal\\views\\carritodecompras\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DAEC6BB0-2C87-416B-9FCE-AE589F4A2A45}|ProyectoFinal\\ProyectoFinal.csproj|d:\\github\\proyectofinalprogramacionavanzada\\proyectoprogramacionavanzada\\proyectofinal\\proyectofinal\\controllers\\carritodecomprascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DAEC6BB0-2C87-416B-9FCE-AE589F4A2A45}|ProyectoFinal\\ProyectoFinal.csproj|solutionrelative:proyectofinal\\controllers\\carritodecomprascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 54,
+          "SelectedChildIndex": 52,
           "Children": [
             {
               "$type": "Bookmark",
@@ -234,41 +238,54 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Contact.cshtml",
+              "DocumentMoniker": "D:\\github\\ProyectoFinalProgramacionAvanzada\\ProyectoProgramacionAvanzada\\ProyectoFinal\\ProyectoFinal\\Views\\Home\\Contact.cshtml",
+              "RelativeDocumentMoniker": "ProyectoFinal\\Views\\Home\\Contact.cshtml",
+              "ToolTip": "D:\\github\\ProyectoFinalProgramacionAvanzada\\ProyectoProgramacionAvanzada\\ProyectoFinal\\ProyectoFinal\\Views\\Home\\Contact.cshtml",
+              "RelativeToolTip": "ProyectoFinal\\Views\\Home\\Contact.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-30T00:26:11.116Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CarritoDeComprasController.cs",
+              "DocumentMoniker": "D:\\github\\ProyectoFinalProgramacionAvanzada\\ProyectoProgramacionAvanzada\\ProyectoFinal\\ProyectoFinal\\Controllers\\CarritoDeComprasController.cs",
+              "RelativeDocumentMoniker": "ProyectoFinal\\Controllers\\CarritoDeComprasController.cs",
+              "ToolTip": "D:\\github\\ProyectoFinalProgramacionAvanzada\\ProyectoProgramacionAvanzada\\ProyectoFinal\\ProyectoFinal\\Controllers\\CarritoDeComprasController.cs",
+              "RelativeToolTip": "ProyectoFinal\\Controllers\\CarritoDeComprasController.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAAkwFgAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-29T23:33:26.622Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Site.css",
+              "DocumentMoniker": "D:\\github\\ProyectoFinalProgramacionAvanzada\\ProyectoProgramacionAvanzada\\ProyectoFinal\\ProyectoFinal\\Content\\Site.css",
+              "RelativeDocumentMoniker": "ProyectoFinal\\Content\\Site.css",
+              "ToolTip": "D:\\github\\ProyectoFinalProgramacionAvanzada\\ProyectoProgramacionAvanzada\\ProyectoFinal\\ProyectoFinal\\Content\\Site.css",
+              "RelativeToolTip": "ProyectoFinal\\Content\\Site.css",
+              "ViewState": "AQIAAI0AAAAAAAAAAAAAAKYAAAAyAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-07-29T23:18:42.16Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 2,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\github\\ProyectoFinalProgramacionAvanzada\\ProyectoProgramacionAvanzada\\ProyectoFinal\\ProyectoFinal\\Views\\CarritoDeCompras\\Index.cshtml",
               "RelativeDocumentMoniker": "ProyectoFinal\\Views\\CarritoDeCompras\\Index.cshtml",
               "ToolTip": "D:\\github\\ProyectoFinalProgramacionAvanzada\\ProyectoProgramacionAvanzada\\ProyectoFinal\\ProyectoFinal\\Views\\CarritoDeCompras\\Index.cshtml",
               "RelativeToolTip": "ProyectoFinal\\Views\\CarritoDeCompras\\Index.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB8AAAATAAAA",
+              "ViewState": "AQIAACcAAAAAAAAAAAAAAAUAAAAEAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-07-23T03:16:10.247Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "CarritoDeComprasController.cs",
-              "DocumentMoniker": "D:\\github\\ProyectoFinalProgramacionAvanzada\\ProyectoProgramacionAvanzada\\ProyectoFinal\\ProyectoFinal\\Controllers\\CarritoDeComprasController.cs",
-              "RelativeDocumentMoniker": "ProyectoFinal\\Controllers\\CarritoDeComprasController.cs",
-              "ToolTip": "D:\\github\\ProyectoFinalProgramacionAvanzada\\ProyectoProgramacionAvanzada\\ProyectoFinal\\ProyectoFinal\\Controllers\\CarritoDeComprasController.cs",
-              "RelativeToolTip": "ProyectoFinal\\Controllers\\CarritoDeComprasController.cs",
-              "ViewState": "AQIAAIgAAAAAAAAAAAAYwJoAAAAbAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-23T02:44:29.067Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "CarritoDeCompras.cs",
-              "DocumentMoniker": "D:\\github\\ProyectoFinalProgramacionAvanzada\\ProyectoProgramacionAvanzada\\ProyectoFinal\\ProyectoFinal\\models\\CarritoDeCompras.cs",
-              "RelativeDocumentMoniker": "ProyectoFinal\\models\\CarritoDeCompras.cs",
-              "ToolTip": "D:\\github\\ProyectoFinalProgramacionAvanzada\\ProyectoProgramacionAvanzada\\ProyectoFinal\\ProyectoFinal\\models\\CarritoDeCompras.cs",
-              "RelativeToolTip": "ProyectoFinal\\models\\CarritoDeCompras.cs",
-              "ViewState": "AQIAABUAAAAAAAAAAAAmwDIAAAAEAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-23T02:43:41.165Z",
+              "WhenOpened": "2024-07-29T23:15:03.365Z",
               "EditorCaption": ""
             }
           ]
