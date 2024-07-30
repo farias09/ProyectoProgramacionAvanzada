@@ -1,14 +1,46 @@
 ﻿@model IEnumerable<ProyectoFinal.Models.Productos>
 @{
-    ViewBag.Title = "HomePage";
+    ViewBag.Title = "Bazar El Nido";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
+
+<style>
+    .big-image {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .small-image {
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 10px;
+    }
+</style>
+
 <main>
     <div class="body-content">
+            
+            <div class="container mt-4">
+                <div class="row">
+                    <!-- Imagen grande a la izquierda -->
+                    <div class="col-md-8">
+                        <img src="~/Assets/img/BazarImg1.png" alt="Rayuela Promocion" class="small-image">
+                    </div>
+                    <!-- Imágenes pequeñas a la derecha -->
+                    <div class="col-md-4">
+                        <div class="d-flex flex-column align-items-start">
+                            <img src="~/Assets/img/Libro2.png" alt="Libro 2" class="small-image">
+                            <img src="~/Assets/img/Libro3.png" alt="Libro 3" class="small-image">
+                            <img src="~/Assets/img/Libro4.png" alt="Libro 4" class="small-image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <div class="row">
                 <div id="tarjetas-section" class="col-md-7">
                     <!-- Titulo principal para la pagina -->
-                    <h1><b>¡Tus compras favoritas a un click!</b></h1>
+                    <h1><b>Lo nuevo para ti</b></h1>
                 </div>
             </div>
             <div class="row">
@@ -58,7 +90,7 @@
                                 <h5 class="card-title">@item.nombreProducto</h5>
                                 <p class="card-text"><strong>Precio:</strong> ₡@item.precioProducto</p>
                                 <div class="grupo-boton">
-                                    <a href="#" class="btn btn-dark btn-sm">Agregar al Carrito</a>
+                                    @Html.ActionLink("Agregar al Carrito", "AgregarAlCarrito", "CarritoDeCompras", new { productoId = item.id_producto }, new { @class = "btn btn-dark btn-sm" })
                                     <a href="@Url.RouteUrl("InfoProducto", new { id = item.id_producto })" class="btn btn-primary btn-sm">Ver Mas</a>
                                 </div>
                             </div>
@@ -78,7 +110,7 @@
                                 <h5 class="card-title">@item.nombreProducto</h5>
                                 <p class="card-text"><strong>Precio:</strong> ₡@item.precioProducto</p>
                                 <div class="grupo-boton">
-                                    <a href="#" class="btn btn-dark btn-sm">Agregar al Carrito</a>
+                                    @Html.ActionLink("Agregar al Carrito", "AgregarAlCarrito", "CarritoDeCompras", new { productoId = item.id_producto }, new { @class = "btn btn-dark btn-sm" })
                                     <a href="@Url.RouteUrl("InfoProducto", new { id = item.id_producto })" class="btn btn-primary btn-sm">Ver Mas</a>
                                 </div>
                             </div>

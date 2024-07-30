@@ -1,0 +1,82 @@
+﻿@model ProyectoFinal.Models.Pago
+
+@{
+    ViewBag.Title = "Checkout";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!DOCTYPE html>
+
+<html>
+<br />
+    <h2>Checkout</h2>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Producto</th>
+                <th>Cantidad</th>
+                <th>Precio</th>
+                <th>Total</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model.Items)
+            {
+                <tr>
+                    <td>@item.Producto.nombreProducto</td>
+                    <td>@item.Cantidad</td>
+                    <td>₡@item.Producto.precioProducto.ToString("0.00")</td>
+                    <td>₡@(item.Producto.precioProducto * item.Cantidad).ToString("0.00")</td>
+                </tr>
+        }
+        </tbody>
+    </table>
+
+    <h4>Total: ₡@Model.MontoTotal.ToString("0.00")</h4>
+
+    @using (Html.BeginForm())
+    {
+    @Html.AntiForgeryToken()
+
+    <div class="form-group">
+        <label for="MetodoDePago">Método de Pago</label>
+        @Html.DropDownListFor(m => m.MetodoDePago, new SelectList(new List<string> { "Tarjeta", "Efectivo", "Sinpe" }), "Selecciona un método", new { @class = "form-control", @id = "MetodoDePago" })
+    </div>
+
+    <div id="PagoTarjeta" class="form-group" style="display:none;">
+        <label for="NumeroTarjeta">Número de Tarjeta</label>
+        @Html.TextBoxFor(m => m.NumeroTarjeta, new { @class = "form-control", @id = "NumeroTarjeta" })
+    </div>
+
+    <div id="PagoEfectivo" class="form-group" style="display:none;">
+        <label for="MontoEfectivo">Monto con el que pagará</label>
+        @Html.TextBoxFor(m => m.MontoEfectivo, new { @class = "form-control", @id = "MontoEfectivo" })
+    </div>
+
+    <div id="PagoSinpe" class="form-group" style="display:none;">
+        <label for="NumeroSinpe">Número de SINPE</label>
+        @Html.TextBoxFor(m => m.NumeroSinpe, new { @class = "form-control", @id = "NumeroSinpe" })
+    </div>
+    <br />
+    <button type="submit" class="btn btn-primary">Realizar Pago</button>
+    }
+
+    @section Scripts {
+        <script>$(document).ready(function() {
+                $('#MetodoDePago').change(function() {
+                    var metodo = $(this).val();
+                    $('#PagoTarjeta').hide();
+                    $('#PagoEfectivo').hide();
+                    $('#PagoSinpe').hide();
+                    if (metodo === 'Tarjeta') {
+                        $('#PagoTarjeta').show();
+                    } else if (metodo === 'Efectivo') {
+                        $('#PagoEfectivo').show();
+                    } else if (metodo === 'Sinpe') {
+                        $('#PagoSinpe').show();
+                }
+            });
+        });</script>
+}
+</html>

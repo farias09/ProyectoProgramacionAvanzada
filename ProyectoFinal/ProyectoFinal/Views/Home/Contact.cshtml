@@ -1,21 +1,49 @@
 ﻿@{
-    ViewBag.Title = "Contact";
+    ViewBag.Title = "¿Quiénes somos?";
+    @Styles.Render("~/Content/Site.css")
 }
 <main aria-labelledby="title">
     <div class="body-content">
-        <h2 id="title">@ViewBag.Title.</h2>
-        <h3>@ViewBag.Message</h3>
 
-        <address>
-            One Microsoft Way<br />
-            Redmond, WA 98052-6399<br />
-            <abbr title="Phone">P:</abbr>
-            425.555.0100
-        </address>
+        <!-- Banner de Bienvenida -->
+        <section id="banner">
+            <div class="container">
+                <a>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <img src="~/Assets/img/Banner_Contact Us.png" alt="Banner" class="img-fluid">
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </section>
 
-        <address>
-            <strong>Support:</strong>   <a href="mailto:Support@example.com">Support@example.com</a><br />
-            <strong>Marketing:</strong> <a href="mailto:Marketing@example.com">Marketing@example.com</a>
-        </address>
+        <!-- Sección de Contacto -->
+        <div class="container-fluid contact-section">
+            <div class="row">
+                <!-- Columna del mapa -->
+                <div class="col-md-4 p-0 map-column">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3929.229682666377!2d-84.11952288820191!3d9.9978770900662!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa0fac481089f93%3A0xb830b01e3f22f746!2sLibreria%20y%20Bazar%20El%20Nido!5e0!3m2!1ses-419!2scr!4v1722299759612!5m2!1ses-419!2scr" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <!-- Columna de información -->
+                <div class="col-md-4 info-column d-flex flex-column justify-content-center align-items-center" style="height: 450px;">
+                    <h2>Conocenos</h2>
+                    <p><i class="fas fa-phone"></i> +506 8888 - 8888</p>
+                    <p><i class="fas fa-envelope"></i> bazarelnido@gmail.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Heredia, Costa Rica</p>
+                </div>
+                <!-- Columna del formulario -->
+                <div class="col-md-4 form-column d-flex flex-column justify-content-center align-items-center" style="height: 450px;">
+                    <h2>Contáctanos</h2>
+                    <p>Si quieres contactarnos directamente, puedes enviarnos un correo electrónico utilizando el botón de Enviar</p>
+                    <a href="mailto:proyecto@proyecto.com" class="btn btn-primary">Enviar</a>
+                </div>
+            </div>
         </div>
+
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    </div>
 </main>
