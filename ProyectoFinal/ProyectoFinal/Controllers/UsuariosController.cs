@@ -115,6 +115,26 @@ namespace ProyectoFinal.Controllers
             return RedirectToAction("Index");
         }
 
+        public ActionResult ToggleStatus(int id)
+        {
+            // Obtén el usuario desde la base de datos
+            var usuario = db.Usuarios.Find(id);
+            if (usuario == null)
+            {
+                return HttpNotFound();
+            }
+
+            // Cambia el estado del usuario
+            usuario.estadoUsuario = !usuario.estadoUsuario;
+
+            // Guarda los cambios en la base de datos
+            db.SaveChanges();
+
+            // Redirige de vuelta a la vista de listado
+            return RedirectToAction("Index");
+        }
+
+
         protected override void Dispose(bool disposing)
         {
             if (disposing)
