@@ -1,22 +1,34 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\github\\ProyectoFinalProgramacionAvanzada\\ProyectoProgramacionAvanzada\\ProyectoFinal\\",
+  "WorkspaceRootPath": "C:\\Users\\Bryan\\Desktop\\Proyecto\\ProyectoProgramacionAvanzada\\ProyectoFinal\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{DAEC6BB0-2C87-416B-9FCE-AE589F4A2A45}|ProyectoFinal\\ProyectoFinal.csproj|d:\\github\\proyectofinalprogramacionavanzada\\proyectoprogramacionavanzada\\proyectofinal\\proyectofinal\\views\\home\\contact.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{DAEC6BB0-2C87-416B-9FCE-AE589F4A2A45}|ProyectoFinal\\ProyectoFinal.csproj|solutionrelative:proyectofinal\\views\\home\\contact.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{DAEC6BB0-2C87-416B-9FCE-AE589F4A2A45}|ProyectoFinal\\ProyectoFinal.csproj|c:\\users\\bryan\\desktop\\proyecto\\proyectoprogramacionavanzada\\proyectofinal\\proyectofinal\\views\\usuarios\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DAEC6BB0-2C87-416B-9FCE-AE589F4A2A45}|ProyectoFinal\\ProyectoFinal.csproj|solutionrelative:proyectofinal\\views\\usuarios\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DAEC6BB0-2C87-416B-9FCE-AE589F4A2A45}|ProyectoFinal\\ProyectoFinal.csproj|d:\\github\\proyectofinalprogramacionavanzada\\proyectoprogramacionavanzada\\proyectofinal\\proyectofinal\\content\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{DAEC6BB0-2C87-416B-9FCE-AE589F4A2A45}|ProyectoFinal\\ProyectoFinal.csproj|solutionrelative:proyectofinal\\content\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+      "AbsoluteMoniker": "D:0:0:{DAEC6BB0-2C87-416B-9FCE-AE589F4A2A45}|ProyectoFinal\\ProyectoFinal.csproj|c:\\users\\bryan\\desktop\\proyecto\\proyectoprogramacionavanzada\\proyectofinal\\proyectofinal\\models\\usuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DAEC6BB0-2C87-416B-9FCE-AE589F4A2A45}|ProyectoFinal\\ProyectoFinal.csproj|solutionrelative:proyectofinal\\models\\usuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DAEC6BB0-2C87-416B-9FCE-AE589F4A2A45}|ProyectoFinal\\ProyectoFinal.csproj|d:\\github\\proyectofinalprogramacionavanzada\\proyectoprogramacionavanzada\\proyectofinal\\proyectofinal\\views\\carritodecompras\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{DAEC6BB0-2C87-416B-9FCE-AE589F4A2A45}|ProyectoFinal\\ProyectoFinal.csproj|solutionrelative:proyectofinal\\views\\carritodecompras\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{DAEC6BB0-2C87-416B-9FCE-AE589F4A2A45}|ProyectoFinal\\ProyectoFinal.csproj|c:\\users\\bryan\\desktop\\proyecto\\proyectoprogramacionavanzada\\proyectofinal\\proyectofinal\\views\\usuarios\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DAEC6BB0-2C87-416B-9FCE-AE589F4A2A45}|ProyectoFinal\\ProyectoFinal.csproj|solutionrelative:proyectofinal\\views\\usuarios\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DAEC6BB0-2C87-416B-9FCE-AE589F4A2A45}|ProyectoFinal\\ProyectoFinal.csproj|d:\\github\\proyectofinalprogramacionavanzada\\proyectoprogramacionavanzada\\proyectofinal\\proyectofinal\\controllers\\carritodecomprascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DAEC6BB0-2C87-416B-9FCE-AE589F4A2A45}|ProyectoFinal\\ProyectoFinal.csproj|solutionrelative:proyectofinal\\controllers\\carritodecomprascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DAEC6BB0-2C87-416B-9FCE-AE589F4A2A45}|ProyectoFinal\\ProyectoFinal.csproj|c:\\users\\bryan\\desktop\\proyecto\\proyectoprogramacionavanzada\\proyectofinal\\proyectofinal\\controllers\\usuarioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DAEC6BB0-2C87-416B-9FCE-AE589F4A2A45}|ProyectoFinal\\ProyectoFinal.csproj|solutionrelative:proyectofinal\\controllers\\usuarioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DAEC6BB0-2C87-416B-9FCE-AE589F4A2A45}|ProyectoFinal\\ProyectoFinal.csproj|c:\\users\\bryan\\desktop\\proyecto\\proyectoprogramacionavanzada\\proyectofinal\\proyectofinal\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DAEC6BB0-2C87-416B-9FCE-AE589F4A2A45}|ProyectoFinal\\ProyectoFinal.csproj|solutionrelative:proyectofinal\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DAEC6BB0-2C87-416B-9FCE-AE589F4A2A45}|ProyectoFinal\\ProyectoFinal.csproj|c:\\users\\bryan\\desktop\\proyecto\\proyectoprogramacionavanzada\\proyectofinal\\proyectofinal\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DAEC6BB0-2C87-416B-9FCE-AE589F4A2A45}|ProyectoFinal\\ProyectoFinal.csproj|solutionrelative:proyectofinal\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DAEC6BB0-2C87-416B-9FCE-AE589F4A2A45}|ProyectoFinal\\ProyectoFinal.csproj|c:\\users\\bryan\\desktop\\proyecto\\proyectoprogramacionavanzada\\proyectofinal\\proyectofinal\\views\\account\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DAEC6BB0-2C87-416B-9FCE-AE589F4A2A45}|ProyectoFinal\\ProyectoFinal.csproj|solutionrelative:proyectofinal\\views\\account\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,281 +38,98 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 52,
+          "SelectedChildIndex": 3,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:12:0:{2456bd12-ecf7-4988-a4a6-67d49173f565}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:13:0:{2456bd12-ecf7-4988-a4a6-67d49173f565}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:131:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:132:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:133:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:134:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:135:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:136:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:137:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:138:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:14:0:{2456bd12-ecf7-4988-a4a6-67d49173f565}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{809f6ff3-8092-454a-8003-6d4091f9b5bb}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:1:0:{809f6ff3-8092-454a-8003-6d4091f9b5bb}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:128:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:134:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:11:0:{2456bd12-ecf7-4988-a4a6-67d49173f565}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:140:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:137:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:138:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:139:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:140:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:141:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:142:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:143:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:144:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:145:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:146:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:147:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:148:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:151:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:149:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:150:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:136:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:152:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:153:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:154:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:155:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:156:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:159:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:133:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:130:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:131:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:132:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:135:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
-            {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Contact.cshtml",
-              "DocumentMoniker": "D:\\github\\ProyectoFinalProgramacionAvanzada\\ProyectoProgramacionAvanzada\\ProyectoFinal\\ProyectoFinal\\Views\\Home\\Contact.cshtml",
-              "RelativeDocumentMoniker": "ProyectoFinal\\Views\\Home\\Contact.cshtml",
-              "ToolTip": "D:\\github\\ProyectoFinalProgramacionAvanzada\\ProyectoProgramacionAvanzada\\ProyectoFinal\\ProyectoFinal\\Views\\Home\\Contact.cshtml",
-              "RelativeToolTip": "ProyectoFinal\\Views\\Home\\Contact.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAADEAAAAAAAAA",
+              "DocumentIndex": 2,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\Bryan\\Desktop\\Proyecto\\ProyectoProgramacionAvanzada\\ProyectoFinal\\ProyectoFinal\\Views\\Usuarios\\Edit.cshtml",
+              "RelativeDocumentMoniker": "ProyectoFinal\\Views\\Usuarios\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\Bryan\\Desktop\\Proyecto\\ProyectoProgramacionAvanzada\\ProyectoFinal\\ProyectoFinal\\Views\\Usuarios\\Edit.cshtml",
+              "RelativeToolTip": "ProyectoFinal\\Views\\Usuarios\\Edit.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAARAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-07-30T00:26:11.116Z",
+              "WhenOpened": "2024-08-06T02:40:34.759Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "CarritoDeComprasController.cs",
-              "DocumentMoniker": "D:\\github\\ProyectoFinalProgramacionAvanzada\\ProyectoProgramacionAvanzada\\ProyectoFinal\\ProyectoFinal\\Controllers\\CarritoDeComprasController.cs",
-              "RelativeDocumentMoniker": "ProyectoFinal\\Controllers\\CarritoDeComprasController.cs",
-              "ToolTip": "D:\\github\\ProyectoFinalProgramacionAvanzada\\ProyectoProgramacionAvanzada\\ProyectoFinal\\ProyectoFinal\\Controllers\\CarritoDeComprasController.cs",
-              "RelativeToolTip": "ProyectoFinal\\Controllers\\CarritoDeComprasController.cs",
-              "ViewState": "AQIAABMAAAAAAAAAAAAkwFgAAAAiAAAA",
+              "Title": "UsuariosController.cs",
+              "DocumentMoniker": "C:\\Users\\Bryan\\Desktop\\Proyecto\\ProyectoProgramacionAvanzada\\ProyectoFinal\\ProyectoFinal\\Controllers\\UsuariosController.cs",
+              "RelativeDocumentMoniker": "ProyectoFinal\\Controllers\\UsuariosController.cs",
+              "ToolTip": "C:\\Users\\Bryan\\Desktop\\Proyecto\\ProyectoProgramacionAvanzada\\ProyectoFinal\\ProyectoFinal\\Controllers\\UsuariosController.cs",
+              "RelativeToolTip": "ProyectoFinal\\Controllers\\UsuariosController.cs",
+              "ViewState": "AQIAAG4AAAAAAAAAAAAAAIcAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-29T23:33:26.622Z",
+              "WhenOpened": "2024-08-06T02:37:14.133Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Site.css",
-              "DocumentMoniker": "D:\\github\\ProyectoFinalProgramacionAvanzada\\ProyectoProgramacionAvanzada\\ProyectoFinal\\ProyectoFinal\\Content\\Site.css",
-              "RelativeDocumentMoniker": "ProyectoFinal\\Content\\Site.css",
-              "ToolTip": "D:\\github\\ProyectoFinalProgramacionAvanzada\\ProyectoProgramacionAvanzada\\ProyectoFinal\\ProyectoFinal\\Content\\Site.css",
-              "RelativeToolTip": "ProyectoFinal\\Content\\Site.css",
-              "ViewState": "AQIAAI0AAAAAAAAAAAAAAKYAAAAyAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-07-29T23:18:42.16Z",
+              "Title": "Usuarios.cs",
+              "DocumentMoniker": "C:\\Users\\Bryan\\Desktop\\Proyecto\\ProyectoProgramacionAvanzada\\ProyectoFinal\\ProyectoFinal\\models\\Usuarios.cs",
+              "RelativeDocumentMoniker": "ProyectoFinal\\models\\Usuarios.cs",
+              "ToolTip": "C:\\Users\\Bryan\\Desktop\\Proyecto\\ProyectoProgramacionAvanzada\\ProyectoFinal\\ProyectoFinal\\models\\Usuarios.cs",
+              "RelativeToolTip": "ProyectoFinal\\models\\Usuarios.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAA5wCAAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-06T02:36:39.78Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\github\\ProyectoFinalProgramacionAvanzada\\ProyectoProgramacionAvanzada\\ProyectoFinal\\ProyectoFinal\\Views\\CarritoDeCompras\\Index.cshtml",
-              "RelativeDocumentMoniker": "ProyectoFinal\\Views\\CarritoDeCompras\\Index.cshtml",
-              "ToolTip": "D:\\github\\ProyectoFinalProgramacionAvanzada\\ProyectoProgramacionAvanzada\\ProyectoFinal\\ProyectoFinal\\Views\\CarritoDeCompras\\Index.cshtml",
-              "RelativeToolTip": "ProyectoFinal\\Views\\CarritoDeCompras\\Index.cshtml",
-              "ViewState": "AQIAACcAAAAAAAAAAAAAAAUAAAAEAAAA",
+              "DocumentMoniker": "C:\\Users\\Bryan\\Desktop\\Proyecto\\ProyectoProgramacionAvanzada\\ProyectoFinal\\ProyectoFinal\\Views\\Usuarios\\Index.cshtml",
+              "RelativeDocumentMoniker": "ProyectoFinal\\Views\\Usuarios\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Bryan\\Desktop\\Proyecto\\ProyectoProgramacionAvanzada\\ProyectoFinal\\ProyectoFinal\\Views\\Usuarios\\Index.cshtml",
+              "RelativeToolTip": "ProyectoFinal\\Views\\Usuarios\\Index.cshtml",
+              "ViewState": "AQIAAEIAAAAAAAAAAAAywFsAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-07-29T23:15:03.365Z",
+              "WhenOpened": "2024-08-06T02:32:28.306Z",
               "EditorCaption": ""
-            }
-          ]
-        },
-        {
-          "DockedWidth": 200,
-          "SelectedChildIndex": -1,
-          "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{4a9b7e51-aa16-11d0-a8c5-00a0c921a4d2}"
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "C:\\Users\\Bryan\\Desktop\\Proyecto\\ProyectoProgramacionAvanzada\\ProyectoFinal\\ProyectoFinal\\Views\\Account\\Register.cshtml",
+              "RelativeDocumentMoniker": "ProyectoFinal\\Views\\Account\\Register.cshtml",
+              "ToolTip": "C:\\Users\\Bryan\\Desktop\\Proyecto\\ProyectoProgramacionAvanzada\\ProyectoFinal\\ProyectoFinal\\Views\\Account\\Register.cshtml",
+              "RelativeToolTip": "ProyectoFinal\\Views\\Account\\Register.cshtml",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAywCYAAAB7AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-06T02:19:12.548Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\Bryan\\Desktop\\Proyecto\\ProyectoProgramacionAvanzada\\ProyectoFinal\\ProyectoFinal\\Views\\Account\\Login.cshtml",
+              "RelativeDocumentMoniker": "ProyectoFinal\\Views\\Account\\Login.cshtml",
+              "ToolTip": "C:\\Users\\Bryan\\Desktop\\Proyecto\\ProyectoProgramacionAvanzada\\ProyectoFinal\\ProyectoFinal\\Views\\Account\\Login.cshtml",
+              "RelativeToolTip": "ProyectoFinal\\Views\\Account\\Login.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAC0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-06T02:14:37.993Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Bryan\\Desktop\\Proyecto\\ProyectoProgramacionAvanzada\\ProyectoFinal\\ProyectoFinal\\Views\\Account\\Index.cshtml",
+              "RelativeDocumentMoniker": "ProyectoFinal\\Views\\Account\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Bryan\\Desktop\\Proyecto\\ProyectoProgramacionAvanzada\\ProyectoFinal\\ProyectoFinal\\Views\\Account\\Index.cshtml",
+              "RelativeToolTip": "ProyectoFinal\\Views\\Account\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-06T02:14:35.469Z",
+              "EditorCaption": ""
             }
           ]
         }
