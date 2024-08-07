@@ -1,33 +1,73 @@
 ﻿@model ProyectoFinal.Models.Usuarios
 
 @{
-    Layout = null;
+    ViewBag.Title = "Editar Usuario";
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
-
-<!DOCTYPE html>
 
 <!DOCTYPE html>
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
-    <title>Editar</title>
+    <title>@ViewBag.Title</title>
+    <!-- Add Bootstrap CSS for styling -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet" />
     <style>
         .form-container {
             max-width: 600px;
-            margin: 0 auto;
-            padding: 20px;
+            margin: 50px auto;
+            padding: 30px;
             border: 1px solid #ddd;
-            border-radius: 5px;
-            background-color: #f9f9f9;
+            border-radius: 10px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
 
             .form-container h4 {
-                margin-bottom: 20px;
+                margin-bottom: 30px;
+                color: #333;
+                text-align: center;
             }
 
         .form-group {
-            margin-bottom: 15px;
+            margin-bottom: 20px;
+        }
+
+            .form-group label {
+                color: #555;
+                font-weight: bold;
+            }
+
+        .form-control {
+            border-radius: 5px;
+        }
+
+        .form-check-input {
+            margin-top: 10px;
+        }
+
+        .btn-group {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .btn-primary {
+            background-color: #007bff;
+            border-color: #007bff;
+            font-size: 16px;
+            padding: 10px 20px;
+        }
+
+        .btn-secondary {
+            background-color: #6c757d;
+            border-color: #6c757d;
+            font-size: 16px;
+            padding: 10px 20px;
+        }
+
+        .btn:hover {
+            opacity: 0.9;
         }
     </style>
 </head>
@@ -38,13 +78,13 @@
             @Html.AntiForgeryToken()
 
             <div class="form-container">
-                <h4>Edit User</h4>
+                <h4>Editar Usuario</h4>
                 <hr />
                 @Html.ValidationSummary(true, "", new { @class = "text-danger" })
                 @Html.HiddenFor(model => model.id_usuario)
 
                 <div class="form-group row">
-                    @Html.LabelFor(model => model.codigoUsuario, htmlAttributes: new { @class = "col-md-4 col-form-label" })
+                    @Html.LabelFor(model => model.codigoUsuario, "Código de Usuario", htmlAttributes: new { @class = "col-md-4 col-form-label" })
                     <div class="col-md-8">
                         @Html.EditorFor(model => model.codigoUsuario, new { htmlAttributes = new { @class = "form-control" } })
                         @Html.ValidationMessageFor(model => model.codigoUsuario, "", new { @class = "text-danger" })
@@ -52,7 +92,7 @@
                 </div>
 
                 <div class="form-group row">
-                    @Html.LabelFor(model => model.nombreUsuario, htmlAttributes: new { @class = "col-md-4 col-form-label" })
+                    @Html.LabelFor(model => model.nombreUsuario, "Nombre Completo", htmlAttributes: new { @class = "col-md-4 col-form-label" })
                     <div class="col-md-8">
                         @Html.EditorFor(model => model.nombreUsuario, new { htmlAttributes = new { @class = "form-control" } })
                         @Html.ValidationMessageFor(model => model.nombreUsuario, "", new { @class = "text-danger" })
@@ -60,7 +100,7 @@
                 </div>
 
                 <div class="form-group row">
-                    @Html.LabelFor(model => model.password, htmlAttributes: new { @class = "col-md-4 col-form-label" })
+                    @Html.LabelFor(model => model.password, "Contraseña", htmlAttributes: new { @class = "col-md-4 col-form-label" })
                     <div class="col-md-8">
                         @Html.EditorFor(model => model.password, new { htmlAttributes = new { @class = "form-control" } })
                         @Html.ValidationMessageFor(model => model.password, "", new { @class = "text-danger" })
@@ -68,7 +108,7 @@
                 </div>
 
                 <div class="form-group row">
-                    @Html.LabelFor(model => model.ultimaFechaConexion, htmlAttributes: new { @class = "col-md-4 col-form-label" })
+                    @Html.LabelFor(model => model.ultimaFechaConexion, "Última Fecha de Conexión", htmlAttributes: new { @class = "col-md-4 col-form-label" })
                     <div class="col-md-8">
                         @Html.EditorFor(model => model.ultimaFechaConexion, new { htmlAttributes = new { @class = "form-control" } })
                         @Html.ValidationMessageFor(model => model.ultimaFechaConexion, "", new { @class = "text-danger" })
@@ -76,7 +116,7 @@
                 </div>
 
                 <div class="form-group row">
-                    @Html.LabelFor(model => model.estadoUsuario, htmlAttributes: new { @class = "col-md-4 col-form-label" })
+                    @Html.LabelFor(model => model.estadoUsuario, "Estado del Usuario", htmlAttributes: new { @class = "col-md-4 col-form-label" })
                     <div class="col-md-8">
                         <div class="form-check">
                             @Html.EditorFor(model => model.estadoUsuario, new { htmlAttributes = new { @class = "form-check-input" } })
@@ -86,9 +126,9 @@
                     </div>
                 </div>
 
-                <div class="btn-group d-flex justify-content-between">
-                    <input type="submit" value="Save" class="btn btn-primary" />
-                    <a href="@Url.Action("Index")" class="btn btn-secondary">Back to List</a>
+                <div class="btn-group">
+                    <input type="submit" value="Guardar" class="btn btn-primary" />
+                    <a href="@Url.Action("Index")" class="btn btn-secondary">Volver a la Lista</a>
                 </div>
             </div>
         }

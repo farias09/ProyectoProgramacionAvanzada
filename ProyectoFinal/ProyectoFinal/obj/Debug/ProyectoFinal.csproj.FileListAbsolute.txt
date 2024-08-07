@@ -300,9 +300,9 @@ C:\Users\Bryan\Desktop\Proyecto\ProyectoProgramacionAvanzada\ProyectoFinal\Proye
 C:\Users\Bryan\Desktop\Proyecto\ProyectoProgramacionAvanzada\ProyectoFinal\ProyectoFinal\obj\Debug\ProyectoFinal.Migrations.InitialCreate.resources
 C:\Users\Bryan\Desktop\Proyecto\ProyectoProgramacionAvanzada\ProyectoFinal\ProyectoFinal\obj\Debug\ProyectoFinal.Migrations.AddKeyToItemDeCarrito.resources
 C:\Users\Bryan\Desktop\Proyecto\ProyectoProgramacionAvanzada\ProyectoFinal\ProyectoFinal\obj\Debug\ProyectoFinal.Migrations.Compras.resources
+C:\Users\Bryan\Desktop\Proyecto\ProyectoProgramacionAvanzada\ProyectoFinal\ProyectoFinal\obj\Debug\ProyectoFinal.Migrations.libreriaBazar.resources
 C:\Users\Bryan\Desktop\Proyecto\ProyectoProgramacionAvanzada\ProyectoFinal\ProyectoFinal\obj\Debug\ProyectoFinal.csproj.GenerateResource.cache
 C:\Users\Bryan\Desktop\Proyecto\ProyectoProgramacionAvanzada\ProyectoFinal\ProyectoFinal\obj\Debug\ProyectoFinal.csproj.CoreCompileInputs.cache
 C:\Users\Bryan\Desktop\Proyecto\ProyectoProgramacionAvanzada\ProyectoFinal\ProyectoFinal\obj\Debug\Proyecto.489DB05A.Up2Date
 C:\Users\Bryan\Desktop\Proyecto\ProyectoProgramacionAvanzada\ProyectoFinal\ProyectoFinal\obj\Debug\ProyectoFinal.dll
 C:\Users\Bryan\Desktop\Proyecto\ProyectoProgramacionAvanzada\ProyectoFinal\ProyectoFinal\obj\Debug\ProyectoFinal.pdb
-C:\Users\Bryan\Desktop\Proyecto\ProyectoProgramacionAvanzada\ProyectoFinal\ProyectoFinal\obj\Debug\ProyectoFinal.Migrations.libreriaBazar.resources
