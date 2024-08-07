@@ -1,66 +1,131 @@
 ﻿@model ProyectoFinal.Models.Usuarios
 
 @{
-    Layout = null;
+    ViewBag.Title = "Detalles del Usuario";
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
 <!DOCTYPE html>
-
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
-    <title>Details</title>
+    <title>@ViewBag.Title</title>
+    <!-- Add Bootstrap CSS for styling -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet" />
+    <style>
+        .details-container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 30px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+            .details-container h4 {
+                margin-bottom: 30px;
+                color: #333;
+                text-align: center;
+            }
+
+        .dl-horizontal dt {
+            float: left;
+            width: 160px;
+            overflow: hidden;
+            clear: left;
+            text-align: right;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            font-weight: bold;
+            color: #555;
+        }
+
+        .dl-horizontal dd {
+            margin-left: 180px;
+            color: #333;
+        }
+
+        .btn-group {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .btn-primary {
+            background-color: #007bff;
+            border-color: #007bff;
+            font-size: 16px;
+            padding: 10px 20px;
+        }
+
+        .btn-secondary {
+            background-color: #6c757d;
+            border-color: #6c757d;
+            font-size: 16px;
+            padding: 10px 20px;
+        }
+
+        .btn:hover {
+            opacity: 0.9;
+        }
+    </style>
 </head>
 <body>
-    <div>
-        <h4>Usuarios</h4>
-        <hr />
-        <dl class="dl-horizontal">
-            <dt>
-                @Html.DisplayNameFor(model => model.codigoUsuario)
-            </dt>
-    
-            <dd>
-                @Html.DisplayFor(model => model.codigoUsuario)
-            </dd>
-    
-            <dt>
-                @Html.DisplayNameFor(model => model.nombreUsuario)
-            </dt>
-    
-            <dd>
-                @Html.DisplayFor(model => model.nombreUsuario)
-            </dd>
-    
-            <dt>
-                @Html.DisplayNameFor(model => model.password)
-            </dt>
-    
-            <dd>
-                @Html.DisplayFor(model => model.password)
-            </dd>
-    
-            <dt>
-                @Html.DisplayNameFor(model => model.ultimaFechaConexion)
-            </dt>
-    
-            <dd>
-                @Html.DisplayFor(model => model.ultimaFechaConexion)
-            </dd>
-    
-            <dt>
-                @Html.DisplayNameFor(model => model.estadoUsuario)
-            </dt>
-    
-            <dd>
-                @Html.DisplayFor(model => model.estadoUsuario)
-            </dd>
-    
-        </dl>
+    <div class="container my-4">
+        <div class="details-container">
+            <h4>Detalles del Usuario</h4>
+            <hr />
+            <dl class="dl-horizontal">
+                <dt>
+                    Código de Usuario
+                </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.codigoUsuario)
+                </dd>
+
+                <dt>
+                    Nombre Completo
+                </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.nombreUsuario)
+                </dd>
+
+                <dt>
+                    Contraseña
+                </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.password)
+                </dd>
+
+                <dt>
+                    Última Fecha de Conexión
+                </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.ultimaFechaConexion)
+                </dd>
+
+                <dt>
+                    Estado del Usuario
+                </dt>
+                <dd>
+                    @if (Model.estadoUsuario)
+                    {
+                        <span class="badge bg-success">Activo</span>
+                    }
+                    else
+                    {
+                        <span class="badge bg-secondary">Inactivo</span>
+                    }
+                </dd>
+            </dl>
+            <div class="btn-group">
+                @Html.ActionLink("Editar", "Edit", new { id = Model.id_usuario }, new { @class = "btn btn-primary" })
+                @Html.ActionLink("Volver a la Lista", "Index", null, new { @class = "btn btn-secondary" })
+            </div>
+        </div>
     </div>
-    <p>
-        @Html.ActionLink("Edit", "Edit", new { id = Model.id_usuario }) |
-        @Html.ActionLink("Back to List", "Index")
-    </p>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
