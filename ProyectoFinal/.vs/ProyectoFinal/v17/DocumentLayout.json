@@ -3,39 +3,39 @@
   "WorkspaceRootPath": "C:\\Users\\ferva\\OneDrive\\Escritorio\\@Repositorios-Github\\ProyectoProgramacionAvanzada\\ProyectoFinal\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{DAEC6BB0-2C87-416B-9FCE-AE589F4A2A45}|ProyectoFinal\\ProyectoFinal.csproj|c:\\users\\ferva\\onedrive\\escritorio\\@repositorios-github\\proyectoprogramacionavanzada\\proyectofinal\\proyectofinal\\views\\productos\\catalogo.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{DAEC6BB0-2C87-416B-9FCE-AE589F4A2A45}|ProyectoFinal\\ProyectoFinal.csproj|solutionrelative:proyectofinal\\views\\productos\\catalogo.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{DAEC6BB0-2C87-416B-9FCE-AE589F4A2A45}|ProyectoFinal\\ProyectoFinal.csproj|C:\\Users\\ferva\\OneDrive\\Escritorio\\@Repositorios-Github\\ProyectoProgramacionAvanzada\\ProyectoFinal\\proyectofinal\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DAEC6BB0-2C87-416B-9FCE-AE589F4A2A45}|ProyectoFinal\\ProyectoFinal.csproj|solutionrelative:proyectofinal\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DAEC6BB0-2C87-416B-9FCE-AE589F4A2A45}|ProyectoFinal\\ProyectoFinal.csproj|C:\\Users\\ferva\\OneDrive\\Escritorio\\@Repositorios-Github\\ProyectoProgramacionAvanzada\\ProyectoFinal\\proyectofinal\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{DAEC6BB0-2C87-416B-9FCE-AE589F4A2A45}|ProyectoFinal\\ProyectoFinal.csproj|solutionrelative:proyectofinal\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DAEC6BB0-2C87-416B-9FCE-AE589F4A2A45}|ProyectoFinal\\ProyectoFinal.csproj|c:\\users\\ferva\\onedrive\\escritorio\\@repositorios-github\\proyectoprogramacionavanzada\\proyectofinal\\proyectofinal\\controllers\\productoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{DAEC6BB0-2C87-416B-9FCE-AE589F4A2A45}|ProyectoFinal\\ProyectoFinal.csproj|c:\\users\\ferva\\onedrive\\escritorio\\@repositorios-github\\proyectoprogramacionavanzada\\proyectofinal\\proyectofinal\\views\\productos\\catalogo.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DAEC6BB0-2C87-416B-9FCE-AE589F4A2A45}|ProyectoFinal\\ProyectoFinal.csproj|solutionrelative:proyectofinal\\views\\productos\\catalogo.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DAEC6BB0-2C87-416B-9FCE-AE589F4A2A45}|ProyectoFinal\\ProyectoFinal.csproj|C:\\Users\\ferva\\OneDrive\\Escritorio\\@Repositorios-Github\\ProyectoProgramacionAvanzada\\ProyectoFinal\\proyectofinal\\controllers\\productoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DAEC6BB0-2C87-416B-9FCE-AE589F4A2A45}|ProyectoFinal\\ProyectoFinal.csproj|solutionrelative:proyectofinal\\controllers\\productoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DAEC6BB0-2C87-416B-9FCE-AE589F4A2A45}|ProyectoFinal\\ProyectoFinal.csproj|c:\\users\\ferva\\onedrive\\escritorio\\@repositorios-github\\proyectoprogramacionavanzada\\proyectofinal\\proyectofinal\\controllers\\categoriascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{DAEC6BB0-2C87-416B-9FCE-AE589F4A2A45}|ProyectoFinal\\ProyectoFinal.csproj|C:\\Users\\ferva\\OneDrive\\Escritorio\\@Repositorios-Github\\ProyectoProgramacionAvanzada\\ProyectoFinal\\proyectofinal\\controllers\\categoriascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DAEC6BB0-2C87-416B-9FCE-AE589F4A2A45}|ProyectoFinal\\ProyectoFinal.csproj|solutionrelative:proyectofinal\\controllers\\categoriascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DAEC6BB0-2C87-416B-9FCE-AE589F4A2A45}|ProyectoFinal\\ProyectoFinal.csproj|c:\\users\\ferva\\onedrive\\escritorio\\@repositorios-github\\proyectoprogramacionavanzada\\proyectofinal\\proyectofinal\\models\\categorias.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{DAEC6BB0-2C87-416B-9FCE-AE589F4A2A45}|ProyectoFinal\\ProyectoFinal.csproj|C:\\Users\\ferva\\OneDrive\\Escritorio\\@Repositorios-Github\\ProyectoProgramacionAvanzada\\ProyectoFinal\\proyectofinal\\models\\categorias.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DAEC6BB0-2C87-416B-9FCE-AE589F4A2A45}|ProyectoFinal\\ProyectoFinal.csproj|solutionrelative:proyectofinal\\models\\categorias.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DAEC6BB0-2C87-416B-9FCE-AE589F4A2A45}|ProyectoFinal\\ProyectoFinal.csproj|c:\\users\\ferva\\onedrive\\escritorio\\@repositorios-github\\proyectoprogramacionavanzada\\proyectofinal\\proyectofinal\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DAEC6BB0-2C87-416B-9FCE-AE589F4A2A45}|ProyectoFinal\\ProyectoFinal.csproj|solutionrelative:proyectofinal\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DAEC6BB0-2C87-416B-9FCE-AE589F4A2A45}|ProyectoFinal\\ProyectoFinal.csproj|c:\\users\\ferva\\onedrive\\escritorio\\@repositorios-github\\proyectoprogramacionavanzada\\proyectofinal\\proyectofinal\\models\\productos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{DAEC6BB0-2C87-416B-9FCE-AE589F4A2A45}|ProyectoFinal\\ProyectoFinal.csproj|C:\\Users\\ferva\\OneDrive\\Escritorio\\@Repositorios-Github\\ProyectoProgramacionAvanzada\\ProyectoFinal\\proyectofinal\\models\\productos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DAEC6BB0-2C87-416B-9FCE-AE589F4A2A45}|ProyectoFinal\\ProyectoFinal.csproj|solutionrelative:proyectofinal\\models\\productos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DAEC6BB0-2C87-416B-9FCE-AE589F4A2A45}|ProyectoFinal\\ProyectoFinal.csproj|c:\\users\\ferva\\onedrive\\escritorio\\@repositorios-github\\proyectoprogramacionavanzada\\proyectofinal\\proyectofinal\\app_start\\routeconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{DAEC6BB0-2C87-416B-9FCE-AE589F4A2A45}|ProyectoFinal\\ProyectoFinal.csproj|C:\\Users\\ferva\\OneDrive\\Escritorio\\@Repositorios-Github\\ProyectoProgramacionAvanzada\\ProyectoFinal\\proyectofinal\\app_start\\routeconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DAEC6BB0-2C87-416B-9FCE-AE589F4A2A45}|ProyectoFinal\\ProyectoFinal.csproj|solutionrelative:proyectofinal\\app_start\\routeconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DAEC6BB0-2C87-416B-9FCE-AE589F4A2A45}|ProyectoFinal\\ProyectoFinal.csproj|c:\\users\\ferva\\onedrive\\escritorio\\@repositorios-github\\proyectoprogramacionavanzada\\proyectofinal\\proyectofinal\\views\\productos\\infoproducto.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{DAEC6BB0-2C87-416B-9FCE-AE589F4A2A45}|ProyectoFinal\\ProyectoFinal.csproj|C:\\Users\\ferva\\OneDrive\\Escritorio\\@Repositorios-Github\\ProyectoProgramacionAvanzada\\ProyectoFinal\\proyectofinal\\views\\productos\\infoproducto.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{DAEC6BB0-2C87-416B-9FCE-AE589F4A2A45}|ProyectoFinal\\ProyectoFinal.csproj|solutionrelative:proyectofinal\\views\\productos\\infoproducto.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
@@ -46,7 +46,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 57,
+          "SelectedChildIndex": 62,
           "Children": [
             {
               "$type": "Bookmark",
@@ -257,6 +257,18 @@
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{ca8cc5c7-0231-406a-95cd-aa5ed6ac0190}"
+            },
+            {
               "$type": "Document",
               "DocumentIndex": 6,
               "Title": "Productos.cs",
@@ -266,12 +278,11 @@
               "RelativeToolTip": "ProyectoFinal\\models\\Productos.cs",
               "ViewState": "AQIAAA8AAAAAAAAAAAAUwBAAAAAlAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-25T18:55:02.599Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-25T18:55:02.599Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Categorias.cs",
               "DocumentMoniker": "C:\\Users\\ferva\\OneDrive\\Escritorio\\@Repositorios-Github\\ProyectoProgramacionAvanzada\\ProyectoFinal\\ProyectoFinal\\models\\Categorias.cs",
               "RelativeDocumentMoniker": "ProyectoFinal\\models\\Categorias.cs",
@@ -279,8 +290,7 @@
               "RelativeToolTip": "ProyectoFinal\\models\\Categorias.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-25T18:54:53.55Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-25T18:54:53.55Z"
             },
             {
               "$type": "Document",
@@ -292,12 +302,11 @@
               "RelativeToolTip": "ProyectoFinal\\App_Start\\RouteConfig.cs",
               "ViewState": "AQIAAAgAAAAAAAAAAAAQwCAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-25T18:54:45.191Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-25T18:54:45.191Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "CategoriasController.cs",
               "DocumentMoniker": "C:\\Users\\ferva\\OneDrive\\Escritorio\\@Repositorios-Github\\ProyectoProgramacionAvanzada\\ProyectoFinal\\ProyectoFinal\\Controllers\\CategoriasController.cs",
               "RelativeDocumentMoniker": "ProyectoFinal\\Controllers\\CategoriasController.cs",
@@ -305,12 +314,11 @@
               "RelativeToolTip": "ProyectoFinal\\Controllers\\CategoriasController.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAH4AAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-25T18:54:29.887Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-25T18:54:29.887Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "ProductosController.cs",
               "DocumentMoniker": "C:\\Users\\ferva\\OneDrive\\Escritorio\\@Repositorios-Github\\ProyectoProgramacionAvanzada\\ProyectoFinal\\ProyectoFinal\\Controllers\\ProductosController.cs",
               "RelativeDocumentMoniker": "ProyectoFinal\\Controllers\\ProductosController.cs",
@@ -318,18 +326,17 @@
               "RelativeToolTip": "ProyectoFinal\\Controllers\\ProductosController.cs",
               "ViewState": "AQIAAIwAAAAAAAAAAAAQwKcAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-25T18:54:20.072Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-25T18:54:20.072Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Catalogo.cshtml",
               "DocumentMoniker": "C:\\Users\\ferva\\OneDrive\\Escritorio\\@Repositorios-Github\\ProyectoProgramacionAvanzada\\ProyectoFinal\\ProyectoFinal\\Views\\Productos\\Catalogo.cshtml",
               "RelativeDocumentMoniker": "ProyectoFinal\\Views\\Productos\\Catalogo.cshtml",
               "ToolTip": "C:\\Users\\ferva\\OneDrive\\Escritorio\\@Repositorios-Github\\ProyectoProgramacionAvanzada\\ProyectoFinal\\ProyectoFinal\\Views\\Productos\\Catalogo.cshtml",
               "RelativeToolTip": "ProyectoFinal\\Views\\Productos\\Catalogo.cshtml",
-              "ViewState": "AQIAAG8AAAAAAAAAAADwv4kAAAAIAAAA",
+              "ViewState": "AQIAAG8AAAAAAAAAAADwv4UAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-07-25T18:53:55.091Z",
               "EditorCaption": ""
@@ -349,13 +356,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 0,
               "Title": "HomeController.cs",
               "DocumentMoniker": "C:\\Users\\ferva\\OneDrive\\Escritorio\\@Repositorios-Github\\ProyectoProgramacionAvanzada\\ProyectoFinal\\ProyectoFinal\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "ProyectoFinal\\Controllers\\HomeController.cs",
               "ToolTip": "C:\\Users\\ferva\\OneDrive\\Escritorio\\@Repositorios-Github\\ProyectoProgramacionAvanzada\\ProyectoFinal\\ProyectoFinal\\Controllers\\HomeController.cs",
               "RelativeToolTip": "ProyectoFinal\\Controllers\\HomeController.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAxwC8AAAAAAAAA",
+              "ViewState": "AQIAAAQAAAAAAAAAAAAnwA8AAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-25T18:45:23.961Z",
               "EditorCaption": ""
@@ -370,8 +377,7 @@
               "RelativeToolTip": "ProyectoFinal\\Views\\Productos\\InfoProducto.cshtml",
               "ViewState": "AQIAABcAAAAAAAAAAAAYwCEAAAAqAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-07-25T16:51:24.526Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-25T16:51:24.526Z"
             }
           ]
         },

@@ -137,3 +137,53 @@ footer {
 #contenedor2 {
     padding-top: 40px;
 }
+.empty-cart-message {
+    text-align: center;
+}
+
+.empty-cart-box {
+    display: inline-block;
+    border: 2px dashed #a4a4a4;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+    .empty-cart-box i {
+        font-size: 100px;
+        color: #a4a4a4;
+    }
+
+    .empty-cart-box h1 {
+        font-size: 24px;
+        color: #333;
+        margin: 10px 0 0;
+    }
+
+.contact-section {
+    display: flex;
+}
+
+.map-column {
+    background-size: cover;
+    background-position: center;
+    height: 100vh; 
+    flex: 1;
+}
+
+.info-column, .form-column {
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.info-column {
+    background-color: #f8f9fa; 
+    flex: 1;
+}
+
+.form-column {
+    background-color: #f8f9fa; 
+    flex: 1;
+}

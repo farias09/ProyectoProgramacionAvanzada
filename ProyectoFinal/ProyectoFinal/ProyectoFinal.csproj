@@ -126,6 +126,7 @@
     <Compile Include="Controllers\CategoriasController.cs" />
     <Compile Include="Controllers\HistorialDePedidosController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\PagoController.cs" />
     <Compile Include="Controllers\ProductosController.cs" />
     <Compile Include="Controllers\ReseñasController.cs" />
     <Compile Include="Controllers\RolesController.cs" />
@@ -145,12 +146,21 @@
     <Compile Include="Migrations\202407230310180_AddKeyToItemDeCarrito.Designer.cs">
       <DependentUpon>202407230310180_AddKeyToItemDeCarrito.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202407291729175_Compras.cs" />
+    <Compile Include="Migrations\202407291729175_Compras.Designer.cs">
+      <DependentUpon>202407291729175_Compras.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202408060210120_libreriaBazar.cs" />
+    <Compile Include="Migrations\202408060210120_libreriaBazar.Designer.cs">
+      <DependentUpon>202408060210120_libreriaBazar.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AplicationDbContext.cs" />
     <Compile Include="Models\CarritoDeCompras.cs" />
     <Compile Include="Models\Categorias.cs" />
     <Compile Include="Models\HistorialDePedidos.cs" />
     <Compile Include="Models\LoginViewModel.cs" />
+    <Compile Include="Models\Pago.cs" />
     <Compile Include="Models\Productos.cs" />
     <Compile Include="Models\Reseñas.cs" />
     <Compile Include="Models\Roles.cs" />
@@ -158,6 +168,13 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\img\BANNER_CARRRITO.png" />
+    <Content Include="Assets\img\Banner_Contact Us.png" />
+    <Content Include="Assets\img\BazarImg1.png" />
+    <Content Include="Assets\img\BazarLogo.png" />
+    <Content Include="Assets\img\Libro2.png" />
+    <Content Include="Assets\img\Libro3.png" />
+    <Content Include="Assets\img\Libro4.png" />
     <Content Include="Assets\img\oferta1.jpg" />
     <Content Include="Content\bootstrap-grid.css" />
     <Content Include="Content\bootstrap-grid.min.css" />
@@ -258,6 +275,7 @@
     <Content Include="Views\Account\Index.cshtml" />
     <Content Include="Views\Account\Register.cshtml" />
     <Content Include="Views\Account\Login.cshtml" />
+    <Content Include="Views\Pago\Checkout.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -298,6 +316,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202407230310180_AddKeyToItemDeCarrito.resx">
       <DependentUpon>202407230310180_AddKeyToItemDeCarrito.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202407291729175_Compras.resx">
+      <DependentUpon>202407291729175_Compras.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202408060210120_libreriaBazar.resx">
+      <DependentUpon>202408060210120_libreriaBazar.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

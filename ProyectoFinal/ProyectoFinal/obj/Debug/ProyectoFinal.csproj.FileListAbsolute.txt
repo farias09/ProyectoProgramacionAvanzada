@@ -229,3 +229,5 @@ C:\Users\ferva\OneDrive\Escritorio\@Repositorios-Github\ProyectoProgramacionAvan
 C:\Users\ferva\OneDrive\Escritorio\@Repositorios-Github\ProyectoProgramacionAvanzada\ProyectoFinal\ProyectoFinal\bin\Microsoft.AspNet.Identity.Core.xml
 C:\Users\ferva\OneDrive\Escritorio\@Repositorios-Github\ProyectoProgramacionAvanzada\ProyectoFinal\ProyectoFinal\obj\Debug\ProyectoFinal.Migrations.InitialCreate.resources
 C:\Users\ferva\OneDrive\Escritorio\@Repositorios-Github\ProyectoProgramacionAvanzada\ProyectoFinal\ProyectoFinal\obj\Debug\ProyectoFinal.Migrations.AddKeyToItemDeCarrito.resources
+C:\Users\ferva\OneDrive\Escritorio\@Repositorios-Github\ProyectoProgramacionAvanzada\ProyectoFinal\ProyectoFinal\obj\Debug\ProyectoFinal.Migrations.Compras.resources
+C:\Users\ferva\OneDrive\Escritorio\@Repositorios-Github\ProyectoProgramacionAvanzada\ProyectoFinal\ProyectoFinal\obj\Debug\ProyectoFinal.Migrations.libreriaBazar.resources

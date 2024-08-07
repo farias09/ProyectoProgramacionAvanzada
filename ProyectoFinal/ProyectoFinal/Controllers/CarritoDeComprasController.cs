@@ -176,5 +176,20 @@ namespace ProyectoFinal.Controllers
             // Redirigir a la vista del carrito o a la página de productos
             return RedirectToAction("Index");
         }
+
+        public ActionResult EliminarDelCarrito(int productoId)
+        {
+            // Obtener el carrito de la sesión
+            CarritoDeCompras carrito = ObtenerCarritoDeLaSesion();
+
+            // Eliminar el producto del carrito
+            carrito.EliminarProducto(productoId);
+
+            // Actualizar la sesión con el carrito actualizado
+            Session[CarritoSessionKey] = carrito;
+
+            // Redirigir de vuelta al índice del carrito
+            return RedirectToAction("Index");
+        }
     }
 }

@@ -23,7 +23,8 @@
                 </div>
                 <div class="mt-4">
                     <button class="btn btn-primary btn-lg btn-block mb-2" style="width: 100%;">Comprar Ahora</button>
-                    <button class="btn btn-outline-secondary btn-lg btn-block" style="width: 100%;">Agregar al Carrito</button>
+                    <button class="btn btn-outline-secondary btn-lg btn-block" style="width: 100%;" onclick="location.href='@Url.Action("AgregarAlCarrito", "CarritoDeCompras", new { productoId = Model.id_producto })'">Agregar al Carrito</button>
+
                 </div>
             </div>
         </div>
