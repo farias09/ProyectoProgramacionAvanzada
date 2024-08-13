@@ -46,22 +46,34 @@ namespace ProyectoFinal.Controllers
 
         // POST: Reseñas/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to, for 
-        // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
+        // POST: Reseñas/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "id_reseña,fechaPublicacion,descripcion,id_usuario,id_producto")] Reseñas reseñas)
+        public ActionResult Create(int id_producto, string titulo, string descripcion)
         {
-            if (ModelState.IsValid)
+            if (ModelState.IsValid && User.Identity.IsAuthenticated)
             {
-                db.Resenas.Add(reseñas);
-                db.SaveChanges();
-                return RedirectToAction("Index");
+                var usuario = db.Usuarios.FirstOrDefault(u => u.codigoUsuario == User.Identity.Name);
+                if (usuario != null)
+                {
+                    var reseña = new Reseñas
+                    {
+                        id_producto = id_producto,
+                        id_usuario = usuario.id_usuario,
+                        titulo = titulo,
+                        descripcion = descripcion,
+                        fechaPublicacion = DateTime.Now
+                    };
+
+                    db.Resenas.Add(reseña);
+                    db.SaveChanges();
+                    return RedirectToAction("InfoProducto", "Productos", new { id = id_producto });
+                }
             }
 
-            ViewBag.id_producto = new SelectList(db.Productos, "id_producto", "codigoProducto", reseñas.id_producto);
-            ViewBag.id_usuario = new SelectList(db.Usuarios, "id_usuario", "codigoUsuario", reseñas.id_usuario);
-            return View(reseñas);
+            return RedirectToAction("InfoProducto", "Productos", new { id = id_producto });
         }
+
 
         // GET: Reseñas/Edit/5
         public ActionResult Edit(int? id)

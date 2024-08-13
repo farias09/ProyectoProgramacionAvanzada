@@ -3,6 +3,7 @@
     ViewBag.Title = Model.nombreProducto;
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
+
 <div class="container mt-2">
     <div class="body-content">
         <h2 class="mb-4">@Model.nombreProducto</h2>
@@ -24,105 +25,96 @@
                 <div class="mt-4">
                     <button class="btn btn-primary btn-lg btn-block mb-2" style="width: 100%;">Comprar Ahora</button>
                     <button class="btn btn-outline-secondary btn-lg btn-block" style="width: 100%;" onclick="location.href='@Url.Action("AgregarAlCarrito", "CarritoDeCompras", new { productoId = Model.id_producto })'">Agregar al Carrito</button>
-
                 </div>
             </div>
         </div>
 
-        <!-- Customer Reviews Section -->
+        <!-- Sección de Reseñas de Clientes -->
         <section class="reviews-section mt-5">
             <div class="d-flex justify-content-between align-items-center mb-4">
                 <h3 class="section-title">Reseñas Recientes</h3>
-                <button class="btn btn-primary btn-sm" id="toggleReviewForm">Agregar Reseña</button>
+                @if (User.Identity.IsAuthenticated) {
+                    <button class="btn btn-dark btn-sm" id="toggleReviewForm">Agregar Reseña</button>
+                }
             </div>
 
-            <!-- Review Form (Collapsible) -->
-            <div class="review-form-container mb-4 collapse" id="reviewFormContainer">
-                <form id="reviewForm" class="bg-light p-4 border rounded">
-                    <h4 class="mb-3">Comparte tu opinión</h4>
-                    <div class="mb-3">
-                        <label for="reviewerName" class="form-label">Nombre</label>
-                        <input type="text" class="form-control" id="reviewerName" required>
-                    </div>
-                    <div class="mb-3">
-                        <label for="reviewTitle" class="form-label">Título de la opinión</label>
-                        <input type="text" class="form-control" id="reviewTitle" required>
-                    </div>
-                    <div class="mb-3">
-                        <label for="reviewContent" class="form-label">Tu opinión</label>
-                        <textarea class="form-control" id="reviewContent" rows="4" required></textarea>
-                    </div>
-                    <div class="mb-3">
-                        <label class="form-label d-block">¿Recomendarías este producto?</label>
-                        <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="recommendation" id="recommendYes" value="yes" required>
-                            <label class="form-check-label" for="recommendYes">Sí</label>
+            <!-- Formulario para agregar una reseña -->
+            @if (User.Identity.IsAuthenticated)
+            {
+                <div class="review-form-container mb-4" id="reviewFormContainer">
+                    @using (Html.BeginForm("Create", "Reseñas", FormMethod.Post, new { id = "reviewForm", @class = "bg-light p-4 border rounded" }))
+                    {
+                        @Html.AntiForgeryToken()
+                        <input type="hidden" name="id_producto" value="@Model.id_producto" />
+                        <h4 class="mb-3">Publica una Reseña</h4>
+                        <p class="text-muted">Comparte tu opinión sobre el producto o servicio</p>
+                        <div class="mb-3">
+                            <label for="titulo" class="form-label">Título</label>
+                            <input type="text" class="form-control" id="titulo" name="titulo" required>
                         </div>
-                        <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="recommendation" id="recommendNo" value="no" required>
-                            <label class="form-check-label" for="recommendNo">No</label>
+                        <div class="mb-3">
+                            <label for="descripcion" class="form-label">Comparte tu experiencia con nosotros</label>
+                            <textarea class="form-control" id="descripcion" name="descripcion" rows="4" required></textarea>
                         </div>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Enviar opinión</button>
-                </form>
-            </div>
+                        <button type="submit" class="btn btn-dark w-100">Publicar</button>
+                    }
+                </div>
+            }
+
 
             <div class="review-list">
-                <article class="review-item mb-4 p-3 border rounded">
-                    <header class="review-header d-flex justify-content-between align-items-center mb-2">
-                        <div class="reviewer-info">
-                            <h5 class="reviewer-name mb-0">María González</h5>
-                            <small class="text-muted">Compra verificada</small>
+                @foreach (var reseña in Model.Reseña.OrderByDescending(r => r.fechaPublicacion))
+                {
+                    <article class="review-item mb-4 p-3 border rounded">
+                        <header class="review-header d-flex justify-content-between align-items-center mb-2">
+                            <div class="reviewer-info">
+                                <h5 class="reviewer-name mb-0">@reseña.Usuario.nombreUsuario</h5>
+                                <small class="text-muted">Usuario verificado</small>
+                            </div>
+                            <div class="review-date">
+                                <time datetime="@reseña.fechaPublicacion.ToString("yyyy-MM-dd")">@reseña.fechaPublicacion.ToString("dd MMMM, yyyy")</time>
+                            </div>
+                        </header>
+                        <div class="review-content">
+                            <h6 class="review-title fw-bold">@reseña.titulo</h6>
+                            <p>@reseña.descripcion</p>
                         </div>
-                        <div class="review-date">
-                            <time datetime="2024-07-18">18 de julio, 2024</time>
-                        </div>
-                    </header>
-                    <div class="review-content">
-                        <h6 class="review-title fw-bold">Excelente producto, altamente recomendado</h6>
-                        <p>Este producto ha superado mis expectativas. La calidad es excelente y el servicio de entrega fue muy rápido. Definitivamente lo recomiendo a cualquiera que esté buscando un producto de alta calidad.</p>
-                    </div>
-                    <footer class="review-footer mt-2">
-                        <button class="btn btn-sm btn-outline-secondary me-2">
-                            <i class="bi bi-hand-thumbs-up"></i> Útil (15)
-                        </button>
-                        <button class="btn btn-sm btn-outline-secondary">
-                            <i class="bi bi-flag"></i> Reportar
-                        </button>
-                    </footer>
-                </article>
-
-                <article class="review-item mb-4 p-3 border rounded">
-                    <header class="review-header d-flex justify-content-between align-items-center mb-2">
-                        <div class="reviewer-info">
-                            <h5 class="reviewer-name mb-0">Carlos Rodríguez</h5>
-                            <small class="text-muted">Compra verificada</small>
-                        </div>
-                        <div class="review-date">
-                            <time datetime="2024-07-10">10 de julio, 2024</time>
-                        </div>
-                    </header>
-                    <div class="review-content">
-                        <h6 class="review-title fw-bold">Satisfecho con mi compra</h6>
-                        <p>Estoy muy satisfecho con mi compra. El producto llegó en perfectas condiciones y funciona exactamente como se describe. El servicio al cliente también fue excelente cuando tuve algunas preguntas antes de la compra.</p>
-                    </div>
-                    <footer class="review-footer mt-2">
-                        <button class="btn btn-sm btn-outline-secondary me-2">
-                            <i class="bi bi-hand-thumbs-up"></i> Útil (8)
-                        </button>
-                        <button class="btn btn-sm btn-outline-secondary">
-                            <i class="bi bi-flag"></i> Reportar
-                        </button>
-                    </footer>
-                </article>
-            </div>
-
-            <div class="text-center mt-4">
-                <button class="btn btn-primary" id="loadMoreReviews">Cargar más opiniones</button>
+                    </article>
+                }
             </div>
         </section>
     </div>
 </div>
+
+<style>
+    .review-form-container {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.5s ease-out;
+    }
+
+        .review-form-container.show {
+            max-height: 1000px;
+            transition: max-height 0.5s ease-in;
+        }
+
+    #reviewForm {
+        opacity: 0;
+        transform: translateY(-20px);
+        transition: opacity 0.3s ease, transform 0.3s ease;
+    }
+
+    .review-form-container.show #reviewForm {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    #reviewForm input,
+    #reviewForm textarea {
+        width: 100%;
+        max-width: none;
+    }
+</style>
 
 <script>
     document.addEventListener('DOMContentLoaded', function () {
@@ -133,20 +125,5 @@
             reviewFormContainer.classList.toggle('show');
             toggleReviewForm.textContent = reviewFormContainer.classList.contains('show') ? 'Cerrar formulario' : 'Agregar Reseña';
         });
-
-        const reviewForm = document.getElementById('reviewForm');
-        reviewForm.addEventListener('submit', function (e) {
-            e.preventDefault();
-            // Aquí iría la lógica para enviar la reseña
-            alert('Gracias por tu opinión. Será revisada y publicada pronto.');
-            reviewForm.reset();
-            reviewFormContainer.classList.remove('show');
-            toggleReviewForm.textContent = 'Agregar Reseña';
-        });
-
-        const loadMoreReviews = document.getElementById('loadMoreReviews');
-        loadMoreReviews.addEventListener('click', function () {
-            // Aquí iría la lógica para cargar más reseñas
-            alert('Cargando más opiniones...');
-        });
-    });</script>
+    });
+</script>

@@ -154,6 +154,10 @@
     <Compile Include="Migrations\202408060210120_libreriaBazar.Designer.cs">
       <DependentUpon>202408060210120_libreriaBazar.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202408072321544_AgregarTituloModelReseñas.cs" />
+    <Compile Include="Migrations\202408072321544_AgregarTituloModelReseñas.Designer.cs">
+      <DependentUpon>202408072321544_AgregarTituloModelReseñas.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AplicationDbContext.cs" />
     <Compile Include="Models\CarritoDeCompras.cs" />
@@ -322,6 +326,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202408060210120_libreriaBazar.resx">
       <DependentUpon>202408060210120_libreriaBazar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202408072321544_AgregarTituloModelReseñas.resx">
+      <DependentUpon>202408072321544_AgregarTituloModelReseñas.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

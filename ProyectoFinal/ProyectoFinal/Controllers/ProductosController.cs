@@ -6,6 +6,7 @@ using System.Linq;
 using System.Net;
 using System.Web;
 using System.Web.Mvc;
+using Microsoft.AspNet.Identity;
 using ProyectoFinal.Models;
 
 namespace ProyectoFinal.Controllers
@@ -50,6 +51,7 @@ namespace ProyectoFinal.Controllers
             }
             return View(productos);
         }
+
 
         // GET: Productos/Create
         public ActionResult Create()
@@ -146,14 +148,42 @@ namespace ProyectoFinal.Controllers
             }
         }
 
+
+        // Método para mostrar la información del producto
         public ActionResult InfoProducto(int id)
         {
-            var producto = db.Productos.Find(id);
+            var producto = db.Productos
+                .Include(p => p.Reseña)
+                .Include(p => p.Reseña.Select(r => r.Usuario))
+                .FirstOrDefault(p => p.id_producto == id);
+
             if (producto == null)
             {
                 return HttpNotFound();
             }
+
             return View(producto);
+        }
+
+        // Método para agregar una nueva reseña
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult AddReview(Reseñas reseña)
+        {
+            if (ModelState.IsValid)
+            {
+                reseña.fechaPublicacion = DateTime.Now;
+                db.Resenas.Add(reseña);
+                db.SaveChanges();
+                return RedirectToAction("InfoProducto", new { id = reseña.id_producto });
+            }
+            var producto = db.Productos.Include(p => p.Reseña.Select(r => r.Usuario)).FirstOrDefault(p => p.id_producto == reseña.id_producto);
+            if (producto == null)
+            {
+                return HttpNotFound();
+            }
+            ViewBag.UserId = User.Identity.GetUserId();
+            return View("InfoProducto", producto);
         }
 
         protected override void Dispose(bool disposing)

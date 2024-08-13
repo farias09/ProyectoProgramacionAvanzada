@@ -15,6 +15,10 @@
         height: auto;
         margin-bottom: 10px;
     }
+    .card-text {
+        font-size: 18px;
+        margin-bottom: 1rem;
+    }
 </style>
 
 <main>
@@ -44,7 +48,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-4 my-2">
+                <div class="col-6 my-2">
                     <a href="@Url.Action("Catalogo", "Productos", new { area = "" })" style="text-decoration: none;">
                         <div class="card">
                             <!-- Tarjeta 1 catalogo -->
@@ -55,25 +59,13 @@
                         </div>
                     </a>
                 </div>
-                <div class="col-md-4 my-2">
+                <div class="col-6 my-2">
                     <a href="@Url.Action("Catalogo", "Productos", new { area = "", categorias = new List<int> { 1 } })" style="text-decoration: none;">
                         <div class="card">
                             <!-- Tarjeta 2 libreria -->
                             <img class="card-img-top" src="https://static01.nyt.com/images/2018/07/12/universal/es/LIBRERIASESPA1206/LIBRERIASESPA1206-superJumbo.jpg?quality=90&auto=webp" alt="ventaflash" />
                             <div class="card-body">
                                 <p class="card-text" style="font-family: Verdana, sans-serif;">Libreria</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="col-md-4 my-2">
-                    <a href="promocionesPanel.php" style="text-decoration: none;">
-                        <div class="card">
-                            <!-- Tarjeta 3 promociones -->
-                            <img class="card-img-top" src="https://njlimo1.com/wp-content/uploads/2023/01/h4.jpg" alt="promociones" />
-                            <div class="card-body">
-                                <p class="card-text" style="font-family: Verdana, sans-serif;">Populares</p>
                             </div>
                         </div>
                     </a>
