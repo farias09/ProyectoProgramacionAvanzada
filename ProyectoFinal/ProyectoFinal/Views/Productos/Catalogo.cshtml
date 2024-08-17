@@ -55,11 +55,17 @@
                                 <div class="card-body d-flex flex-column">
                                     <h5 class="card-title">@producto.nombreProducto</h5>
                                     <p class="precio">₡@producto.precioProducto.ToString("0.00")</p>
-                                    <a href="#" class="btn btn-primary btn-agregar mt-auto">Agregar al carrito</a>
+                                    <div class="grupo-boton mt-auto">
+                                        @Html.ActionLink("Agregar al Carrito", "AgregarAlCarrito", "CarritoDeCompras", new { productoId = producto.id_producto }, new { @class = "btn btn-primary btn-agregar w-100" })
+                                    </div>
                                 </div>
                             </a>
                         </div>
                     </div>
+                }
+                @if (!Model.Any())
+                {
+                    <p>No se encontraron productos.</p>
                 }
             </div>
         </div>
@@ -100,10 +106,10 @@
         transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
     }
 
-    .catalogo-productos .card:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    }
+        .catalogo-productos .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
 
     .catalogo-productos .card-body {
         flex-grow: 1;
@@ -126,9 +132,9 @@
         color: inherit;
     }
 
-    .catalogo-productos .card-link:hover {
-        text-decoration: none;
-    }
+        .catalogo-productos .card-link:hover {
+            text-decoration: none;
+        }
 
     @@media (max-width: 575.98px) {
         .catalogo-productos .card-img-top-wrapper {
