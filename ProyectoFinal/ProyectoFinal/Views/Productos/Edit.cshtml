@@ -1,7 +1,8 @@
 ﻿@model ProyectoFinal.Models.Productos
 
 @{
-    Layout = null;
+    ViewBag.Title = "Editar Producto";
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
 <!DOCTYPE html>
@@ -10,90 +11,150 @@
 <head>
     <meta name="viewport" content="width=device-width" />
     <title>Edit</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet" />
+    <style>
+        .form-container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 30px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+            .form-container h4 {
+                margin-bottom: 30px;
+                color: #333;
+                text-align: center;
+            }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+            .form-group label {
+                color: #555;
+                font-weight: bold;
+            }
+
+        .form-control {
+            border-radius: 5px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .btn-group {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .btn-primary {
+            background-color: #007bff;
+            border-color: #007bff;
+            font-size: 16px;
+            padding: 10px 20px;
+        }
+
+        .btn-secondary {
+            background-color: #6c757d;
+            border-color: #6c757d;
+            font-size: 16px;
+            padding: 10px 20px;
+        }
+
+        .btn:hover {
+            opacity: 0.9;
+        }
+    </style>
 </head>
 <body>
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/jqueryval")
-    
-    
+
     @using (Html.BeginForm())
     {
         @Html.AntiForgeryToken()
-        
-        <div class="form-horizontal">
-            <h4>Productos</h4>
+
+        <div class="form-container">
+            <h4>Editar Producto</h4>
             <hr />
             @Html.ValidationSummary(true, "", new { @class = "text-danger" })
             @Html.HiddenFor(model => model.id_producto)
-    
-            <div class="form-group">
-                @Html.LabelFor(model => model.codigoProducto, htmlAttributes: new { @class = "control-label col-md-2" })
-                <div class="col-md-10">
+
+            <div class="form-group row">
+                @Html.LabelFor(model => model.codigoProducto, htmlAttributes: new { @class = "col-md-4 col-form-label" })
+                <div class="col-md-8">
                     @Html.EditorFor(model => model.codigoProducto, new { htmlAttributes = new { @class = "form-control" } })
                     @Html.ValidationMessageFor(model => model.codigoProducto, "", new { @class = "text-danger" })
                 </div>
             </div>
-    
-            <div class="form-group">
-                @Html.LabelFor(model => model.nombreProducto, htmlAttributes: new { @class = "control-label col-md-2" })
-                <div class="col-md-10">
+
+            <div class="form-group row">
+                @Html.LabelFor(model => model.nombreProducto, htmlAttributes: new { @class = "col-md-4 col-form-label" })
+                <div class="col-md-8">
                     @Html.EditorFor(model => model.nombreProducto, new { htmlAttributes = new { @class = "form-control" } })
                     @Html.ValidationMessageFor(model => model.nombreProducto, "", new { @class = "text-danger" })
                 </div>
             </div>
-    
-            <div class="form-group">
-                @Html.LabelFor(model => model.descripcion, htmlAttributes: new { @class = "control-label col-md-2" })
-                <div class="col-md-10">
-                    @Html.EditorFor(model => model.descripcion, new { htmlAttributes = new { @class = "form-control" } })
+
+            <div class="form-group row">
+                @Html.LabelFor(model => model.descripcion, htmlAttributes: new { @class = "col-md-4 col-form-label" })
+                <div class="col-md-8">
+                    @Html.TextAreaFor(model => model.descripcion, new { @class = "form-control", @rows = "5", @style = "resize:vertical;" })
                     @Html.ValidationMessageFor(model => model.descripcion, "", new { @class = "text-danger" })
                 </div>
             </div>
-    
-            <div class="form-group">
-                @Html.LabelFor(model => model.precioProducto, htmlAttributes: new { @class = "control-label col-md-2" })
-                <div class="col-md-10">
+
+            <div class="form-group row">
+                @Html.LabelFor(model => model.precioProducto, htmlAttributes: new { @class = "col-md-4 col-form-label" })
+                <div class="col-md-8">
                     @Html.EditorFor(model => model.precioProducto, new { htmlAttributes = new { @class = "form-control" } })
                     @Html.ValidationMessageFor(model => model.precioProducto, "", new { @class = "text-danger" })
                 </div>
             </div>
-    
-            <div class="form-group">
-                @Html.LabelFor(model => model.disponibilidadInventario, htmlAttributes: new { @class = "control-label col-md-2" })
-                <div class="col-md-10">
+
+            <div class="form-group row">
+                @Html.LabelFor(model => model.disponibilidadInventario, htmlAttributes: new { @class = "col-md-4 col-form-label" })
+                <div class="col-md-8">
                     @Html.EditorFor(model => model.disponibilidadInventario, new { htmlAttributes = new { @class = "form-control" } })
                     @Html.ValidationMessageFor(model => model.disponibilidadInventario, "", new { @class = "text-danger" })
                 </div>
             </div>
-    
-            <div class="form-group">
-                @Html.LabelFor(model => model.imagenAlmacenada, htmlAttributes: new { @class = "control-label col-md-2" })
-                <div class="col-md-10">
+
+            <div class="form-group row">
+                @Html.LabelFor(model => model.imagenAlmacenada, htmlAttributes: new { @class = "col-md-4 col-form-label" })
+                <div class="col-md-8">
                     @Html.EditorFor(model => model.imagenAlmacenada, new { htmlAttributes = new { @class = "form-control" } })
                     @Html.ValidationMessageFor(model => model.imagenAlmacenada, "", new { @class = "text-danger" })
                 </div>
             </div>
-    
-            <div class="form-group">
-                @Html.LabelFor(model => model.estadoProducto, htmlAttributes: new { @class = "control-label col-md-2" })
-                <div class="col-md-10">
-                    <div class="checkbox">
-                        @Html.EditorFor(model => model.estadoProducto)
+
+            <div class="form-group row">
+                @Html.LabelFor(model => model.CategoriaId, "Categoría", htmlAttributes: new { @class = "col-md-4 col-form-label" })
+                <div class="col-md-8">
+                    @Html.DropDownList("CategoriaId", null, htmlAttributes: new { @class = "form-control" })
+                    @Html.ValidationMessageFor(model => model.CategoriaId, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group row">
+                @Html.LabelFor(model => model.estadoProducto, htmlAttributes: new { @class = "col-md-4 col-form-label" })
+                <div class="col-md-8">
+                    <div class="form-check">
+                        @Html.EditorFor(model => model.estadoProducto, new { htmlAttributes = new { @class = "form-check-input" } })
+                        @Html.LabelFor(model => model.estadoProducto, htmlAttributes: new { @class = "form-check-label" })
                         @Html.ValidationMessageFor(model => model.estadoProducto, "", new { @class = "text-danger" })
                     </div>
                 </div>
             </div>
-    
-            <div class="form-group">
-                <div class="col-md-offset-2 col-md-10">
-                    <input type="submit" value="Save" class="btn btn-default" />
-                </div>
+
+            <div class="btn-group">
+                <input type="submit" value="Guardar" class="btn btn-primary" />
+                <a href="@Url.Action("Index")" class="btn btn-secondary">Volver a la Lista</a>
             </div>
         </div>
     }
-    
-    <div>
-        @Html.ActionLink("Back to List", "Index")
-    </div>
 </body>
 </html>

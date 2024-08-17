@@ -109,11 +109,34 @@ namespace ProyectoFinal.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)
         {
-            Categorias categorias = db.Categorias.Find(id);
-            db.Categorias.Remove(categorias);
-            db.SaveChanges();
-            return RedirectToAction("Index");
+            Categorias categoria = db.Categorias.Find(id);
+
+            if (categoria == null)
+            {
+                return HttpNotFound();
+            }
+
+            // Verificar si hay productos asociados
+            var productos = db.Productos.Where(p => p.CategoriaId == id).ToList();
+            if (productos.Any())
+            {
+                ModelState.AddModelError("", "No se puede eliminar la categoría porque tiene productos asociados.");
+                return View(categoria);
+            }
+
+            try
+            {
+                db.Categorias.Remove(categoria);
+                db.SaveChanges();
+                return RedirectToAction("Index");
+            }
+            catch (Exception ex)
+            {
+                ModelState.AddModelError("", "Error al eliminar la categoría. " + ex.Message);
+                return View(categoria);
+            }
         }
+
 
         protected override void Dispose(bool disposing)
         {

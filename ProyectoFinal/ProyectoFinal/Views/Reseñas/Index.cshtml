@@ -1,59 +1,159 @@
 ﻿@model IEnumerable<ProyectoFinal.Models.Reseñas>
-
 @{
-    Layout = null;
+    ViewBag.Title = "Reseñas";
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<!DOCTYPE html>
+<div class="container-fluid px-3 py-4">
+    <div class="row">
+        <div class="col-12">
+            <h2 class="text-center mb-4" style="padding-top: 25px;">Lista de Reseñas</h2>
+            <div class="card shadow">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-center mb-3">
+                        <a href="@Url.Action("Create")" class="btn btn-dark" style="width: 15%">
+                            <i class="fas fa-plus"></i> Crear Reseña
+                        </a>
+                    </div>
+                    <div class="table-responsive">
+                        <table class="table table-hover">
+                            <thead class="thead-light">
+                                <tr>
+                                    <th>Producto</th>
+                                    <th>Usuario</th>
+                                    <th>Fecha</th>
+                                    <th>Descripción</th>
+                                    <th class="text-end">Acciones</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var item in Model)
+                                {
+                                    <tr>
+                                        <td>@item.Producto.codigoProducto</td>
+                                        <td>@item.Usuario.codigoUsuario</td>
+                                        <td>@item.fechaPublicacion.ToString("dd/MM/yyyy")</td>
+                                        <td class="description-cell">@item.descripcion</td>
+                                        <td class="text-end">
+                                            <div class="btn-group" role="group">
+                                                <a href="@Url.Action("Edit", new { id = item.id_reseña })" class="btn btn-sm btn-outline-primary">
+                                                    <i class="fas fa-edit"></i>
+                                                </a>
+                                                <a href="@Url.Action("Details", new { id = item.id_reseña })" class="btn btn-sm btn-outline-info">
+                                                    <i class="fas fa-info-circle"></i>
+                                                </a>
+                                                <a href="@Url.Action("Delete", new { id = item.id_reseña })" class="btn btn-sm btn-outline-danger">
+                                                    <i class="fas fa-trash-alt"></i>
+                                                </a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
-<html>
-<head>
-    <meta name="viewport" content="width=device-width" />
-    <title>Index</title>
-</head>
-<body>
-    <p>
-        @Html.ActionLink("Create New", "Create")
-    </p>
-    <table class="table">
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.Producto.codigoProducto)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Usuario.codigoUsuario)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.fechaPublicacion)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.descripcion)
-            </th>
-            <th></th>
-        </tr>
-    
-    @foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Producto.codigoProducto)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Usuario.codigoUsuario)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.fechaPublicacion)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.descripcion)
-            </td>
-            <td>
-                @Html.ActionLink("Edit", "Edit", new { id=item.id_reseña }) |
-                @Html.ActionLink("Details", "Details", new { id=item.id_reseña }) |
-                @Html.ActionLink("Delete", "Delete", new { id=item.id_reseña })
-            </td>
-        </tr>
+<style>
+    .card {
+        border: none;
+        transition: all 0.3s ease;
     }
-    
-    </table>
-</body>
-</html>
+
+        .card:hover {
+            box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+        }
+
+    .table th {
+        font-weight: 600;
+        background-color: #f8f9fa;
+    }
+
+    .btn-group .btn {
+        padding: .25rem .5rem;
+        font-size: .875rem;
+    }
+
+    .description-cell {
+        max-width: 300px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .image-cell img {
+        max-height: 50px;
+        width: auto;
+    }
+
+    @@media (max-width: 1200px) {
+        .table th, .table td {
+            font-size: 0.9rem;
+        }
+
+        .description-cell {
+            max-width: 200px;
+        }
+    }
+
+    @@media (max-width: 992px) {
+        .description-cell {
+            max-width: 150px;
+        }
+
+        .btn-group .btn {
+            padding: .2rem .4rem;
+            font-size: .8rem;
+        }
+    }
+
+    @@media (max-width: 768px) {
+        .table thead {
+            display: none;
+        }
+
+        .table, .table tbody, .table tr, .table td {
+            display: block;
+            width: 100%;
+        }
+
+            .table tr {
+                margin-bottom: 15px;
+                border-bottom: 2px solid #ddd;
+            }
+
+            .table td {
+                text-align: right;
+                padding-left: 50%;
+                position: relative;
+            }
+
+                .table td::before {
+                    content: attr(data-label);
+                    position: absolute;
+                    left: 6px;
+                    width: 45%;
+                    padding-right: 10px;
+                    white-space: nowrap;
+                    font-weight: bold;
+                    text-align: left;
+                }
+
+        .description-cell, .image-cell {
+            max-width: none;
+        }
+
+        .btn-group {
+            display: flex;
+            justify-content: flex-end;
+        }
+    }
+</style>
+
+@section Scripts {
+    <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
+}

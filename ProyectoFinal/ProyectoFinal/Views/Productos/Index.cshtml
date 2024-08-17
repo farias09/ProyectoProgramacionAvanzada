@@ -1,109 +1,165 @@
 ﻿@model IEnumerable<ProyectoFinal.Models.Productos>
-
 @{
     ViewBag.Title = "Productos";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<!DOCTYPE html>
-<html>
-<head>
-    <meta name="viewport" content="width=device-width" />
-    <title>@ViewBag.Title</title>
-    <!-- Add Bootstrap CSS for styling -->
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet" />
-    <style>
-        .table-container {
-            max-width: 1000px;
-            margin: 50px auto;
-            padding: 30px;
-            border: 1px solid #ddd;
-            border-radius: 10px;
-            background-color: #fff;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+<style>
+    .card {
+        border: none;
+        transition: all 0.3s ease;
+    }
+
+        .card:hover {
+            box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
         }
 
-            .table-container h4 {
-                margin-bottom: 30px;
-                color: #333;
-                text-align: center;
+    .table th {
+        font-weight: 600;
+        background-color: #f8f9fa;
+    }
+
+    .btn-group .btn {
+        padding: .25rem .5rem;
+        font-size: .875rem;
+    }
+
+    .description-cell {
+        max-width: 300px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .image-cell img {
+        max-height: 50px;
+        width: auto;
+    }
+
+    @@media (max-width: 1200px) {
+        .table th, .table td {
+            font-size: 0.9rem;
+        }
+
+        .description-cell {
+            max-width: 200px;
+        }
+    }
+
+    @@media (max-width: 992px) {
+        .description-cell {
+            max-width: 150px;
+        }
+
+        .btn-group .btn {
+            padding: .2rem .4rem;
+            font-size: .8rem;
+        }
+    }
+
+    @@media (max-width: 768px) {
+        .table thead {
+            display: none;
+        }
+
+        .table, .table tbody, .table tr, .table td {
+            display: block;
+            width: 100%;
+        }
+
+            .table tr {
+                margin-bottom: 15px;
+                border-bottom: 2px solid #ddd;
             }
 
-        .table th, .table td {
-            text-align: center;
-            vertical-align: middle;
-            word-wrap: break-word;
+            .table td {
+                text-align: right;
+                padding-left: 50%;
+                position: relative;
+            }
+
+                .table td::before {
+                    content: attr(data-label);
+                    position: absolute;
+                    left: 6px;
+                    width: 45%;
+                    padding-right: 10px;
+                    white-space: nowrap;
+                    font-weight: bold;
+                    text-align: left;
+                }
+
+        .description-cell, .image-cell {
+            max-width: none;
         }
 
         .btn-group {
             display: flex;
-            justify-content: center;
-            margin-top: 20px;
+            justify-content: flex-end;
         }
+    }
+</style>
 
-        .btn-primary {
-            background-color: #007bff;
-            border-color: #007bff;
-            font-size: 16px;
-            padding: 10px 20px;
-        }
-
-        .btn-secondary {
-            background-color: #6c757d;
-            border-color: #6c757d;
-            font-size: 16px;
-            padding: 10px 20px;
-        }
-
-        .btn:hover {
-            opacity: 0.9;
-        }
-    </style>
-</head>
-<body>
-    <div class="container my-4 table-container">
-        <h4>Lista de Productos</h4>
-        <hr />
-        <p>
-            @Html.ActionLink("Crear Nuevo Producto", "Create", null, new { @class = "btn btn-primary" })
-        </p>
-        <div class="table-responsive">
-            <table class="table table-bordered table-hover">
-                <thead>
-                    <tr>
-                        <th style="width: 10%;">@Html.DisplayNameFor(model => model.First().codigoProducto)</th>
-                        <th style="width: 15%;">@Html.DisplayNameFor(model => model.First().nombreProducto)</th>
-                        <th style="width: 25%;">@Html.DisplayNameFor(model => model.First().descripcion)</th>
-                        <th style="width: 10%;">@Html.DisplayNameFor(model => model.First().precioProducto)</th>
-                        <th style="width: 15%;">@Html.DisplayNameFor(model => model.First().disponibilidadInventario)</th>
-                        <th style="width: 15%;">@Html.DisplayNameFor(model => model.First().imagenAlmacenada)</th>
-                        <th style="width: 10%;">@Html.DisplayNameFor(model => model.First().estadoProducto)</th>
-                        <th style="width: 10%;">Acciones</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    @foreach (var item in Model)
-                    {
-                        <tr>
-                            <td>@Html.DisplayFor(modelItem => item.codigoProducto)</td>
-                            <td>@Html.DisplayFor(modelItem => item.nombreProducto)</td>
-                            <td>@Html.DisplayFor(modelItem => item.descripcion)</td>
-                            <td>@Html.DisplayFor(modelItem => item.precioProducto)</td>
-                            <td>@Html.DisplayFor(modelItem => item.disponibilidadInventario)</td>
-                            <td>@Html.DisplayFor(modelItem => item.imagenAlmacenada)</td>
-                            <td>@Html.DisplayFor(modelItem => item.estadoProducto)</td>
-                            <td>
-                                @Html.ActionLink("Editar", "Edit", new { id = item.id_producto }, new { @class = "btn btn-primary btn-sm" }) |
-                                @Html.ActionLink("Detalles", "Details", new { id = item.id_producto }, new { @class = "btn btn-secondary btn-sm" }) |
-                                @Html.ActionLink("Eliminar", "Delete", new { id = item.id_producto }, new { @class = "btn btn-danger btn-sm" })
-                            </td>
-                        </tr>
-                    }
-                </tbody>
-            </table>
+<div class="container-fluid px-3 py-4">
+    <div class="row">
+        <div class="col-12">
+            <h2 class="text-center mb-4" style="padding-top: 25px;">Lista de Productos</h2>
+            <div class="card shadow">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-center mb-3">
+                        <a href="@Url.Action("Create")" class="btn btn-dark" style="width: 15%"">
+                            <i class="fas fa-plus"></i> Crear Producto
+                        </a>
+                    </div>
+                    <div class="table-responsive">
+                        <table class="table table-hover">
+                            <thead class="thead-light">
+                                <tr>
+                                    <th>Código</th>
+                                    <th>Nombre</th>
+                                    <th>Descripción</th>
+                                    <th>Precio</th>
+                                    <th>Stock</th>
+                                    <th>Imagen</th>
+                                    <th>Estado</th>
+                                    <th class="text-end">Acciones</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var item in Model)
+                                {
+                                    <tr>
+                                        <td>@item.codigoProducto</td>
+                                        <td>@item.nombreProducto</td>
+                                        <td class="description-cell">@item.descripcion</td>
+                                        <td>@item.precioProducto</td>
+                                        <td>@item.disponibilidadInventario</td>
+                                        <td class="image-cell"><img src="@item.imagenAlmacenada" alt="@item.nombreProducto" class="img-thumbnail" style="max-width: 100px;"></td>
+                                        <td>@(item.estadoProducto ? "Activo" : "Inactivo")</td>
+                                        <td class="text-end">
+                                            <div class="btn-group" role="group">
+                                                <a href="@Url.Action("Edit", new { id = item.id_producto })" class="btn btn-sm btn-outline-primary">
+                                                    <i class="fas fa-edit"></i>
+                                                </a>
+                                                <a href="@Url.Action("Details", new { id = item.id_producto })" class="btn btn-sm btn-outline-info">
+                                                    <i class="fas fa-info-circle"></i>
+                                                </a>
+                                                <a href="@Url.Action("Delete", new { id = item.id_producto })" class="btn btn-sm btn-outline-danger">
+                                                    <i class="fas fa-trash-alt"></i>
+                                                </a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
+</div>
 
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
-</body>
-</html>
+@section Scripts {
+    <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
+}

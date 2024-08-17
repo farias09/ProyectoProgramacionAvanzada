@@ -1,9 +1,39 @@
 ﻿@model ProyectoFinal.Models.Productos
-
 @{
     ViewBag.Title = Model.nombreProducto;
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
+
+
+<style>
+    .review-form-container {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.5s ease-out;
+    }
+
+        .review-form-container.show {
+            max-height: 1000px;
+            transition: max-height 0.5s ease-in;
+        }
+
+    #reviewForm {
+        opacity: 0;
+        transform: translateY(-20px);
+        transition: opacity 0.3s ease, transform 0.3s ease;
+    }
+
+    .review-form-container.show #reviewForm {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    #reviewForm input,
+    #reviewForm textarea {
+        width: 100%;
+        max-width: none;
+    }
+</style>
 
 <div class="container mt-2">
     <div class="body-content">
@@ -18,7 +48,7 @@
                 <h4>Descripción</h4>
                 <p><strong>Código:</strong> @Model.codigoProducto</p>
                 <p>@Model.descripcion</p>
-                <h3 class="mt-4">₡@Model.precioProducto.ToString("0.00")</h3>
+                <h3 class="mt-4">Precio: ₡@Model.precioProducto.ToString("0.00")</h3>
                 <div class="form-group mt-3">
                     <label for="cantidad">Cantidad:</label>
                     <input type="number" id="cantidad" name="cantidad" class="form-control" value="1" min="1" style="width: 100px;">
@@ -26,9 +56,77 @@
                 <div class="mt-4">
                     <button class="btn btn-primary btn-lg btn-block mb-2" style="width: 100%;">Comprar Ahora</button>
                     <button class="btn btn-outline-secondary btn-lg btn-block" style="width: 100%;" onclick="location.href='@Url.Action("AgregarAlCarrito", "CarritoDeCompras", new { productoId = Model.id_producto })'">Agregar al Carrito</button>
-
                 </div>
             </div>
         </div>
-        </div>
+
+        <!-- Seccion de reseñas para clientes registrados -->
+        <section class="reviews-section mt-5">
+            <div class="d-flex justify-content-between align-items-center mb-4">
+                <h3 class="section-title">Reseñas Recientes</h3>
+                @if (User.Identity.IsAuthenticated)
+                {
+                    <button class="btn btn-dark btn-sm" id="toggleReviewForm">Agregar Reseña</button>
+                }
+            </div>
+
+            <!-- Formulario para agregar una reseña -->
+            @if (User.Identity.IsAuthenticated)
+            {
+                <div class="review-form-container mb-4" id="reviewFormContainer">
+                    @using (Html.BeginForm("Create", "Reseñas", FormMethod.Post, new { id = "reviewForm", @class = "bg-light p-4 border rounded" }))
+                    {
+                        @Html.AntiForgeryToken()
+                        <input type="hidden" name="id_producto" value="@Model.id_producto" />
+                        <h4 class="mb-3">Publica una Reseña</h4>
+                        <p class="text-muted">Comparte tu opinión sobre el producto o servicio</p>
+                        <div class="mb-3">
+                            <label for="titulo" class="form-label">Descripcion Breve</label>
+                            <input type="text" class="form-control" id="titulo" name="titulo" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="descripcion" class="form-label">Comparte tu experiencia con nosotros</label>
+                            <textarea class="form-control" id="descripcion" name="descripcion" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-dark w-100">Publicar</button>
+                    }
+                </div>
+            }
+
+
+            <div class="review-list">
+                @foreach (var reseña in Model.Reseña.OrderByDescending(r => r.fechaPublicacion))
+                {
+                    <article class="review-item mb-4 p-3 border rounded">
+                        <header class="review-header d-flex justify-content-between align-items-center mb-2">
+                            <div class="reviewer-info">
+                                <h5 class="reviewer-name mb-0">@reseña.Usuario.nombreUsuario</h5>
+                                <small class="text-muted">Usuario verificado</small>
+                            </div>
+                            <div class="review-date">
+                                <time datetime="@reseña.fechaPublicacion.ToString("yyyy-MM-dd")">@reseña.fechaPublicacion.ToString("dd MMMM, yyyy")</time>
+                            </div>
+                        </header>
+                        <div class="review-content">
+                            <h6 class="review-title fw-bold">@reseña.titulo</h6>
+                            <p>@reseña.descripcion</p>
+                        </div>
+                    </article>
+                }
+            </div>
+        </section>
     </div>
+</div>
+
+<!-- Script para mostrar el formulario de la reseña -->
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const toggleReviewForm = document.getElementById('toggleReviewForm');
+        const reviewFormContainer = document.getElementById('reviewFormContainer');
+
+        toggleReviewForm.addEventListener('click', function () {
+            reviewFormContainer.classList.toggle('show');
+            toggleReviewForm.textContent = reviewFormContainer.classList.contains('show') ? 'Cerrar formulario' : 'Agregar Reseña';
+        });
+    });
+</script>

@@ -13,15 +13,14 @@ namespace ProyectoFinal.Controllers
 
         public ActionResult Index()
         {
-
             var libros = db.Productos
-                .Where(p => p.Categoria.Nombre == "Libros")
+                .Where(p => p.Categoria != null && p.Categoria.Nombre == "Libros")
                 .OrderByDescending(p => p.id_producto)
                 .Take(10)
                 .ToList();
 
             var productosRecientes = db.Productos
-                .Where(p => p.Categoria.Nombre != "Libros")
+                .Where(p => p.Categoria != null && p.Categoria.Nombre != "Libros")
                 .OrderByDescending(p => p.id_producto)
                 .Take(10)
                 .ToList();
