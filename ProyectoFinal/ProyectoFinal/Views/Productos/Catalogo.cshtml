@@ -1,6 +1,6 @@
 ﻿@model IEnumerable<ProyectoFinal.Models.Productos>
 @{
-    ViewBag.Title = "Catalogo";
+    ViewBag.Title = "Catálogo";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
@@ -11,39 +11,51 @@
             <h4>Filtros</h4>
             <form method="get" action="@Url.Action("Catalogo", "Productos")">
                 <h5>Categoría</h5>
-                @foreach (var categoria in ViewBag.Categorias)
+                @if (ViewBag.Categorias != null)
                 {
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" name="categorias" value="@categoria.Id" id="categoria-@categoria.Id"
-                               @(ViewBag.CategoriasSeleccionadas != null && ViewBag.CategoriasSeleccionadas.Contains(categoria.Id) ? "checked" : "")>
-                        <label class="form-check-label" for="categoria-@categoria.Id">@categoria.Nombre</label>
-                    </div>
+                    foreach (var categoria in ViewBag.Categorias)
+                    {
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="categorias" value="@categoria.Id" id="categoria-@categoria.Id"
+                                   @(ViewBag.CategoriasSeleccionadas != null && ViewBag.CategoriasSeleccionadas.Contains(categoria.Id) ? "checked" : "") />
+                            <label class="form-check-label" for="categoria-@categoria.Id">@categoria.Nombre</label>
+                        </div>
+                    }
                 }
                 <button type="submit" class="btn btn-primary mt-3">Aplicar Filtros</button>
             </form>
         </div>
+
         <div class="col-md-9 catalogo-productos">
             <div class="d-flex justify-content-between align-items-center mb-3">
                 <p class="mb-0">Mostrando @Model.Count() productos</p>
-                <select class="form-select" style="width: auto;">
-                    <option selected>Ordenar por: Todos</option>
-                    <option>Precio: Menor a Mayor</option>
-                    <option>Precio: Mayor a Menor</option>
-                </select>
+                <form method="get" action="@Url.Action("Catalogo", "Productos")">
+                    @foreach (var categoria in ViewBag.CategoriasSeleccionadas)
+                    {
+                        <input type="hidden" name="categorias" value="@categoria" />
+                    }
+
+                    <select class="form-select" style="width: auto;" name="ordenarPor" onchange="this.form.submit()">
+                        <option value="" @(string.IsNullOrEmpty(ViewBag.OrdenarPor) ? "selected" : "")>Ordenar por: Todos</option>
+                        <option value="PrecioAsc" @(ViewBag.OrdenarPor == "PrecioAsc" ? "selected" : "")>Precio: Menor a Mayor</option>
+                        <option value="PrecioDesc" @(ViewBag.OrdenarPor == "PrecioDesc" ? "selected" : "")>Precio: Mayor a Menor</option>
+                    </select>
+                </form>
             </div>
+
             <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
                 @foreach (var producto in Model)
                 {
                     <div class="col">
-                        <div class="card h-100">
-                            <a href="@Url.RouteUrl("InfoProducto", new { id = producto.id_producto })">
+                        <div class="card h-100 d-flex flex-column">
+                            <a href="@Url.RouteUrl("InfoProducto", new { id = producto.id_producto })" class="card-link">
                                 <div class="card-img-top-wrapper">
                                     <img src="@producto.imagenAlmacenada" class="card-img-top" alt="@producto.nombreProducto">
                                 </div>
-                                <div class="card-body">
+                                <div class="card-body d-flex flex-column">
                                     <h5 class="card-title">@producto.nombreProducto</h5>
                                     <p class="precio">₡@producto.precioProducto.ToString("0.00")</p>
-                                    <a href="#" class="btn btn-primary btn-agregar">Agregar al carrito</a>
+                                    <a href="#" class="btn btn-primary btn-agregar mt-auto">Agregar al carrito</a>
                                 </div>
                             </a>
                         </div>
@@ -59,80 +71,72 @@
         margin-top: 2rem;
     }
 
-        .catalogo-container h1 {
-            margin-bottom: 1.5rem;
-        }
-
     .catalogo-filtros {
         margin-bottom: 1.5rem;
     }
 
-        .catalogo-filtros h4 {
-            margin-bottom: 1rem;
-        }
-
-        .catalogo-filtros h5 {
-            margin-top: 1rem;
-            margin-bottom: 0.5rem;
-        }
-
-    .catalogo-productos {
-        margin-bottom: 2rem;
+    .catalogo-productos .card-img-top-wrapper {
+        width: 100%;
+        aspect-ratio: 4/3;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 220px;
+        max-height: 300px;
     }
 
-        .catalogo-productos .card-img-top-wrapper {
-            width: 100%;
-            height: 200px;
-            overflow: hidden;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
+    .catalogo-productos .card-img-top {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        min-width: 150px;
+        max-width: 100%;
+        max-height: 100%;
+    }
 
-        .catalogo-productos .card-img-top {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
+
+    .catalogo-productos .card {
+        transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    }
+
+    .catalogo-productos .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .catalogo-productos .card-body {
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .catalogo-productos .card-title {
+        font-size: 1.1rem;
+        font-weight: bold;
+        margin-bottom: 0.5rem;
+    }
+
+    .catalogo-productos .btn-agregar {
+        width: 100%;
+    }
+
+    .catalogo-productos .card-link {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    .catalogo-productos .card-link:hover {
+        text-decoration: none;
+    }
+
+    @@media (max-width: 575.98px) {
+        .catalogo-productos .card-img-top-wrapper {
+            height: auto;
         }
 
         .catalogo-productos .card {
-            height: 100%;
-            display: flex;
-            flex-direction: column;
-            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+            margin-bottom: 1rem;
         }
-
-            .catalogo-productos .card:hover {
-                transform: translateY(-5px);
-                box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-            }
-
-        .catalogo-productos .card-body {
-            flex-grow: 1;
-            display: flex;
-            flex-direction: column;
-        }
-
-        .catalogo-productos .card-title {
-            font-size: 1.1rem;
-            font-weight: bold;
-            margin-bottom: 0.5rem;
-        }
-
-        .catalogo-productos .card-text {
-            font-size: 0.9rem;
-            flex-grow: 1;
-        }
-
-        .catalogo-productos .precio {
-            font-size: 1.2rem;
-            font-weight: bold;
-            color: #007bff;
-            margin-top: auto;
-            margin-bottom: 0.5rem;
-        }
-
-        .catalogo-productos .btn-agregar {
-            width: 100%;
-        }
+    }
 </style>

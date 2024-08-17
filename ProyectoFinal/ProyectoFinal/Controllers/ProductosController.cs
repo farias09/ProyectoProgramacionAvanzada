@@ -15,7 +15,7 @@ namespace ProyectoFinal.Controllers
     {
         private ApplicationDbContext db = new ApplicationDbContext();
 
-        public ActionResult Catalogo(List<int> categorias)
+        public ActionResult Catalogo(List<int> categorias, string ordenarPor)
         {
             IQueryable<Productos> productos = db.Productos.Include(p => p.Categoria);
 
@@ -24,11 +24,29 @@ namespace ProyectoFinal.Controllers
                 productos = productos.Where(p => categorias.Contains(p.CategoriaId));
             }
 
-            ViewBag.Categorias = db.Categorias.ToList();
-            ViewBag.CategoriasSeleccionadas = categorias;
+            // Ordenar los productos según el valor de ordenarPor
+            switch (ordenarPor)
+            {
+                case "PrecioAsc":
+                    productos = productos.OrderBy(p => p.precioProducto);
+                    break;
+                case "PrecioDesc":
+                    productos = productos.OrderByDescending(p => p.precioProducto);
+                    break;
+                default:
+                    break;
+            }
+
+            // Inicializa ViewBag.Categorias si es null
+            var categoriasList = db.Categorias.ToList();
+            ViewBag.Categorias = categoriasList ?? new List<Categorias>();
+            ViewBag.CategoriasSeleccionadas = categorias ?? new List<int>();
+            ViewBag.OrdenarPor = ordenarPor ?? string.Empty;
 
             return View(productos.ToList());
         }
+
+
 
         // GET: Productos
         public ActionResult Index()
@@ -99,15 +117,34 @@ namespace ProyectoFinal.Controllers
         {
             if (ModelState.IsValid)
             {
-                db.Entry(productos).State = EntityState.Modified;
-                try
+                db.Configuration.ValidateOnSaveEnabled = false;
+                var productoExistente = db.Productos.Find(productos.id_producto);
+                if (productoExistente != null)
                 {
-                    db.SaveChanges();
-                    return RedirectToAction("Index");
+                    db.Entry(productoExistente).CurrentValues.SetValues(productos);
+                    try
+                    {
+                        db.SaveChanges();
+                        return RedirectToAction("Index");
+                    }
+                    catch (System.Data.Entity.Validation.DbEntityValidationException dbEx)
+                    {
+                        foreach (var validationErrors in dbEx.EntityValidationErrors)
+                        {
+                            foreach (var validationError in validationErrors.ValidationErrors)
+                            {
+                                ModelState.AddModelError(string.Empty, validationError.ErrorMessage);
+                            }
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        ModelState.AddModelError("", "Error al guardar los cambios. " + ex.Message);
+                    }
                 }
-                catch (Exception ex)
+                else
                 {
-                    ModelState.AddModelError("", "Error al guardar los cambios. " + ex.Message);
+                    ModelState.AddModelError("", "No se encontró el producto.");
                 }
             }
             ViewBag.CategoriaId = new SelectList(db.Categorias, "Id", "Nombre", productos.CategoriaId);

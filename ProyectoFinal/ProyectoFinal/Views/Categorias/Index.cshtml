@@ -1,45 +1,93 @@
 ﻿@model IEnumerable<ProyectoFinal.Models.Categorias>
-
 @{
     ViewBag.Title = "Categorias";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<!DOCTYPE html>
-
-<html>
-<head>
-    <meta name="viewport" content="width=device-width" />
-    <title>Index</title>
-</head>
-<body>
-    <div class="body-content">
-        <p>
-            @Html.ActionLink("Create New", "Create")
-        </p>
-        <table class="table">
-            <tr>
-                <th>
-                    @Html.DisplayNameFor(model => model.Nombre)
-                </th>
-                <th></th>
-            </tr>
-
-            @foreach (var item in Model)
-            {
-                <tr>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.Nombre)
-                    </td>
-                    <td>
-                        @Html.ActionLink("Edit", "Edit", new { id = item.Id }) |
-                        @Html.ActionLink("Details", "Details", new { id = item.Id }) |
-                        @Html.ActionLink("Delete", "Delete", new { id = item.Id })
-                    </td>
-                </tr>
-            }
-
-        </table>
+<div class="container-fluid px-4 py-5">
+    <div class="row">
+        <div class="col-12">
+            <h2 class="text-center mb-4">Lista de Categorías</h2>
+            <div class="card shadow">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-center mb-3">
+                        <a href="@Url.Action("Create")" class="btn btn-dark" style="width: 15%;">
+                            <i class="fas fa-plus"></i> Crear Categoria
+                        </a>
+                    </div>
+                    <div class="table-responsive">
+                        <table class="table table-hover">
+                            <thead class="thead-light">
+                                <tr>
+                                    <th>@Html.DisplayNameFor(model => model.Nombre)</th>
+                                    <th class="text-end">Acciones</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var item in Model)
+                                {
+                                    <tr>
+                                        <td>@Html.DisplayFor(modelItem => item.Nombre)</td>
+                                        <td class="text-end">
+                                            <div class="btn-group" role="group">
+                                                <a href="@Url.Action("Edit", new { id = item.Id })" class="btn btn-sm btn-outline-primary">
+                                                    <i class="fas fa-edit"></i> Editar
+                                                </a>
+                                                <a href="@Url.Action("Details", new { id = item.Id })" class="btn btn-sm btn-outline-info">
+                                                    <i class="fas fa-info-circle"></i> Detalles
+                                                </a>
+                                                <a href="@Url.Action("Delete", new { id = item.Id })" class="btn btn-sm btn-outline-danger">
+                                                    <i class="fas fa-trash-alt"></i> Eliminar
+                                                </a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
         </div>
-</body>
-</html>
+    </div>
+</div>
+
+<style>
+    .card {
+        border: none;
+        transition: all 0.3s ease;
+    }
+
+        .card:hover {
+            box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+        }
+
+    .table th {
+        font-weight: 600;
+        background-color: #f8f9fa;
+    }
+
+    .btn-group .btn {
+        margin-right: 5px;
+    }
+
+        .btn-group .btn:last-child {
+            margin-right: 0;
+        }
+
+    @@media (max-width: 1068px) {
+        .btn-group {
+            display: flex;
+            flex-direction: column;
+        }
+
+            .btn-group .btn {
+                margin-right: 0;
+                margin-bottom: 5px;
+            }
+    }
+</style>
+
+@section Scripts {
+    <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
+}

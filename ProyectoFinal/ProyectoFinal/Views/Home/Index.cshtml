@@ -52,7 +52,7 @@
                     <a href="@Url.Action("Catalogo", "Productos", new { area = "" })" style="text-decoration: none;">
                         <div class="card">
                             <!-- Tarjeta 1 catalogo -->
-                            <img class="card-img-top" src="https://fahrenheitmagazine.com/sites/default/files/wp-content/uploads/2019/06/bazar_fuison_casa.jpg" alt="catalogo" />
+                            <img class="card-img-top" src="~/Assets/img/CatalogoHomepage.jpg" alt="catalogo" />
                             <div class="card-body">
                                 <p class="card-text" style="font-family: Verdana, sans-serif;">Catalogo</p>
                             </div>
@@ -60,10 +60,10 @@
                     </a>
                 </div>
                 <div class="col-6 my-2">
-                    <a href="@Url.Action("Catalogo", "Productos", new { area = "", categorias = new List<int> { 1 } })" style="text-decoration: none;">
+                    <a href="https://localhost:44316/Catalogo?categorias=1" style="text-decoration: none;">
                         <div class="card">
                             <!-- Tarjeta 2 libreria -->
-                            <img class="card-img-top" src="https://static01.nyt.com/images/2018/07/12/universal/es/LIBRERIASESPA1206/LIBRERIASESPA1206-superJumbo.jpg?quality=90&auto=webp" alt="ventaflash" />
+                            <img class="card-img-top" src="~/Assets/img/LibrosHomepage.jpg" alt="ventaflash" />
                             <div class="card-body">
                                 <p class="card-text" style="font-family: Verdana, sans-serif;">Libreria</p>
                             </div>
@@ -80,7 +80,7 @@
                         <div class="card" id="tarjetaLibros">
                             <img src="@item.imagenAlmacenada" class="card-img-top" alt="@item.nombreProducto" id="imgTarjetaLibros">
                             <div class="card-body" id="contenidoTarjetaLibros">
-                                <h5 class="card-title">@item.nombreProducto</h5>
+                                <h5 class="card-title" style="font-size: 20px">@item.nombreProducto</h5>
                                 <p class="card-text"><strong>Precio:</strong> ₡@item.precioProducto</p>
                                 <div class="grupo-boton">
                                     @Html.ActionLink("Agregar al Carrito", "AgregarAlCarrito", "CarritoDeCompras", new { productoId = item.id_producto }, new { @class = "btn btn-dark btn-sm" })
