@@ -1,0 +1,39 @@
+﻿@model ProyectoFinal.Models.RegistroCompra
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Confirmación de Compra</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-4">
+        <h2>Confirmación de Compra</h2>
+        <p><strong>Fecha de Compra:</strong> @Model.FechaCompra.ToString("dd/MM/yyyy HH:mm:ss")</p>
+        <p><strong>Monto Total:</strong> ₡@Model.MontoTotal.ToString("N2")</p>
+
+        <table class="table table-bordered table-striped">
+            <thead>
+                <tr>
+                    <th>Producto</th>
+                    <th>Cantidad</th>
+                    <th>Precio Unitario</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var detalle in Model.Detalles)
+                {
+                    <tr>
+                        <td>@detalle.Producto.nombreProducto</td>
+                        <td>@detalle.Cantidad</td>
+                        <td>₡@detalle.Producto.precioProducto.ToString("N2")</td>
+                        <td>₡@(detalle.Cantidad * detalle.Producto.precioProducto).ToString("N2")</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+        <a href="@Url.Action("Index", "Home")" class="btn btn-primary">Volver a la Página Inicial</a>
+    </div>
+</body>
+</html>

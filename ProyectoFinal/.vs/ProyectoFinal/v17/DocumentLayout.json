@@ -1,17 +1,41 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\ferva\\OneDrive\\Escritorio\\@Repositorios-Github\\ProyectoProgramacionAvanzada\\ProyectoFinal\\",
+  "WorkspaceRootPath": "D:\\github\\ProyectoFinalProgramacionAvanzada\\ProyectoProgramacionAvanzada\\ProyectoFinal\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{DAEC6BB0-2C87-416B-9FCE-AE589F4A2A45}|ProyectoFinal\\ProyectoFinal.csproj|c:\\users\\ferva\\onedrive\\escritorio\\@repositorios-github\\proyectoprogramacionavanzada\\proyectofinal\\proyectofinal\\views\\productos\\catalogo.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{DAEC6BB0-2C87-416B-9FCE-AE589F4A2A45}|ProyectoFinal\\ProyectoFinal.csproj|solutionrelative:proyectofinal\\views\\productos\\catalogo.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DAEC6BB0-2C87-416B-9FCE-AE589F4A2A45}|ProyectoFinal\\ProyectoFinal.csproj|C:\\Users\\ferva\\OneDrive\\Escritorio\\@Repositorios-Github\\ProyectoProgramacionAvanzada\\ProyectoFinal\\proyectofinal\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{DAEC6BB0-2C87-416B-9FCE-AE589F4A2A45}|ProyectoFinal\\ProyectoFinal.csproj|D:\\github\\ProyectoFinalProgramacionAvanzada\\ProyectoProgramacionAvanzada\\ProyectoFinal\\proyectofinal\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{DAEC6BB0-2C87-416B-9FCE-AE589F4A2A45}|ProyectoFinal\\ProyectoFinal.csproj|solutionrelative:proyectofinal\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DAEC6BB0-2C87-416B-9FCE-AE589F4A2A45}|ProyectoFinal\\ProyectoFinal.csproj|C:\\Users\\ferva\\OneDrive\\Escritorio\\@Repositorios-Github\\ProyectoProgramacionAvanzada\\ProyectoFinal\\proyectofinal\\views\\productos\\infoproducto.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{DAEC6BB0-2C87-416B-9FCE-AE589F4A2A45}|ProyectoFinal\\ProyectoFinal.csproj|d:\\github\\proyectofinalprogramacionavanzada\\proyectoprogramacionavanzada\\proyectofinal\\proyectofinal\\views\\carritodecompras\\confirmacioncompra.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DAEC6BB0-2C87-416B-9FCE-AE589F4A2A45}|ProyectoFinal\\ProyectoFinal.csproj|solutionrelative:proyectofinal\\views\\carritodecompras\\confirmacioncompra.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DAEC6BB0-2C87-416B-9FCE-AE589F4A2A45}|ProyectoFinal\\ProyectoFinal.csproj|d:\\github\\proyectofinalprogramacionavanzada\\proyectoprogramacionavanzada\\proyectofinal\\proyectofinal\\models\\carritodecompras.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DAEC6BB0-2C87-416B-9FCE-AE589F4A2A45}|ProyectoFinal\\ProyectoFinal.csproj|solutionrelative:proyectofinal\\models\\carritodecompras.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DAEC6BB0-2C87-416B-9FCE-AE589F4A2A45}|ProyectoFinal\\ProyectoFinal.csproj|d:\\github\\proyectofinalprogramacionavanzada\\proyectoprogramacionavanzada\\proyectofinal\\proyectofinal\\models\\registrocompra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DAEC6BB0-2C87-416B-9FCE-AE589F4A2A45}|ProyectoFinal\\ProyectoFinal.csproj|solutionrelative:proyectofinal\\models\\registrocompra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DAEC6BB0-2C87-416B-9FCE-AE589F4A2A45}|ProyectoFinal\\ProyectoFinal.csproj|d:\\github\\proyectofinalprogramacionavanzada\\proyectoprogramacionavanzada\\proyectofinal\\proyectofinal\\migrations\\202408180149248_actualizarmodelo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DAEC6BB0-2C87-416B-9FCE-AE589F4A2A45}|ProyectoFinal\\ProyectoFinal.csproj|solutionrelative:proyectofinal\\migrations\\202408180149248_actualizarmodelo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DAEC6BB0-2C87-416B-9FCE-AE589F4A2A45}|ProyectoFinal\\ProyectoFinal.csproj|d:\\github\\proyectofinalprogramacionavanzada\\proyectoprogramacionavanzada\\proyectofinal\\proyectofinal\\controllers\\carritodecomprascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DAEC6BB0-2C87-416B-9FCE-AE589F4A2A45}|ProyectoFinal\\ProyectoFinal.csproj|solutionrelative:proyectofinal\\controllers\\carritodecomprascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DAEC6BB0-2C87-416B-9FCE-AE589F4A2A45}|ProyectoFinal\\ProyectoFinal.csproj|d:\\github\\proyectofinalprogramacionavanzada\\proyectoprogramacionavanzada\\proyectofinal\\proyectofinal\\views\\productos\\catalogo.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DAEC6BB0-2C87-416B-9FCE-AE589F4A2A45}|ProyectoFinal\\ProyectoFinal.csproj|solutionrelative:proyectofinal\\views\\productos\\catalogo.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DAEC6BB0-2C87-416B-9FCE-AE589F4A2A45}|ProyectoFinal\\ProyectoFinal.csproj|d:\\github\\proyectofinalprogramacionavanzada\\proyectoprogramacionavanzada\\proyectofinal\\proyectofinal\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{DAEC6BB0-2C87-416B-9FCE-AE589F4A2A45}|ProyectoFinal\\ProyectoFinal.csproj|solutionrelative:proyectofinal\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DAEC6BB0-2C87-416B-9FCE-AE589F4A2A45}|ProyectoFinal\\ProyectoFinal.csproj|D:\\github\\ProyectoFinalProgramacionAvanzada\\ProyectoProgramacionAvanzada\\ProyectoFinal\\proyectofinal\\views\\productos\\infoproducto.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{DAEC6BB0-2C87-416B-9FCE-AE589F4A2A45}|ProyectoFinal\\ProyectoFinal.csproj|solutionrelative:proyectofinal\\views\\productos\\infoproducto.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
@@ -22,12 +46,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 55,
+          "SelectedChildIndex": 62,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:12:0:{2456bd12-ecf7-4988-a4a6-67d49173f565}"
@@ -226,6 +246,10 @@
             },
             {
               "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
@@ -246,36 +270,115 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
+              "Title": "202408180149248_ActualizarModelo.cs",
+              "DocumentMoniker": "D:\\github\\ProyectoFinalProgramacionAvanzada\\ProyectoProgramacionAvanzada\\ProyectoFinal\\ProyectoFinal\\Migrations\\202408180149248_ActualizarModelo.cs",
+              "RelativeDocumentMoniker": "ProyectoFinal\\Migrations\\202408180149248_ActualizarModelo.cs",
+              "ToolTip": "D:\\github\\ProyectoFinalProgramacionAvanzada\\ProyectoProgramacionAvanzada\\ProyectoFinal\\ProyectoFinal\\Migrations\\202408180149248_ActualizarModelo.cs",
+              "RelativeToolTip": "ProyectoFinal\\Migrations\\202408180149248_ActualizarModelo.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-18T01:49:29.348Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "CarritoDeComprasController.cs",
+              "DocumentMoniker": "D:\\github\\ProyectoFinalProgramacionAvanzada\\ProyectoProgramacionAvanzada\\ProyectoFinal\\ProyectoFinal\\Controllers\\CarritoDeComprasController.cs",
+              "RelativeDocumentMoniker": "ProyectoFinal\\Controllers\\CarritoDeComprasController.cs",
+              "ToolTip": "D:\\github\\ProyectoFinalProgramacionAvanzada\\ProyectoProgramacionAvanzada\\ProyectoFinal\\ProyectoFinal\\Controllers\\CarritoDeComprasController.cs",
+              "RelativeToolTip": "ProyectoFinal\\Controllers\\CarritoDeComprasController.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-18T01:48:34.616Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CarritoDeCompras.cs",
+              "DocumentMoniker": "D:\\github\\ProyectoFinalProgramacionAvanzada\\ProyectoProgramacionAvanzada\\ProyectoFinal\\ProyectoFinal\\models\\CarritoDeCompras.cs",
+              "RelativeDocumentMoniker": "ProyectoFinal\\models\\CarritoDeCompras.cs",
+              "ToolTip": "D:\\github\\ProyectoFinalProgramacionAvanzada\\ProyectoProgramacionAvanzada\\ProyectoFinal\\ProyectoFinal\\models\\CarritoDeCompras.cs",
+              "RelativeToolTip": "ProyectoFinal\\models\\CarritoDeCompras.cs",
+              "ViewState": "AQIAABIAAAAAAAAAAAAmwCkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-18T00:08:38.194Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "RegistroCompra.cs",
+              "DocumentMoniker": "D:\\github\\ProyectoFinalProgramacionAvanzada\\ProyectoProgramacionAvanzada\\ProyectoFinal\\ProyectoFinal\\models\\RegistroCompra.cs",
+              "RelativeDocumentMoniker": "ProyectoFinal\\models\\RegistroCompra.cs",
+              "ToolTip": "D:\\github\\ProyectoFinalProgramacionAvanzada\\ProyectoProgramacionAvanzada\\ProyectoFinal\\ProyectoFinal\\models\\RegistroCompra.cs",
+              "RelativeToolTip": "ProyectoFinal\\models\\RegistroCompra.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-18T00:08:26.917Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ConfirmacionCompra.cshtml",
+              "DocumentMoniker": "D:\\github\\ProyectoFinalProgramacionAvanzada\\ProyectoProgramacionAvanzada\\ProyectoFinal\\ProyectoFinal\\Views\\CarritoDeCompras\\ConfirmacionCompra.cshtml",
+              "RelativeDocumentMoniker": "ProyectoFinal\\Views\\CarritoDeCompras\\ConfirmacionCompra.cshtml",
+              "ToolTip": "D:\\github\\ProyectoFinalProgramacionAvanzada\\ProyectoProgramacionAvanzada\\ProyectoFinal\\ProyectoFinal\\Views\\CarritoDeCompras\\ConfirmacionCompra.cshtml",
+              "RelativeToolTip": "ProyectoFinal\\Views\\CarritoDeCompras\\ConfirmacionCompra.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACMAAABlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-17T23:46:16.624Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Web.config",
+              "DocumentMoniker": "D:\\github\\ProyectoFinalProgramacionAvanzada\\ProyectoProgramacionAvanzada\\ProyectoFinal\\ProyectoFinal\\Web.config",
+              "RelativeDocumentMoniker": "ProyectoFinal\\Web.config",
+              "ToolTip": "D:\\github\\ProyectoFinalProgramacionAvanzada\\ProyectoProgramacionAvanzada\\ProyectoFinal\\ProyectoFinal\\Web.config",
+              "RelativeToolTip": "ProyectoFinal\\Web.config",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAC8AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2024-08-17T22:34:40.322Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "Catalogo.cshtml",
-              "DocumentMoniker": "C:\\Users\\ferva\\OneDrive\\Escritorio\\@Repositorios-Github\\ProyectoProgramacionAvanzada\\ProyectoFinal\\ProyectoFinal\\Views\\Productos\\Catalogo.cshtml",
+              "DocumentMoniker": "D:\\github\\ProyectoFinalProgramacionAvanzada\\ProyectoProgramacionAvanzada\\ProyectoFinal\\ProyectoFinal\\Views\\Productos\\Catalogo.cshtml",
               "RelativeDocumentMoniker": "ProyectoFinal\\Views\\Productos\\Catalogo.cshtml",
-              "ToolTip": "C:\\Users\\ferva\\OneDrive\\Escritorio\\@Repositorios-Github\\ProyectoProgramacionAvanzada\\ProyectoFinal\\ProyectoFinal\\Views\\Productos\\Catalogo.cshtml",
+              "ToolTip": "D:\\github\\ProyectoFinalProgramacionAvanzada\\ProyectoProgramacionAvanzada\\ProyectoFinal\\ProyectoFinal\\Views\\Productos\\Catalogo.cshtml",
               "RelativeToolTip": "ProyectoFinal\\Views\\Productos\\Catalogo.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAFwAAAAZAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAFwAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-08-17T20:30:16.04Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\ferva\\OneDrive\\Escritorio\\@Repositorios-Github\\ProyectoProgramacionAvanzada\\ProyectoFinal\\ProyectoFinal\\Views\\Home\\Index.cshtml",
+              "DocumentMoniker": "D:\\github\\ProyectoFinalProgramacionAvanzada\\ProyectoProgramacionAvanzada\\ProyectoFinal\\ProyectoFinal\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "ProyectoFinal\\Views\\Home\\Index.cshtml",
-              "ToolTip": "C:\\Users\\ferva\\OneDrive\\Escritorio\\@Repositorios-Github\\ProyectoProgramacionAvanzada\\ProyectoFinal\\ProyectoFinal\\Views\\Home\\Index.cshtml",
+              "ToolTip": "D:\\github\\ProyectoFinalProgramacionAvanzada\\ProyectoProgramacionAvanzada\\ProyectoFinal\\ProyectoFinal\\Views\\Home\\Index.cshtml",
               "RelativeToolTip": "ProyectoFinal\\Views\\Home\\Index.cshtml",
-              "ViewState": "AQIAACoAAAAAAAAAAAAAADUAAAA3AAAA",
+              "ViewState": "AQIAABIAAAAAAAAAAAAAAGsAAAAmAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-08-17T20:10:51.171Z"
+              "WhenOpened": "2024-08-17T20:10:51.171Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 8,
               "Title": "InfoProducto.cshtml",
-              "DocumentMoniker": "C:\\Users\\ferva\\OneDrive\\Escritorio\\@Repositorios-Github\\ProyectoProgramacionAvanzada\\ProyectoFinal\\ProyectoFinal\\Views\\Productos\\InfoProducto.cshtml",
+              "DocumentMoniker": "D:\\github\\ProyectoFinalProgramacionAvanzada\\ProyectoProgramacionAvanzada\\ProyectoFinal\\ProyectoFinal\\Views\\Productos\\InfoProducto.cshtml",
               "RelativeDocumentMoniker": "ProyectoFinal\\Views\\Productos\\InfoProducto.cshtml",
-              "ToolTip": "C:\\Users\\ferva\\OneDrive\\Escritorio\\@Repositorios-Github\\ProyectoProgramacionAvanzada\\ProyectoFinal\\ProyectoFinal\\Views\\Productos\\InfoProducto.cshtml",
+              "ToolTip": "D:\\github\\ProyectoFinalProgramacionAvanzada\\ProyectoProgramacionAvanzada\\ProyectoFinal\\ProyectoFinal\\Views\\Productos\\InfoProducto.cshtml",
               "RelativeToolTip": "ProyectoFinal\\Views\\Productos\\InfoProducto.cshtml",
               "ViewState": "AQIAAAQAAAAAAAAAAAAuwCMAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -289,11 +392,11 @@
           "Children": [
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{4a9b7e51-aa16-11d0-a8c5-00a0c921a4d2}"
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+              "Name": "ST:0:0:{4a9b7e51-aa16-11d0-a8c5-00a0c921a4d2}"
             }
           ]
         }

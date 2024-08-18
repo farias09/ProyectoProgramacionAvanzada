@@ -14,7 +14,7 @@ namespace ProyectoFinal.Models
         public string codigoProducto { get; set; }
         public string nombreProducto { get; set; }
         public string descripcion { get; set; }
-        public float precioProducto { get; set; }
+        public decimal precioProducto { get; set; }
         public int disponibilidadInventario { get; set; }
         public string imagenAlmacenada { get; set; }
         public bool estadoProducto { get; set; }

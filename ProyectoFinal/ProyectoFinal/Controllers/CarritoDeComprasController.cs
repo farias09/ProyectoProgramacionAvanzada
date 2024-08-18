@@ -159,7 +159,7 @@ namespace ProyectoFinal.Controllers
         public ActionResult AgregarAlCarrito(int productoId)
         {
             // Obtener el producto desde la base de datos 
-            Productos producto = db.Productos.Find(productoId); 
+            Productos producto = db.Productos.Find(productoId);
 
             if (producto != null)
             {
@@ -190,6 +190,58 @@ namespace ProyectoFinal.Controllers
 
             // Redirigir de vuelta al índice del carrito
             return RedirectToAction("Index");
+        }
+
+        [HttpPost]
+        public ActionResult ConfirmacionCompra()
+        {
+            var carrito = ObtenerCarritoDeLaSesion();
+            if (carrito == null || carrito.Items.Count == 0)
+            {
+                // Maneja el caso donde el carrito está vacío
+                return RedirectToAction("Index", "Home");
+            }
+
+            var registroCompra = ProcesarPedido(carrito);
+
+            // Limpiar el carrito de la sesión después de la compra
+            Session[CarritoSessionKey] = null;
+
+            // Pasar el modelo a la vista
+            return View("ConfirmacionCompra", registroCompra);
+        }
+
+
+        private RegistroCompra ProcesarPedido(CarritoDeCompras carrito)
+        {
+            var registroCompra = new RegistroCompra
+            {
+                FechaCompra = DateTime.Now,
+                MontoTotal = Convert.ToDecimal(carrito.montoTotal),
+                Detalles = new List<DetalleCompra>()
+            };
+
+            foreach (var item in carrito.Items)
+            {
+                var producto = db.Productos.Find(item.Producto.id_producto);
+                if (producto != null)
+                {
+                    var detalle = new DetalleCompra
+                    {
+                        ProductoId = producto.id_producto,
+                        Cantidad = item.Cantidad,
+                        RegistroCompra = registroCompra,
+                        Producto = producto // Asegúrate de incluir el producto completo
+                    };
+
+                    registroCompra.Detalles.Add(detalle);
+                }
+            }
+
+            db.RegistroCompras.Add(registroCompra);
+            db.SaveChanges();
+
+            return registroCompra;
         }
     }
 }
