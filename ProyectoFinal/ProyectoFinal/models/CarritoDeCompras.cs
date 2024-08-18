@@ -12,7 +12,7 @@ namespace ProyectoFinal.Models
         [Key]
         public int id_carritoCompra { get; set; }
         public int cantidad { get; set; }
-        public float montoTotal { get; set; }
+        public decimal montoTotal { get; set; }
         public DateTime fechaCompra { get; set; }
         public int id_usuario { get; set; }
         public int id_producto { get; set; }
@@ -37,6 +37,9 @@ namespace ProyectoFinal.Models
             {
                 Items.Add(new ItemDeCarrito { Producto = producto, Cantidad = 1 });
             }
+
+            montoTotal = Items.Sum(i => i.Cantidad * i.Producto.precioProducto);
+
         }
 
         public void EliminarProducto(int productoId)
@@ -46,6 +49,7 @@ namespace ProyectoFinal.Models
             {
                 Items.Remove(item);
             }
+            montoTotal = Items.Sum(i => i.Cantidad * i.Producto.precioProducto);
         }
     }
     

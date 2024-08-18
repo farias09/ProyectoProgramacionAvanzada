@@ -158,14 +158,32 @@
     <Compile Include="Migrations\202408072321544_AgregarTituloModelReseñas.Designer.cs">
       <DependentUpon>202408072321544_AgregarTituloModelReseñas.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202408180012272_AgregarRegistroCompra.cs" />
+    <Compile Include="Migrations\202408180012272_AgregarRegistroCompra.Designer.cs">
+      <DependentUpon>202408180012272_AgregarRegistroCompra.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202408180034281_AgregarDetalleCompra.cs" />
+    <Compile Include="Migrations\202408180034281_AgregarDetalleCompra.Designer.cs">
+      <DependentUpon>202408180034281_AgregarDetalleCompra.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202408180144116_CambiarPrecioProductoADecimal.cs" />
+    <Compile Include="Migrations\202408180144116_CambiarPrecioProductoADecimal.Designer.cs">
+      <DependentUpon>202408180144116_CambiarPrecioProductoADecimal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202408180149248_ActualizarModelo.cs" />
+    <Compile Include="Migrations\202408180149248_ActualizarModelo.Designer.cs">
+      <DependentUpon>202408180149248_ActualizarModelo.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AplicationDbContext.cs" />
     <Compile Include="Models\CarritoDeCompras.cs" />
     <Compile Include="Models\Categorias.cs" />
+    <Compile Include="Models\DetalleCompra.cs" />
     <Compile Include="Models\HistorialDePedidos.cs" />
     <Compile Include="Models\LoginViewModel.cs" />
     <Compile Include="Models\Pago.cs" />
     <Compile Include="Models\Productos.cs" />
+    <Compile Include="Models\RegistroCompra.cs" />
     <Compile Include="Models\Reseñas.cs" />
     <Compile Include="Models\Roles.cs" />
     <Compile Include="Models\Usuarios.cs" />
@@ -280,6 +298,8 @@
     <Content Include="Views\Account\Register.cshtml" />
     <Content Include="Views\Account\Login.cshtml" />
     <Content Include="Views\Pago\Checkout.cshtml" />
+    <Content Include="Views\CarritoDeCompras\ConfirmacionCompra.cshtml" />
+    <Content Include="Views\CarritoDeCompras\GraciasPorTuCompra.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -329,6 +349,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202408072321544_AgregarTituloModelReseñas.resx">
       <DependentUpon>202408072321544_AgregarTituloModelReseñas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202408180012272_AgregarRegistroCompra.resx">
+      <DependentUpon>202408180012272_AgregarRegistroCompra.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202408180034281_AgregarDetalleCompra.resx">
+      <DependentUpon>202408180034281_AgregarDetalleCompra.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202408180144116_CambiarPrecioProductoADecimal.resx">
+      <DependentUpon>202408180144116_CambiarPrecioProductoADecimal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202408180149248_ActualizarModelo.resx">
+      <DependentUpon>202408180149248_ActualizarModelo.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

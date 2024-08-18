@@ -23,7 +23,7 @@ namespace ProyectoFinal.Controllers
             Pago model = new Pago
             {
                 Items = carrito.Items,
-                MontoTotal = carrito.Items.Sum(i => i.Producto.precioProducto * i.Cantidad)
+               //MontoTotal = Items.Sum(i => i.Cantidad * i.Producto.precioProducto);
             };
 
             return View(model);

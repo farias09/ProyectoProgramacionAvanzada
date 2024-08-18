@@ -68,9 +68,10 @@
             </tbody>
         </table>
         <div class="mt-4">
-            <form action="@Url.Action("Checkout", "Pago")" method="get">
-                <button type="submit" class="btn btn-primary btn-lg btn-block">Completar Compra</button>
+            <form action="@Url.Action("ConfirmacionCompra", "CarritoDeCompras")" method="post">
+                <button type="submit">Confirmar Compra</button>
             </form>
+
         </div>
     }
     <br />
