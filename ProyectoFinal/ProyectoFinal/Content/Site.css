@@ -180,3 +180,7 @@ footer {
     background-color: #f8f9fa; 
     flex: 1;
 }
+
+.card-header-custom {
+    background-color: #B5936F;
+    color: white;

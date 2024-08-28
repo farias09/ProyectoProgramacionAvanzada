@@ -1,0 +1,103 @@
+﻿@model ProyectoFinal.Models.Usuarios
+
+<div class="container mt-5">
+    <div class="row">
+        <!-- Sección de información del perfil -->
+        <div class="col-md-4">
+            <div class="card text-center">
+                <img src="@Model.FotoPerfilUrl" class="card-img-top rounded-circle mx-auto mt-4" style="width: 150px; height: 150px;" alt="Foto de perfil">
+                <div class="card-body">
+                    <h4 class="card-title">@Model.nombreUsuario</h4>
+                    <p class="card-text">@Model.Biografia</p>
+                    <a href="@Url.Action("Edit", "Usuarios", new { id = Model.id_usuario })" class="btn btn-primary">Editar perfil</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sección de historial de compras -->
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-header card-header-custom">
+                    Historial de Compras
+                </div>
+                <div class="card-body">
+                    @if (Model.RegistroCompra != null && Model.RegistroCompra.Any())
+                    {
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>Fecha</th>
+                                    <th>Monto Total</th>
+                                    <th>Productos</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var compra in Model.RegistroCompra)
+                                {
+                                    <tr>
+                                        <td>@compra.FechaCompra.ToString("dd/MM/yyyy")</td>
+                                        <td>@compra.MontoTotal.ToString("C")</td>
+                                        <td>
+                                            <ul>
+                                                @foreach (var detalle in compra.Detalles)
+                                                {
+                                                    <li>@detalle.Producto.nombreProducto - @detalle.Cantidad</li>
+                                                }
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    }
+                    else
+                    {
+                        <p>No hay compras registradas.</p>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sección de Dirección Principal -->
+    <div class="row mt-4">
+        <div class="col-md-12">
+            <div class="card">
+                <div class="card-header card-header-custom">
+                    Dirección Principal
+                </div>
+                <div class="card-body">
+                    @if (Model.DireccionPrincipal == null)
+                    {
+                        <p>No se ha configurado un método de pago.</p>
+                    }
+                    else
+                    {
+                        <p>@Model.DireccionPrincipal</p>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sección de Método de Pago -->
+    <div class="row mt-4">
+        <div class="col-md-12">
+            <div class="card">
+                <div class="card-header card-header-custom">
+                    Método de Pago
+                </div>
+                <div class="card-body">
+                    @if (Model.MetodoDePago == null)
+                    {
+                        <p>No se ha configurado un método de pago.</p>
+                    }
+                    else
+                    {
+                        <p>@Model.MetodoDePago</p>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
