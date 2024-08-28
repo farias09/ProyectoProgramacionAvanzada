@@ -26,11 +26,6 @@ namespace ProyectoFinal.Models
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<Roles>()
-                .HasRequired(r => r.Usuario)
-                .WithMany(u => u.Roles)
-                .HasForeignKey(r => r.id_usuario)
-                .WillCascadeOnDelete(true);
 
             modelBuilder.Entity<Reseñas>()
                 .HasRequired(r => r.Usuario)
@@ -48,12 +43,6 @@ namespace ProyectoFinal.Models
                 .HasRequired(c => c.Usuario)
                 .WithMany(u => u.CarritoDeCompras)
                 .HasForeignKey(c => c.id_usuario)
-                .WillCascadeOnDelete(false);
-
-            modelBuilder.Entity<HistorialDePedidos>()
-                .HasRequired(h => h.Usuario)
-                .WithMany(u => u.HistorialDePedidos)
-                .HasForeignKey(h => h.id_usuario)
                 .WillCascadeOnDelete(false);
 
             modelBuilder.Entity<HistorialDePedidos>()

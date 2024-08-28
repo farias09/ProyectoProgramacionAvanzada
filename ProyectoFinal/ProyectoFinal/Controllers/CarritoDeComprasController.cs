@@ -19,6 +19,22 @@ namespace ProyectoFinal.Controllers
         // GET: CarritoDeCompras
         public ActionResult Index()
         {
+
+            if (User.Identity.IsAuthenticated)
+            {
+                var userName = User.Identity.Name;
+
+                // Verificar si el nombre de usuario se puede usar para buscar al usuario en la base de datos
+                var usuario = db.Usuarios
+                    .SingleOrDefault(u => u.codigoUsuario == userName);
+
+                if (usuario != null)
+                {
+                    ViewBag.UserName = usuario.nombreUsuario;
+                    ViewBag.RolID = usuario.ID_Rol;
+                }
+            }
+
             CarritoDeCompras carrito = ObtenerCarritoDeLaSesion();
             return View(carrito.Items);
         }
@@ -214,10 +230,29 @@ namespace ProyectoFinal.Controllers
 
         private RegistroCompra ProcesarPedido(CarritoDeCompras carrito)
         {
+            // Obtener el nombre de usuario del usuario autenticado
+            var userName = User.Identity.Name;
+
+            if (string.IsNullOrEmpty(userName))
+            {
+                // Maneja el caso en que el usuario no está autenticado
+                throw new InvalidOperationException("Usuario no autenticado.");
+            }
+
+            // Buscar el usuario en la base de datos usando el nombre de usuario
+            var usuario = db.Usuarios.SingleOrDefault(u => u.codigoUsuario == userName);
+
+            if (usuario == null)
+            {
+                // Maneja el caso en que el usuario no se encuentra
+                throw new InvalidOperationException("Usuario no encontrado.");
+            }
+
             var registroCompra = new RegistroCompra
             {
                 FechaCompra = DateTime.Now,
                 MontoTotal = Convert.ToDecimal(carrito.montoTotal),
+                UsuarioId = usuario.id_usuario, // Asignar el ID del usuario autenticado
                 Detalles = new List<DetalleCompra>()
             };
 
@@ -231,7 +266,7 @@ namespace ProyectoFinal.Controllers
                         ProductoId = producto.id_producto,
                         Cantidad = item.Cantidad,
                         RegistroCompra = registroCompra,
-                        Producto = producto // Asegúrate de incluir el producto completo
+                        Producto = producto 
                     };
 
                     registroCompra.Detalles.Add(detalle);
@@ -243,5 +278,6 @@ namespace ProyectoFinal.Controllers
 
             return registroCompra;
         }
+
     }
 }

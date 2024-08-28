@@ -15,105 +15,112 @@
         height: auto;
         margin-bottom: 10px;
     }
+
     .card-text {
         font-size: 18px;
         margin-bottom: 1rem;
     }
+
+    .admin-section {
+        margin-top: 20px;
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        background-color: #f8f9fa;
+    }
+
+        .admin-section h3 {
+            margin-top: 0;
+        }
 </style>
 
 <main>
     <div class="body-content">
-            
-            <div class="container mt-4">
-                <div class="row">
-                    <!-- Imagen grande a la izquierda -->
-                    <div class="col-md-8">
-                        <img src="~/Assets/img/BazarImg1.png" alt="Rayuela Promocion" class="small-image">
-                    </div>
-                    <!-- Imágenes pequeñas a la derecha -->
-                    <div class="col-md-4">
-                        <div class="d-flex flex-column align-items-start">
-                            <img src="~/Assets/img/Libro2.png" alt="Libro 2" class="small-image">
-                            <img src="~/Assets/img/Libro3.png" alt="Libro 3" class="small-image">
-                            <img src="~/Assets/img/Libro4.png" alt="Libro 4" class="small-image">
-                        </div>
+        <div class="container mt-4">
+            <div class="row">
+                <!-- Imagen grande a la izquierda -->
+                <div class="col-md-8">
+                    <img src="~/Assets/img/BazarImg1.png" alt="Rayuela Promocion" class="small-image">
+                </div>
+                <!-- Imágenes pequeñas a la derecha -->
+                <div class="col-md-4">
+                    <div class="d-flex flex-column align-items-start">
+                        <img src="~/Assets/img/Libro2.png" alt="Libro 2" class="small-image">
+                        <img src="~/Assets/img/Libro3.png" alt="Libro 3" class="small-image">
+                        <img src="~/Assets/img/Libro4.png" alt="Libro 4" class="small-image">
                     </div>
                 </div>
             </div>
+        </div>
 
-            <div class="row">
-                <div id="tarjetas-section" class="col-md-9">
-                    <!-- Titulo principal para la pagina -->
-                    <h1><b>Lo nuevo para ti</b></h1>
-                </div>
+        <div class="row">
+            <div id="tarjetas-section" class="col-md-9">
+                <h1><b>Lo nuevo para ti</b></h1>
             </div>
-            <div class="row">
-                <div class="col-6 my-2">
-                    <a href="@Url.Action("Catalogo", "Productos", new { area = "" })" style="text-decoration: none;">
-                        <div class="card">
-                            <!-- Tarjeta 1 catalogo -->
-                            <img class="card-img-top" src="~/Assets/img/CatalogoHomepage.jpg" alt="catalogo" />
-                            <div class="card-body">
-                                <p class="card-text" style="font-family: Verdana, sans-serif;">Catalogo</p>
-                            </div>
+        </div>
+        <div class="row">
+            <div class="col-6 my-2">
+                <a href="@Url.Action("Catalogo", "Productos", new { area = "" })" style="text-decoration: none;">
+                    <div class="card">
+                        <!-- Tarjeta 1 catalogo -->
+                        <img class="card-img-top" src="~/Assets/img/CatalogoHomepage.jpg" alt="catalogo" />
+                        <div class="card-body">
+                            <p class="card-text" style="font-family: Verdana, sans-serif;">Catalogo</p>
                         </div>
-                    </a>
-                </div>
-                <div class="col-6 my-2">
-                    <a href="https://localhost:44316/Catalogo?categorias=1" style="text-decoration: none;">
-                        <div class="card">
-                            <!-- Tarjeta 2 libreria -->
-                            <img class="card-img-top" src="~/Assets/img/LibrosHomepage.jpg" alt="ventaflash" />
-                            <div class="card-body">
-                                <p class="card-text" style="font-family: Verdana, sans-serif;">Libreria</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
+                    </div>
+                </a>
             </div>
+            <div class="col-6 my-2">
+                <a href="https://localhost:44316/Catalogo?categorias=1" style="text-decoration: none;">
+                    <div class="card">
+                        <!-- Tarjeta 2 libreria -->
+                        <img class="card-img-top" src="~/Assets/img/LibrosHomepage.jpg" alt="ventaflash" />
+                        <div class="card-body">
+                            <p class="card-text" style="font-family: Verdana, sans-serif;">Libreria</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
 
-            <div id="contenedor1">
-                <h2>Libros Disponibles</h2>
-                <div id="contenedor-libros">
-                    @foreach (var item in Model)
-                    {
-                        <div class="card" id="tarjetaLibros">
-                            <img src="@item.imagenAlmacenada" class="card-img-top" alt="@item.nombreProducto" id="imgTarjetaLibros">
-                            <div class="card-body" id="contenidoTarjetaLibros">
-                                <h5 class="card-title" style="font-size: 20px">@item.nombreProducto</h5>
-                                <p class="card-text"><strong>Precio:</strong> ₡@item.precioProducto</p>
-                                <div class="grupo-boton">
-                                    @Html.ActionLink("Agregar al Carrito", "AgregarAlCarrito", "CarritoDeCompras", new { productoId = item.id_producto }, new { @class = "btn btn-dark btn-sm" })
-                                    <a href="@Url.RouteUrl("InfoProducto", new { id = item.id_producto })" class="btn btn-primary btn-sm">Ver Mas</a>
-                                </div>
+        <div id="contenedor1">
+            <h2>Libros Disponibles</h2>
+            <div id="contenedor-libros">
+                @foreach (var item in Model)
+                {
+                    <div class="card" id="tarjetaLibros">
+                        <img src="@item.imagenAlmacenada" class="card-img-top" alt="@item.nombreProducto" id="imgTarjetaLibros">
+                        <div class="card-body" id="contenidoTarjetaLibros">
+                            <h5 class="card-title" style="font-size: 20px">@item.nombreProducto</h5>
+                            <p class="card-text"><strong>Precio:</strong> ₡@item.precioProducto</p>
+                            <div class="grupo-boton">
+                                @Html.ActionLink("Agregar al Carrito", "AgregarAlCarrito", "CarritoDeCompras", new { productoId = item.id_producto }, new { @class = "btn btn-dark btn-sm" })
+                                <a href="@Url.RouteUrl("InfoProducto", new { id = item.id_producto })" class="btn btn-primary btn-sm">Ver Mas</a>
                             </div>
                         </div>
-                    }
-                </div>
+                    </div>
+                }
             </div>
+        </div>
 
-            <div id="contenedor2">
-                <h2>Productos Recientes</h2>
-                <div id="contenedor-productos-recientes">
-                    @foreach (var item in ViewBag.ProductosRecientes)
-                    {
-                        <div class="card" id="tarjetaProducto">
-                            <img src="@item.imagenAlmacenada" class="card-img-top" alt="@item.nombreProducto" id="imgTarjetaProducto">
-                            <div class="card-body" id="contenidoTarjetaProducto">
-                                <h5 class="card-title">@item.nombreProducto</h5>
-                                <p class="card-text"><strong>Precio:</strong> ₡@item.precioProducto</p>
-                                <div class="grupo-boton">
-                                    @Html.ActionLink("Agregar al Carrito", "AgregarAlCarrito", "CarritoDeCompras", new { productoId = item.id_producto }, new { @class = "btn btn-dark btn-sm" })
-                                    <a href="@Url.RouteUrl("InfoProducto", new { id = item.id_producto })" class="btn btn-primary btn-sm">Ver Mas</a>
-                                </div>
+        <div id="contenedor2">
+            <h2>Productos Recientes</h2>
+            <div id="contenedor-productos-recientes">
+                @foreach (var item in ViewBag.ProductosRecientes)
+                {
+                    <div class="card" id="tarjetaProducto">
+                        <img src="@item.imagenAlmacenada" class="card-img-top" alt="@item.nombreProducto" id="imgTarjetaProducto">
+                        <div class="card-body" id="contenidoTarjetaProducto">
+                            <h5 class="card-title">@item.nombreProducto</h5>
+                            <p class="card-text"><strong>Precio:</strong> ₡@item.precioProducto</p>
+                            <div class="grupo-boton">
+                                @Html.ActionLink("Agregar al Carrito", "AgregarAlCarrito", "CarritoDeCompras", new { productoId = item.id_producto }, new { @class = "btn btn-dark btn-sm" })
+                                <a href="@Url.RouteUrl("InfoProducto", new { id = item.id_producto })" class="btn btn-primary btn-sm">Ver Mas</a>
                             </div>
                         </div>
-                    }
-                </div>
+                    </div>
+                }
             </div>
+        </div>
     </div>
 </main>
-
-<style>
-
-</style>

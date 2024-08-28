@@ -174,6 +174,38 @@
     <Compile Include="Migrations\202408180149248_ActualizarModelo.Designer.cs">
       <DependentUpon>202408180149248_ActualizarModelo.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202408272111062_PerfilUpdate.cs" />
+    <Compile Include="Migrations\202408272111062_PerfilUpdate.Designer.cs">
+      <DependentUpon>202408272111062_PerfilUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202408280134565_RelacionCompraUsuario.cs" />
+    <Compile Include="Migrations\202408280134565_RelacionCompraUsuario.Designer.cs">
+      <DependentUpon>202408280134565_RelacionCompraUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202408280200099_AddUserToRegistroCompra.cs" />
+    <Compile Include="Migrations\202408280200099_AddUserToRegistroCompra.Designer.cs">
+      <DependentUpon>202408280200099_AddUserToRegistroCompra.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202408280211287_lastUpdate.cs" />
+    <Compile Include="Migrations\202408280211287_lastUpdate.Designer.cs">
+      <DependentUpon>202408280211287_lastUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202408280418118_DireccionyPago.cs" />
+    <Compile Include="Migrations\202408280418118_DireccionyPago.Designer.cs">
+      <DependentUpon>202408280418118_DireccionyPago.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202408281803088_RolesTest.cs" />
+    <Compile Include="Migrations\202408281803088_RolesTest.Designer.cs">
+      <DependentUpon>202408281803088_RolesTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202408281805022_RolesTest2.cs" />
+    <Compile Include="Migrations\202408281805022_RolesTest2.Designer.cs">
+      <DependentUpon>202408281805022_RolesTest2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202408281811537_RolesTest4.cs" />
+    <Compile Include="Migrations\202408281811537_RolesTest4.Designer.cs">
+      <DependentUpon>202408281811537_RolesTest4.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AplicationDbContext.cs" />
     <Compile Include="Models\CarritoDeCompras.cs" />
@@ -194,6 +226,7 @@
     <Content Include="Assets\img\Banner_Contact Us.png" />
     <Content Include="Assets\img\BazarImg1.png" />
     <Content Include="Assets\img\BazarLogo.png" />
+    <Content Include="Assets\img\ProfilePicture.jpg" />
     <Content Include="Assets\img\Libro2.png" />
     <Content Include="Assets\img\Libro3.png" />
     <Content Include="Assets\img\Libro4.png" />
@@ -300,9 +333,11 @@
     <Content Include="Views\Pago\Checkout.cshtml" />
     <Content Include="Views\CarritoDeCompras\ConfirmacionCompra.cshtml" />
     <Content Include="Views\CarritoDeCompras\GraciasPorTuCompra.cshtml" />
+    <Content Include="Views\Usuarios\Profile.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Assets\FotosDePerfil\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap.rtl.min.css.map" />
@@ -361,6 +396,30 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202408180149248_ActualizarModelo.resx">
       <DependentUpon>202408180149248_ActualizarModelo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202408272111062_PerfilUpdate.resx">
+      <DependentUpon>202408272111062_PerfilUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202408280134565_RelacionCompraUsuario.resx">
+      <DependentUpon>202408280134565_RelacionCompraUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202408280200099_AddUserToRegistroCompra.resx">
+      <DependentUpon>202408280200099_AddUserToRegistroCompra.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202408280211287_lastUpdate.resx">
+      <DependentUpon>202408280211287_lastUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202408280418118_DireccionyPago.resx">
+      <DependentUpon>202408280418118_DireccionyPago.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202408281803088_RolesTest.resx">
+      <DependentUpon>202408281803088_RolesTest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202408281805022_RolesTest2.resx">
+      <DependentUpon>202408281805022_RolesTest2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202408281811537_RolesTest4.resx">
+      <DependentUpon>202408281811537_RolesTest4.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

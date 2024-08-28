@@ -16,18 +16,25 @@ namespace ProyectoFinal.Models
         public string password { get; set; }
         public DateTime ultimaFechaConexion { get; set; } = DateTime.Now;
         public bool estadoUsuario { get; set; }
+        public string FotoPerfilUrl { get; set; }
+        public string Biografia { get; set; }
+        public string DireccionPrincipal { get; set; }
+        public string MetodoDePago { get; set; }
+        public int ID_Rol { get; set; } 
 
-        public virtual ICollection<Roles> Roles { get; set; }
+        [ForeignKey("ID_Rol")]
+        public virtual Roles Rol { get; set; }
+
         public virtual ICollection<Reseñas> Reseñas { get; set; }
         public virtual ICollection<CarritoDeCompras> CarritoDeCompras { get; set; }
-        public virtual ICollection<HistorialDePedidos> HistorialDePedidos { get; set; }
+        public virtual ICollection<RegistroCompra> RegistroCompra { get; set; }
 
         public Usuarios()
         {
-            Roles = new HashSet<Roles>();
             Reseñas = new HashSet<Reseñas>();
             CarritoDeCompras = new HashSet<CarritoDeCompras>();
-            HistorialDePedidos = new HashSet<HistorialDePedidos>();
+            RegistroCompra = new HashSet<RegistroCompra>();
         }
     }
+
 }

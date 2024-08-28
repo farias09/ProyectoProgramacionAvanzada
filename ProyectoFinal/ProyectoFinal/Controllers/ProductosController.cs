@@ -17,6 +17,22 @@ namespace ProyectoFinal.Controllers
 
         public ActionResult Catalogo(List<int> categorias, string ordenarPor)
         {
+
+            if (User.Identity.IsAuthenticated)
+            {
+                var userName = User.Identity.Name;
+
+                // Verificar si el nombre de usuario se puede usar para buscar al usuario en la base de datos
+                var usuario = db.Usuarios
+                    .SingleOrDefault(u => u.codigoUsuario == userName);
+
+                if (usuario != null)
+                {
+                    ViewBag.UserName = usuario.nombreUsuario;
+                    ViewBag.RolID = usuario.ID_Rol;
+                }
+            }
+
             IQueryable<Productos> productos = db.Productos.Include(p => p.Categoria);
 
             if (categorias != null && categorias.Any())
@@ -51,6 +67,20 @@ namespace ProyectoFinal.Controllers
         // GET: Productos
         public ActionResult Index()
         {
+            if (User.Identity.IsAuthenticated)
+            {
+                var userName = User.Identity.Name;
+
+                // Verificar si el nombre de usuario se puede usar para buscar al usuario en la base de datos
+                var usuario = db.Usuarios
+                    .SingleOrDefault(u => u.codigoUsuario == userName);
+
+                if (usuario != null)
+                {
+                    ViewBag.UserName = usuario.nombreUsuario;
+                    ViewBag.RolID = usuario.ID_Rol;
+                }
+            }
             var productos = db.Productos.Include(p => p.Categoria);
             return View(productos.ToList());
         }
@@ -189,6 +219,22 @@ namespace ProyectoFinal.Controllers
         // Método para mostrar la información del producto
         public ActionResult InfoProducto(int id)
         {
+
+            if (User.Identity.IsAuthenticated)
+            {
+                var userName = User.Identity.Name;
+
+                // Verificar si el nombre de usuario se puede usar para buscar al usuario en la base de datos
+                var usuario = db.Usuarios
+                    .SingleOrDefault(u => u.codigoUsuario == userName);
+
+                if (usuario != null)
+                {
+                    ViewBag.UserName = usuario.nombreUsuario;
+                    ViewBag.RolID = usuario.ID_Rol;
+                }
+            }
+
             var producto = db.Productos
                 .Include(p => p.Reseña)
                 .Include(p => p.Reseña.Select(r => r.Usuario))
@@ -207,6 +253,21 @@ namespace ProyectoFinal.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult AddReview(Reseñas reseña)
         {
+
+            if (User.Identity.IsAuthenticated)
+            {
+                var userName = User.Identity.Name;
+
+                // Verificar si el nombre de usuario se puede usar para buscar al usuario en la base de datos
+                var usuario = db.Usuarios
+                    .SingleOrDefault(u => u.codigoUsuario == userName);
+
+                if (usuario != null)
+                {
+                    ViewBag.UserName = usuario.nombreUsuario;
+                    ViewBag.RolID = usuario.ID_Rol;
+                }
+            }
             if (ModelState.IsValid)
             {
                 reseña.fechaPublicacion = DateTime.Now;

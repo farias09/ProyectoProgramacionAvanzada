@@ -32,19 +32,31 @@ namespace ProyectoFinal.Controllers
         {
             if (ModelState.IsValid)
             {
-                // Hash the password before saving (recommended)
+
+                if (string.IsNullOrEmpty(model.FotoPerfilUrl))
+                {
+                    model.FotoPerfilUrl = "/Assets/img/ProfilePicture.jpg";
+                }
+
                 model.password = Crypto.HashPassword(model.password);
+
+                model.ID_Rol = ObtenerRolClienteId();
 
                 db.Usuarios.Add(model);
                 db.SaveChanges();
 
-                // Log in the user automatically after registration
                 FormsAuthentication.SetAuthCookie(model.codigoUsuario, false);
 
                 return RedirectToAction("Index", "Home");
             }
 
             return View(model);
+        }
+
+        private int ObtenerRolClienteId()
+        {
+            // Obtener el ID del rol "Cliente" desde la base de datos
+            return db.Roles.FirstOrDefault(r => r.nombreRol == "Cliente")?.id_rol ?? 0;
         }
 
         // GET: Account/Login

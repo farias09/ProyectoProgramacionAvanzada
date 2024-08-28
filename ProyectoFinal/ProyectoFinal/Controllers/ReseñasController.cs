@@ -17,6 +17,20 @@ namespace ProyectoFinal.Controllers
         // GET: Reseñas
         public ActionResult Index()
         {
+            if (User.Identity.IsAuthenticated)
+            {
+                var userName = User.Identity.Name;
+
+                // Verificar si el nombre de usuario se puede usar para buscar al usuario en la base de datos
+                var usuario = db.Usuarios
+                    .SingleOrDefault(u => u.codigoUsuario == userName);
+
+                if (usuario != null)
+                {
+                    ViewBag.UserName = usuario.nombreUsuario;
+                    ViewBag.RolID = usuario.ID_Rol;
+                }
+            }
             var resenas = db.Resenas.Include(r => r.Producto).Include(r => r.Usuario);
             return View(resenas.ToList());
         }

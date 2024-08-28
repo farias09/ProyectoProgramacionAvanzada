@@ -17,8 +17,8 @@ namespace ProyectoFinal.Controllers
         // GET: Roles
         public ActionResult Index()
         {
-            var roles = db.Roles.Include(r => r.Usuario);
-            return View(roles.ToList());
+            var roles = db.Roles.ToList();
+            return View(roles);
         }
 
         // GET: Roles/Details/5
@@ -39,7 +39,6 @@ namespace ProyectoFinal.Controllers
         // GET: Roles/Create
         public ActionResult Create()
         {
-            ViewBag.id_usuario = new SelectList(db.Usuarios, "id_usuario", "codigoUsuario");
             return View();
         }
 
@@ -48,7 +47,7 @@ namespace ProyectoFinal.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "id_rol,nombreRol,id_usuario")] Roles roles)
+        public ActionResult Create([Bind(Include = "id_rol,nombreRol")] Roles roles)
         {
             if (ModelState.IsValid)
             {
@@ -57,7 +56,6 @@ namespace ProyectoFinal.Controllers
                 return RedirectToAction("Index");
             }
 
-            ViewBag.id_usuario = new SelectList(db.Usuarios, "id_usuario", "codigoUsuario", roles.id_usuario);
             return View(roles);
         }
 
@@ -73,7 +71,6 @@ namespace ProyectoFinal.Controllers
             {
                 return HttpNotFound();
             }
-            ViewBag.id_usuario = new SelectList(db.Usuarios, "id_usuario", "codigoUsuario", roles.id_usuario);
             return View(roles);
         }
 
@@ -82,7 +79,7 @@ namespace ProyectoFinal.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "id_rol,nombreRol,id_usuario")] Roles roles)
+        public ActionResult Edit([Bind(Include = "id_rol,nombreRol")] Roles roles)
         {
             if (ModelState.IsValid)
             {
@@ -90,7 +87,6 @@ namespace ProyectoFinal.Controllers
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
-            ViewBag.id_usuario = new SelectList(db.Usuarios, "id_usuario", "codigoUsuario", roles.id_usuario);
             return View(roles);
         }
 

@@ -12,9 +12,5 @@ namespace ProyectoFinal.Models
         [Key]
         public int id_rol { get; set; }
         public string nombreRol { get; set; }
-        public int id_usuario { get; set; }
-
-        [ForeignKey("id_usuario")]
-        public virtual Usuarios Usuario { get; set; }
     }
 }
